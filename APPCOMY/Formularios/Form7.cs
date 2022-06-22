@@ -16,5 +16,12 @@ namespace APPCOMY
         {
             InitializeComponent();
         }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            var newForm4 = new Form4();
+            newForm4.Show();
+            this.Hide();
+        }
     }
 }

@@ -27,5 +27,12 @@ namespace APPCOMY
             Form4 administrador = new Form4();
             administrador.ShowDialog();
         }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            var newForm = new Form();
+            newForm.Show();
+            this.Hide();
+        }
     }
 }

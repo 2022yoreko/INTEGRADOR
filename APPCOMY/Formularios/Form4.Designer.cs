@@ -255,6 +255,7 @@ namespace APPCOMY
             this.Controls.Add(this.groupBox2);
             this.MaximumSize = new System.Drawing.Size(670, 550);
             this.Name = "Form4";
+            this.Load += new System.EventHandler(this.Form4_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
