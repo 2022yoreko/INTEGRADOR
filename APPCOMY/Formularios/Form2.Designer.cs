@@ -114,13 +114,14 @@ namespace APPCOMY
             // btnAcceder
             // 
             this.btnAcceder.BackColor = System.Drawing.Color.Silver;
-            this.btnAcceder.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAcceder.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAcceder.Location = new System.Drawing.Point(260, 387);
             this.btnAcceder.Name = "btnAcceder";
             this.btnAcceder.Size = new System.Drawing.Size(157, 49);
             this.btnAcceder.TabIndex = 7;
             this.btnAcceder.Text = "Acceder";
             this.btnAcceder.UseVisualStyleBackColor = false;
+            this.btnAcceder.Click += new System.EventHandler(this.btnAcceder_Click);
             // 
             // txtNombre_usuario
             // 

@@ -156,7 +156,7 @@ namespace APPCOMY
             // btnAcceder
             // 
             this.btnAcceder.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.btnAcceder.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAcceder.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAcceder.ForeColor = System.Drawing.Color.Black;
             this.btnAcceder.Location = new System.Drawing.Point(261, 431);
             this.btnAcceder.Name = "btnAcceder";
@@ -164,6 +164,7 @@ namespace APPCOMY
             this.btnAcceder.TabIndex = 12;
             this.btnAcceder.Text = "Acceder";
             this.btnAcceder.UseVisualStyleBackColor = false;
+            this.btnAcceder.Click += new System.EventHandler(this.btnAcceder_Click);
             // 
             // btnRegresar
             // 
@@ -185,6 +186,7 @@ namespace APPCOMY
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(654, 510);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnAcceder);
             this.Controls.Add(this.txtNumero_Telefono);
@@ -196,7 +198,6 @@ namespace APPCOMY
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
             this.MaximumSize = new System.Drawing.Size(670, 550);
             this.Name = "Form3";

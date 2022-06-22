@@ -19,7 +19,54 @@ namespace APPCOMY
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
+           
+        }
 
+        private void btnRegistro_Estudiantes_Click(object sender, EventArgs e)
+        {
+            Form5 administrador = new Form5();
+            administrador.ShowDialog();
+        }
+
+        private void btnPerfil_Alumnos_Click(object sender, EventArgs e)
+        {
+            Form7 administrador = new Form7();
+            administrador.ShowDialog();
+        }
+
+        private void btnRegistro_Click(object sender, EventArgs e)
+        {
+            Form5 administrador = new Form5();
+            administrador.ShowDialog();
+        }
+
+        private void btnInformacion_Personal_Click(object sender, EventArgs e)
+        {
+            Form7 administrador = new Form7();
+            administrador.ShowDialog();
+        }
+
+        private void btnTabla_Asistencia_Click(object sender, EventArgs e)
+        {
+            Form8 administrador = new Form8();
+            administrador.ShowDialog();
+        }
+
+        private void btnCalendario_Click(object sender, EventArgs e)
+        {
+            Form6 administrador = new Form6();
+            administrador.ShowDialog();
+        }
+
+        private void btnPerfil_Click(object sender, EventArgs e)
+        {
+            Form7 administrador = new Form7();
+            administrador.ShowDialog();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

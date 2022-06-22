@@ -24,7 +24,14 @@ namespace APPCOMY
 
         private void txtRegistrate_Click(object sender, EventArgs e)
         {
+            Form3 administrador = new Form3();
+            administrador.ShowDialog();
+        }
 
+        private void txtIniciar_Click(object sender, EventArgs e)
+        {
+            Form2 administrador = new Form2();
+            administrador.ShowDialog();
         }
     }
 }

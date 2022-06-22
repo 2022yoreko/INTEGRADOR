@@ -61,6 +61,7 @@ namespace APPCOMY
             this.txtIniciar.Size = new System.Drawing.Size(70, 70);
             this.txtIniciar.TabIndex = 2;
             this.txtIniciar.UseVisualStyleBackColor = false;
+            this.txtIniciar.Click += new System.EventHandler(this.txtIniciar_Click);
             // 
             // txtRegistrate
             // 

@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace APPCOMY
 {
-    public partial class Form2 : Form
+    public partial class Form8 : Form
     {
-        public Form2()
+        public Form8()
         {
             InitializeComponent();
-        }
-
-        private void btnAcceder_Click(object sender, EventArgs e)
-        {
-            Form4 administrador = new Form4();
-            administrador.ShowDialog();
         }
     }
 }

@@ -30,282 +30,235 @@ namespace APPCOMY
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnRegresar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtBuscar = new System.Windows.Forms.TextBox();
-            this.txtPerfil_Alumnos = new System.Windows.Forms.TextBox();
-            this.txtRegistro_Estudiantes = new System.Windows.Forms.TextBox();
-            this.txtInformacion_Personal = new System.Windows.Forms.TextBox();
-            this.txtTabla_Asistencia = new System.Windows.Forms.TextBox();
-            this.txtEditar = new System.Windows.Forms.TextBox();
-            this.txtConfiguracion = new System.Windows.Forms.TextBox();
-            this.txtCalendario = new System.Windows.Forms.TextBox();
-            this.txtImprimir = new System.Windows.Forms.TextBox();
-            this.txtZona_horaria = new System.Windows.Forms.TextBox();
-            this.txtAyuda = new System.Windows.Forms.TextBox();
-            this.txtSalir = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnPerfil = new System.Windows.Forms.Button();
+            this.btnRegistro = new System.Windows.Forms.Button();
+            this.btnInformacion_Personal = new System.Windows.Forms.Button();
+            this.btnTabla_Asistencia = new System.Windows.Forms.Button();
+            this.btnConfiguracion = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnCalendario = new System.Windows.Forms.Button();
+            this.btnZona_Horaria = new System.Windows.Forms.Button();
+            this.btnImprimir = new System.Windows.Forms.Button();
+            this.btnAyuda = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // btnBuscar
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(250, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(72, 62);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.btnBuscar.BackColor = System.Drawing.Color.White;
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.Color.Black;
+            this.btnBuscar.Location = new System.Drawing.Point(10, 70);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(171, 34);
+            this.btnBuscar.TabIndex = 0;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = false;
             // 
-            // label2
+            // btnPerfil
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(328, 18);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(154, 23);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Comedor Central";
+            this.btnPerfil.BackColor = System.Drawing.Color.White;
+            this.btnPerfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPerfil.ForeColor = System.Drawing.Color.Black;
+            this.btnPerfil.Location = new System.Drawing.Point(10, 110);
+            this.btnPerfil.Name = "btnPerfil";
+            this.btnPerfil.Size = new System.Drawing.Size(171, 30);
+            this.btnPerfil.TabIndex = 1;
+            this.btnPerfil.Text = "Perfil de Alumnos";
+            this.btnPerfil.UseVisualStyleBackColor = false;
+            this.btnPerfil.Click += new System.EventHandler(this.btnPerfil_Click);
             // 
-            // label3
+            // btnRegistro
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(328, 41);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(167, 21);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "UNAN_MANAGUA";
+            this.btnRegistro.BackColor = System.Drawing.Color.White;
+            this.btnRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistro.ForeColor = System.Drawing.Color.Black;
+            this.btnRegistro.Location = new System.Drawing.Point(10, 146);
+            this.btnRegistro.Name = "btnRegistro";
+            this.btnRegistro.Size = new System.Drawing.Size(175, 33);
+            this.btnRegistro.TabIndex = 2;
+            this.btnRegistro.Text = "Registro de Estudiantes";
+            this.btnRegistro.UseVisualStyleBackColor = false;
+            this.btnRegistro.Click += new System.EventHandler(this.btnRegistro_Click);
             // 
-            // btnRegresar
+            // btnInformacion_Personal
             // 
-            this.btnRegresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.btnRegresar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRegresar.BackgroundImage")));
-            this.btnRegresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegresar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.btnRegresar.Location = new System.Drawing.Point(596, 12);
-            this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(46, 39);
-            this.btnRegresar.TabIndex = 14;
-            this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnInformacion_Personal.BackColor = System.Drawing.Color.White;
+            this.btnInformacion_Personal.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInformacion_Personal.ForeColor = System.Drawing.Color.Black;
+            this.btnInformacion_Personal.Location = new System.Drawing.Point(10, 185);
+            this.btnInformacion_Personal.Name = "btnInformacion_Personal";
+            this.btnInformacion_Personal.Size = new System.Drawing.Size(171, 29);
+            this.btnInformacion_Personal.TabIndex = 3;
+            this.btnInformacion_Personal.Text = "Informacion Personal";
+            this.btnInformacion_Personal.UseVisualStyleBackColor = false;
+            this.btnInformacion_Personal.Click += new System.EventHandler(this.btnInformacion_Personal_Click);
             // 
-            // label1
+            // btnTabla_Asistencia
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(213, 114);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(400, 26);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "FORMANDO PARTE DEL CAMBIO";
+            this.btnTabla_Asistencia.BackColor = System.Drawing.Color.White;
+            this.btnTabla_Asistencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTabla_Asistencia.ForeColor = System.Drawing.Color.Black;
+            this.btnTabla_Asistencia.Location = new System.Drawing.Point(10, 220);
+            this.btnTabla_Asistencia.Name = "btnTabla_Asistencia";
+            this.btnTabla_Asistencia.Size = new System.Drawing.Size(171, 29);
+            this.btnTabla_Asistencia.TabIndex = 4;
+            this.btnTabla_Asistencia.Text = "Tabla de Asistencia";
+            this.btnTabla_Asistencia.UseVisualStyleBackColor = false;
+            this.btnTabla_Asistencia.Click += new System.EventHandler(this.btnTabla_Asistencia_Click);
             // 
-            // groupBox1
+            // btnConfiguracion
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.pictureBox2);
-            this.groupBox1.Controls.Add(this.txtSalir);
-            this.groupBox1.Controls.Add(this.txtCalendario);
-            this.groupBox1.Controls.Add(this.txtAyuda);
-            this.groupBox1.Controls.Add(this.txtConfiguracion);
-            this.groupBox1.Controls.Add(this.txtImprimir);
-            this.groupBox1.Controls.Add(this.txtZona_horaria);
-            this.groupBox1.Controls.Add(this.txtEditar);
-            this.groupBox1.Controls.Add(this.txtTabla_Asistencia);
-            this.groupBox1.Controls.Add(this.txtInformacion_Personal);
-            this.groupBox1.Controls.Add(this.txtRegistro_Estudiantes);
-            this.groupBox1.Controls.Add(this.txtBuscar);
-            this.groupBox1.Controls.Add(this.txtPerfil_Alumnos);
-            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.groupBox1.Location = new System.Drawing.Point(-1, 0);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(208, 512);
-            this.groupBox1.TabIndex = 16;
-            this.groupBox1.TabStop = false;
+            this.btnConfiguracion.BackColor = System.Drawing.Color.White;
+            this.btnConfiguracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfiguracion.ForeColor = System.Drawing.Color.Black;
+            this.btnConfiguracion.Location = new System.Drawing.Point(10, 425);
+            this.btnConfiguracion.Name = "btnConfiguracion";
+            this.btnConfiguracion.Size = new System.Drawing.Size(171, 29);
+            this.btnConfiguracion.TabIndex = 5;
+            this.btnConfiguracion.Text = "Configuracion";
+            this.btnConfiguracion.UseVisualStyleBackColor = false;
             // 
-            // txtBuscar
+            // btnSalir
             // 
-            this.txtBuscar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscar.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.txtBuscar.Location = new System.Drawing.Point(13, 82);
-            this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(175, 26);
-            this.txtBuscar.TabIndex = 0;
-            this.txtBuscar.Text = "Buscar";
+            this.btnSalir.BackColor = System.Drawing.Color.White;
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.ForeColor = System.Drawing.Color.Black;
+            this.btnSalir.Location = new System.Drawing.Point(10, 460);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(171, 29);
+            this.btnSalir.TabIndex = 6;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // txtPerfil_Alumnos
+            // btnEditar
             // 
-            this.txtPerfil_Alumnos.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPerfil_Alumnos.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.txtPerfil_Alumnos.Location = new System.Drawing.Point(13, 117);
-            this.txtPerfil_Alumnos.Name = "txtPerfil_Alumnos";
-            this.txtPerfil_Alumnos.Size = new System.Drawing.Size(175, 26);
-            this.txtPerfil_Alumnos.TabIndex = 17;
-            this.txtPerfil_Alumnos.Text = "Perfil de Alumnos";
-            this.txtPerfil_Alumnos.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.btnEditar.BackColor = System.Drawing.Color.White;
+            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.ForeColor = System.Drawing.Color.Black;
+            this.btnEditar.Location = new System.Drawing.Point(10, 255);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(171, 28);
+            this.btnEditar.TabIndex = 7;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = false;
             // 
-            // txtRegistro_Estudiantes
+            // btnCalendario
             // 
-            this.txtRegistro_Estudiantes.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRegistro_Estudiantes.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.txtRegistro_Estudiantes.Location = new System.Drawing.Point(13, 156);
-            this.txtRegistro_Estudiantes.Name = "txtRegistro_Estudiantes";
-            this.txtRegistro_Estudiantes.Size = new System.Drawing.Size(175, 26);
-            this.txtRegistro_Estudiantes.TabIndex = 18;
-            this.txtRegistro_Estudiantes.Text = "Registro de Estudiantes";
+            this.btnCalendario.BackColor = System.Drawing.Color.White;
+            this.btnCalendario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalendario.ForeColor = System.Drawing.Color.Black;
+            this.btnCalendario.Location = new System.Drawing.Point(10, 289);
+            this.btnCalendario.Name = "btnCalendario";
+            this.btnCalendario.Size = new System.Drawing.Size(171, 27);
+            this.btnCalendario.TabIndex = 8;
+            this.btnCalendario.Text = "Calendario";
+            this.btnCalendario.UseVisualStyleBackColor = false;
+            this.btnCalendario.Click += new System.EventHandler(this.btnCalendario_Click);
             // 
-            // txtInformacion_Personal
+            // btnZona_Horaria
             // 
-            this.txtInformacion_Personal.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtInformacion_Personal.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.txtInformacion_Personal.Location = new System.Drawing.Point(13, 191);
-            this.txtInformacion_Personal.Name = "txtInformacion_Personal";
-            this.txtInformacion_Personal.Size = new System.Drawing.Size(175, 26);
-            this.txtInformacion_Personal.TabIndex = 19;
-            this.txtInformacion_Personal.Text = "Informacion Personal";
+            this.btnZona_Horaria.BackColor = System.Drawing.Color.White;
+            this.btnZona_Horaria.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnZona_Horaria.ForeColor = System.Drawing.Color.Black;
+            this.btnZona_Horaria.Location = new System.Drawing.Point(10, 322);
+            this.btnZona_Horaria.Name = "btnZona_Horaria";
+            this.btnZona_Horaria.Size = new System.Drawing.Size(171, 28);
+            this.btnZona_Horaria.TabIndex = 9;
+            this.btnZona_Horaria.Text = "Zona Horaria";
+            this.btnZona_Horaria.UseVisualStyleBackColor = false;
             // 
-            // txtTabla_Asistencia
+            // btnImprimir
             // 
-            this.txtTabla_Asistencia.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTabla_Asistencia.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.txtTabla_Asistencia.Location = new System.Drawing.Point(13, 226);
-            this.txtTabla_Asistencia.Name = "txtTabla_Asistencia";
-            this.txtTabla_Asistencia.Size = new System.Drawing.Size(175, 26);
-            this.txtTabla_Asistencia.TabIndex = 20;
-            this.txtTabla_Asistencia.Text = "Tabla de Asistencia";
+            this.btnImprimir.BackColor = System.Drawing.Color.White;
+            this.btnImprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImprimir.ForeColor = System.Drawing.Color.Black;
+            this.btnImprimir.Location = new System.Drawing.Point(10, 356);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(171, 29);
+            this.btnImprimir.TabIndex = 10;
+            this.btnImprimir.Text = "Imprimir";
+            this.btnImprimir.UseVisualStyleBackColor = false;
             // 
-            // txtEditar
+            // btnAyuda
             // 
-            this.txtEditar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEditar.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.txtEditar.Location = new System.Drawing.Point(13, 263);
-            this.txtEditar.Name = "txtEditar";
-            this.txtEditar.Size = new System.Drawing.Size(175, 26);
-            this.txtEditar.TabIndex = 21;
-            this.txtEditar.Text = "Editar";
+            this.btnAyuda.BackColor = System.Drawing.Color.White;
+            this.btnAyuda.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAyuda.ForeColor = System.Drawing.Color.Black;
+            this.btnAyuda.Location = new System.Drawing.Point(10, 391);
+            this.btnAyuda.Name = "btnAyuda";
+            this.btnAyuda.Size = new System.Drawing.Size(171, 28);
+            this.btnAyuda.TabIndex = 11;
+            this.btnAyuda.Text = "Ayuda";
+            this.btnAyuda.UseVisualStyleBackColor = false;
             // 
-            // txtConfiguracion
+            // groupBox2
             // 
-            this.txtConfiguracion.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfiguracion.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.txtConfiguracion.Location = new System.Drawing.Point(13, 299);
-            this.txtConfiguracion.Name = "txtConfiguracion";
-            this.txtConfiguracion.Size = new System.Drawing.Size(175, 26);
-            this.txtConfiguracion.TabIndex = 22;
-            this.txtConfiguracion.Text = "Configuracion";
+            this.groupBox2.BackColor = System.Drawing.Color.Black;
+            this.groupBox2.Controls.Add(this.groupBox3);
+            this.groupBox2.Controls.Add(this.btnRegistro);
+            this.groupBox2.Controls.Add(this.btnBuscar);
+            this.groupBox2.Controls.Add(this.btnAyuda);
+            this.groupBox2.Controls.Add(this.btnPerfil);
+            this.groupBox2.Controls.Add(this.btnImprimir);
+            this.groupBox2.Controls.Add(this.btnZona_Horaria);
+            this.groupBox2.Controls.Add(this.btnInformacion_Personal);
+            this.groupBox2.Controls.Add(this.btnCalendario);
+            this.groupBox2.Controls.Add(this.btnTabla_Asistencia);
+            this.groupBox2.Controls.Add(this.btnEditar);
+            this.groupBox2.Controls.Add(this.btnConfiguracion);
+            this.groupBox2.Controls.Add(this.btnSalir);
+            this.groupBox2.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.groupBox2.Location = new System.Drawing.Point(2, -2);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(200, 515);
+            this.groupBox2.TabIndex = 12;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "groupBox2";
             // 
-            // txtCalendario
+            // groupBox3
             // 
-            this.txtCalendario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCalendario.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.txtCalendario.Location = new System.Drawing.Point(13, 335);
-            this.txtCalendario.Name = "txtCalendario";
-            this.txtCalendario.Size = new System.Drawing.Size(175, 26);
-            this.txtCalendario.TabIndex = 23;
-            this.txtCalendario.Text = "Calendario";
+            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(124)))), ((int)(((byte)(140)))));
+            this.groupBox3.Controls.Add(this.pictureBox3);
+            this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(124)))), ((int)(((byte)(140)))));
+            this.groupBox3.Location = new System.Drawing.Point(-9, 14);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(209, 50);
+            this.groupBox3.TabIndex = 13;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "groupBox3";
             // 
-            // txtImprimir
+            // pictureBox3
             // 
-            this.txtImprimir.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtImprimir.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.txtImprimir.Location = new System.Drawing.Point(13, 406);
-            this.txtImprimir.Name = "txtImprimir";
-            this.txtImprimir.Size = new System.Drawing.Size(175, 26);
-            this.txtImprimir.TabIndex = 17;
-            this.txtImprimir.Text = "Imprimir";
-            // 
-            // txtZona_horaria
-            // 
-            this.txtZona_horaria.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtZona_horaria.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.txtZona_horaria.Location = new System.Drawing.Point(13, 370);
-            this.txtZona_horaria.Name = "txtZona_horaria";
-            this.txtZona_horaria.Size = new System.Drawing.Size(175, 26);
-            this.txtZona_horaria.TabIndex = 18;
-            this.txtZona_horaria.Text = "Zona horaria";
-            // 
-            // txtAyuda
-            // 
-            this.txtAyuda.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAyuda.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.txtAyuda.Location = new System.Drawing.Point(13, 442);
-            this.txtAyuda.Name = "txtAyuda";
-            this.txtAyuda.Size = new System.Drawing.Size(175, 26);
-            this.txtAyuda.TabIndex = 19;
-            this.txtAyuda.Text = "Ayuda";
-            // 
-            // txtSalir
-            // 
-            this.txtSalir.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSalir.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.txtSalir.Location = new System.Drawing.Point(13, 478);
-            this.txtSalir.Name = "txtSalir";
-            this.txtSalir.Size = new System.Drawing.Size(175, 26);
-            this.txtSalir.TabIndex = 20;
-            this.txtSalir.Text = "Salir";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(124)))), ((int)(((byte)(150)))));
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Location = new System.Drawing.Point(-75, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(283, 58);
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(124)))), ((int)(((byte)(150)))));
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(95, 29);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 22);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "APPCOMY";
+            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox3.Location = new System.Drawing.Point(71, 5);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(61, 45);
+            this.pictureBox3.TabIndex = 13;
+            this.pictureBox3.TabStop = false;
             // 
             // Form4
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(654, 510);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnRegresar);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.groupBox2);
             this.MaximumSize = new System.Drawing.Size(670, 550);
             this.Name = "Form4";
-            this.Text = "Form4";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -318,8 +271,6 @@ namespace APPCOMY
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtBuscar;
-        private System.Windows.Forms.TextBox txtPerfil_Alumnos;
-        private System.Windows.Forms.TextBox txtRegistro_Estudiantes;
         private System.Windows.Forms.TextBox txtSalir;
         private System.Windows.Forms.TextBox txtCalendario;
         private System.Windows.Forms.TextBox txtAyuda;
@@ -331,5 +282,22 @@ namespace APPCOMY
         private System.Windows.Forms.TextBox txtInformacion_Personal;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btnRegistro_Estudiantes;
+        private System.Windows.Forms.Button btnPerfil_Alumnos;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.Button btnPerfil;
+        private System.Windows.Forms.Button btnRegistro;
+        private System.Windows.Forms.Button btnInformacion_Personal;
+        private System.Windows.Forms.Button btnTabla_Asistencia;
+        private System.Windows.Forms.Button btnConfiguracion;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button btnCalendario;
+        private System.Windows.Forms.Button btnZona_Horaria;
+        private System.Windows.Forms.Button btnImprimir;
+        private System.Windows.Forms.Button btnAyuda;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

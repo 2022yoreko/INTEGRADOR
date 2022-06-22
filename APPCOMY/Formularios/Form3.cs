@@ -21,5 +21,11 @@ namespace APPCOMY
         {
 
         }
+
+        private void btnAcceder_Click(object sender, EventArgs e)
+        {
+            Form4 administrador = new Form4();
+            administrador.ShowDialog();
+        }
     }
 }
