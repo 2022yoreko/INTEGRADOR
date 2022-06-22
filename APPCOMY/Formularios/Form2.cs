@@ -22,5 +22,10 @@ namespace APPCOMY
             Form4 administrador = new Form4();
             administrador.ShowDialog();
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

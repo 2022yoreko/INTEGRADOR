@@ -381,6 +381,7 @@ namespace APPCOMY
             this.btnMenu.Size = new System.Drawing.Size(44, 38);
             this.btnMenu.TabIndex = 35;
             this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // Form5
             // 

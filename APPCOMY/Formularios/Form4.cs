@@ -66,7 +66,8 @@ namespace APPCOMY
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            Close();
+            System.Windows.Forms.Application.Exit();
+
         }
 
         private void Form4_Load(object sender, EventArgs e)
