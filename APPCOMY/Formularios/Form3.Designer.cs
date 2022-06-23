@@ -50,7 +50,7 @@ namespace APPCOMY
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(44, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(44, 23);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(92, 92);
             this.pictureBox1.TabIndex = 1;
@@ -187,7 +187,6 @@ namespace APPCOMY
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(654, 510);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnAcceder);
             this.Controls.Add(this.txtNumero_Telefono);
@@ -199,6 +198,7 @@ namespace APPCOMY
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
             this.MaximumSize = new System.Drawing.Size(670, 550);
             this.Name = "Form3";

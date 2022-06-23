@@ -54,8 +54,7 @@ namespace APPCOMY
 
         private void btnCalendario_Click(object sender, EventArgs e)
         {
-            Form6 administrador = new Form6();
-            administrador.ShowDialog();
+           
         }
 
         private void btnPerfil_Click(object sender, EventArgs e)
