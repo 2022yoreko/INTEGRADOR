@@ -101,7 +101,7 @@ namespace APPCOMY
             {
             
             }
-
+            MessageBox.Show("Registro exitoso");
         }
     }
 }

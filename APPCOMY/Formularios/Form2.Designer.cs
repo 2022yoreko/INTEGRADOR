@@ -37,7 +37,8 @@ namespace APPCOMY
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.btnAcceder = new System.Windows.Forms.Button();
             this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.Recordar_Contraseña = new System.Windows.Forms.CheckBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -92,17 +93,18 @@ namespace APPCOMY
             // 
             this.txtContraseña.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseña.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtContraseña.Location = new System.Drawing.Point(238, 289);
+            this.txtContraseña.Location = new System.Drawing.Point(238, 282);
             this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(179, 29);
+            this.txtContraseña.Size = new System.Drawing.Size(209, 29);
             this.txtContraseña.TabIndex = 5;
-            this.txtContraseña.Text = "     Contraseña";
+            this.txtContraseña.Text = "Contraseña";
+            this.txtContraseña.UseSystemPasswordChar = true;
             // 
             // btnAcceder
             // 
             this.btnAcceder.BackColor = System.Drawing.Color.Silver;
             this.btnAcceder.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAcceder.Location = new System.Drawing.Point(260, 373);
+            this.btnAcceder.Location = new System.Drawing.Point(260, 366);
             this.btnAcceder.Name = "btnAcceder";
             this.btnAcceder.Size = new System.Drawing.Size(157, 49);
             this.btnAcceder.TabIndex = 7;
@@ -114,19 +116,40 @@ namespace APPCOMY
             // 
             this.txtUsuario.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtUsuario.Location = new System.Drawing.Point(238, 244);
+            this.txtUsuario.Location = new System.Drawing.Point(238, 237);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(209, 29);
             this.txtUsuario.TabIndex = 8;
-            this.txtUsuario.Text = "   Nombre de usuario";
+            this.txtUsuario.Text = "         Usuario";
+            this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
             // 
-            // comboBox1
+            // Recordar_Contraseña
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(423, 289);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(21, 21);
-            this.comboBox1.TabIndex = 9;
+            this.Recordar_Contraseña.AutoSize = true;
+            this.Recordar_Contraseña.BackColor = System.Drawing.Color.Transparent;
+            this.Recordar_Contraseña.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Recordar_Contraseña.ForeColor = System.Drawing.Color.Silver;
+            this.Recordar_Contraseña.Location = new System.Drawing.Point(260, 327);
+            this.Recordar_Contraseña.Name = "Recordar_Contraseña";
+            this.Recordar_Contraseña.Size = new System.Drawing.Size(177, 22);
+            this.Recordar_Contraseña.TabIndex = 9;
+            this.Recordar_Contraseña.Text = "Recordar Contraseña";
+            this.Recordar_Contraseña.UseVisualStyleBackColor = false;
+            this.Recordar_Contraseña.CheckedChanged += new System.EventHandler(this.Recordar_Contraseña_CheckedChanged);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.ForeColor = System.Drawing.Color.Crimson;
+            this.linkLabel1.LinkColor = System.Drawing.Color.White;
+            this.linkLabel1.Location = new System.Drawing.Point(273, 476);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(127, 16);
+            this.linkLabel1.TabIndex = 10;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Olvide la Contraseña";
             // 
             // Form2
             // 
@@ -134,7 +157,8 @@ namespace APPCOMY
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(654, 510);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.Recordar_Contraseña);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.btnAcceder);
             this.Controls.Add(this.txtContraseña);
@@ -142,6 +166,7 @@ namespace APPCOMY
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(670, 550);
             this.Name = "Form2";
             this.Text = "Form2";
@@ -161,6 +186,7 @@ namespace APPCOMY
         private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.Button btnAcceder;
         private System.Windows.Forms.TextBox txtUsuario;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.CheckBox Recordar_Contraseña;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

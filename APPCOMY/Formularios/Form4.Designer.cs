@@ -39,18 +39,18 @@ namespace APPCOMY
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnZona_Horaria = new System.Windows.Forms.Button();
             this.btnAyuda = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnPerfil
@@ -58,7 +58,7 @@ namespace APPCOMY
             this.btnPerfil.BackColor = System.Drawing.Color.Gainsboro;
             this.btnPerfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPerfil.ForeColor = System.Drawing.Color.Black;
-            this.btnPerfil.Location = new System.Drawing.Point(14, 90);
+            this.btnPerfil.Location = new System.Drawing.Point(21, 93);
             this.btnPerfil.MaximumSize = new System.Drawing.Size(171, 36);
             this.btnPerfil.Name = "btnPerfil";
             this.btnPerfil.Size = new System.Drawing.Size(171, 36);
@@ -72,7 +72,7 @@ namespace APPCOMY
             this.btnRegistro.BackColor = System.Drawing.Color.Gainsboro;
             this.btnRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistro.ForeColor = System.Drawing.Color.Black;
-            this.btnRegistro.Location = new System.Drawing.Point(10, 140);
+            this.btnRegistro.Location = new System.Drawing.Point(17, 144);
             this.btnRegistro.Name = "btnRegistro";
             this.btnRegistro.Size = new System.Drawing.Size(180, 36);
             this.btnRegistro.TabIndex = 2;
@@ -85,7 +85,7 @@ namespace APPCOMY
             this.btnInformacion_Personal.BackColor = System.Drawing.Color.Gainsboro;
             this.btnInformacion_Personal.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInformacion_Personal.ForeColor = System.Drawing.Color.Black;
-            this.btnInformacion_Personal.Location = new System.Drawing.Point(14, 190);
+            this.btnInformacion_Personal.Location = new System.Drawing.Point(21, 195);
             this.btnInformacion_Personal.MaximumSize = new System.Drawing.Size(171, 36);
             this.btnInformacion_Personal.Name = "btnInformacion_Personal";
             this.btnInformacion_Personal.Size = new System.Drawing.Size(171, 36);
@@ -99,7 +99,7 @@ namespace APPCOMY
             this.btnTabla_Asistencia.BackColor = System.Drawing.Color.Gainsboro;
             this.btnTabla_Asistencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTabla_Asistencia.ForeColor = System.Drawing.Color.Black;
-            this.btnTabla_Asistencia.Location = new System.Drawing.Point(14, 290);
+            this.btnTabla_Asistencia.Location = new System.Drawing.Point(21, 246);
             this.btnTabla_Asistencia.MaximumSize = new System.Drawing.Size(171, 36);
             this.btnTabla_Asistencia.Name = "btnTabla_Asistencia";
             this.btnTabla_Asistencia.Size = new System.Drawing.Size(171, 36);
@@ -113,7 +113,7 @@ namespace APPCOMY
             this.btnConfiguracion.BackColor = System.Drawing.Color.Gainsboro;
             this.btnConfiguracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfiguracion.ForeColor = System.Drawing.Color.Black;
-            this.btnConfiguracion.Location = new System.Drawing.Point(14, 440);
+            this.btnConfiguracion.Location = new System.Drawing.Point(26, 450);
             this.btnConfiguracion.MaximumSize = new System.Drawing.Size(171, 36);
             this.btnConfiguracion.Name = "btnConfiguracion";
             this.btnConfiguracion.Size = new System.Drawing.Size(171, 36);
@@ -126,7 +126,7 @@ namespace APPCOMY
             this.btnSalir.BackColor = System.Drawing.Color.Gainsboro;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.Black;
-            this.btnSalir.Location = new System.Drawing.Point(14, 490);
+            this.btnSalir.Location = new System.Drawing.Point(26, 505);
             this.btnSalir.MaximumSize = new System.Drawing.Size(171, 36);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(171, 36);
@@ -140,7 +140,7 @@ namespace APPCOMY
             this.btnEditar.BackColor = System.Drawing.Color.Gainsboro;
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.ForeColor = System.Drawing.Color.Black;
-            this.btnEditar.Location = new System.Drawing.Point(14, 340);
+            this.btnEditar.Location = new System.Drawing.Point(26, 399);
             this.btnEditar.MaximumSize = new System.Drawing.Size(171, 36);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(171, 36);
@@ -153,7 +153,7 @@ namespace APPCOMY
             this.btnZona_Horaria.BackColor = System.Drawing.Color.Gainsboro;
             this.btnZona_Horaria.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnZona_Horaria.ForeColor = System.Drawing.Color.Black;
-            this.btnZona_Horaria.Location = new System.Drawing.Point(14, 240);
+            this.btnZona_Horaria.Location = new System.Drawing.Point(21, 297);
             this.btnZona_Horaria.MaximumSize = new System.Drawing.Size(171, 36);
             this.btnZona_Horaria.Name = "btnZona_Horaria";
             this.btnZona_Horaria.Size = new System.Drawing.Size(171, 36);
@@ -166,53 +166,21 @@ namespace APPCOMY
             this.btnAyuda.BackColor = System.Drawing.Color.Gainsboro;
             this.btnAyuda.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAyuda.ForeColor = System.Drawing.Color.Black;
-            this.btnAyuda.Location = new System.Drawing.Point(14, 390);
+            this.btnAyuda.Location = new System.Drawing.Point(21, 348);
             this.btnAyuda.MaximumSize = new System.Drawing.Size(171, 36);
             this.btnAyuda.Name = "btnAyuda";
             this.btnAyuda.Size = new System.Drawing.Size(171, 36);
             this.btnAyuda.TabIndex = 11;
             this.btnAyuda.Text = "Ayuda";
             this.btnAyuda.UseVisualStyleBackColor = false;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.BackColor = System.Drawing.Color.Black;
-            this.groupBox2.Controls.Add(this.groupBox3);
-            this.groupBox2.Controls.Add(this.btnRegistro);
-            this.groupBox2.Controls.Add(this.btnAyuda);
-            this.groupBox2.Controls.Add(this.btnPerfil);
-            this.groupBox2.Controls.Add(this.btnZona_Horaria);
-            this.groupBox2.Controls.Add(this.btnInformacion_Personal);
-            this.groupBox2.Controls.Add(this.btnTabla_Asistencia);
-            this.groupBox2.Controls.Add(this.btnEditar);
-            this.groupBox2.Controls.Add(this.btnConfiguracion);
-            this.groupBox2.Controls.Add(this.btnSalir);
-            this.groupBox2.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.groupBox2.Location = new System.Drawing.Point(2, -2);
-            this.groupBox2.MaximumSize = new System.Drawing.Size(201, 548);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(201, 548);
-            this.groupBox2.TabIndex = 12;
-            this.groupBox2.TabStop = false;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(124)))), ((int)(((byte)(140)))));
-            this.groupBox3.Controls.Add(this.pictureBox3);
-            this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(124)))), ((int)(((byte)(140)))));
-            this.groupBox3.Location = new System.Drawing.Point(-9, 14);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(210, 60);
-            this.groupBox3.TabIndex = 13;
-            this.groupBox3.TabStop = false;
+            this.btnAyuda.Click += new System.EventHandler(this.btnAyuda_Click);
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3.Location = new System.Drawing.Point(69, 9);
+            this.pictureBox3.Location = new System.Drawing.Point(61, 10);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(61, 45);
             this.pictureBox3.TabIndex = 13;
@@ -224,7 +192,7 @@ namespace APPCOMY
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 15F);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(311, 24);
+            this.label5.Location = new System.Drawing.Point(373, 21);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(146, 22);
             this.label5.TabIndex = 36;
@@ -236,7 +204,7 @@ namespace APPCOMY
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 15F);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(301, 50);
+            this.label6.Location = new System.Drawing.Point(364, 46);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(175, 22);
             this.label6.TabIndex = 37;
@@ -248,7 +216,7 @@ namespace APPCOMY
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 15F);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(234, 119);
+            this.label7.Location = new System.Drawing.Point(267, 119);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(308, 22);
             this.label7.TabIndex = 38;
@@ -259,7 +227,7 @@ namespace APPCOMY
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox4.Location = new System.Drawing.Point(218, 21);
+            this.pictureBox4.Location = new System.Drawing.Point(280, 21);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(87, 78);
             this.pictureBox4.TabIndex = 39;
@@ -278,23 +246,52 @@ namespace APPCOMY
             this.button1.TabIndex = 40;
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.btnSalir);
+            this.panel1.Controls.Add(this.btnPerfil);
+            this.panel1.Controls.Add(this.btnConfiguracion);
+            this.panel1.Controls.Add(this.btnRegistro);
+            this.panel1.Controls.Add(this.btnAyuda);
+            this.panel1.Controls.Add(this.btnInformacion_Personal);
+            this.panel1.Controls.Add(this.btnEditar);
+            this.panel1.Controls.Add(this.btnTabla_Asistencia);
+            this.panel1.Controls.Add(this.btnZona_Horaria);
+            this.panel1.Location = new System.Drawing.Point(0, -1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(228, 578);
+            this.panel1.TabIndex = 41;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Teal;
+            this.panel2.Controls.Add(this.pictureBox3);
+            this.panel2.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.panel2.Location = new System.Drawing.Point(0, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(197, 63);
+            this.panel2.TabIndex = 42;
+            // 
             // Form4
             // 
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(654, 543);
+            this.ClientSize = new System.Drawing.Size(654, 575);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.pictureBox4);
-            this.MaximumSize = new System.Drawing.Size(670, 583);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(670, 575);
             this.Name = "Form4";
             this.Load += new System.EventHandler(this.Form4_Load);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -331,13 +328,13 @@ namespace APPCOMY
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnZona_Horaria;
         private System.Windows.Forms.Button btnAyuda;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

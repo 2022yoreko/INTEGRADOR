@@ -617,6 +617,7 @@ namespace APPCOMY
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.pictureBox2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(780, 540);
             this.Name = "Form8";
             this.Text = "Form8";

@@ -16,11 +16,11 @@ namespace APPCOMY
         {
             InitializeComponent();
         }
-           
+
         private void btnAcceder_Click(object sender, EventArgs e)
         {
-           Form4 administrador = new Form4();
-                administrador.ShowDialog();
+            Form4 administrador = new Form4();
+            administrador.ShowDialog();
 
             string login = txtUsuario.Text;
             string contraseña = txtContraseña.Text;
@@ -46,14 +46,33 @@ namespace APPCOMY
 
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form2_Load(object sender, EventArgs e)
         {
 
+        
+
+        }
+
+        private void Recordar_Contraseña_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Recordar_Contraseña.Checked) 
+            {
+                txtContraseña.UseSystemPasswordChar = false;
+            }
+            else 
+            {
+                txtContraseña.UseSystemPasswordChar = true;
+            }
+
+        }
+
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+            if (txtUsuario.Text == "Usuario") 
+            {
+                txtUsuario.Text = "";
+                txtUsuario.ForeColor = Color.LightGray;
+            }
         }
     }
 }

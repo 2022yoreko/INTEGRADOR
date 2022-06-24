@@ -87,6 +87,7 @@ namespace APPCOMY
             this.Controls.Add(this.txtRegistrate);
             this.Controls.Add(this.txtIniciar);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(670, 550);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;

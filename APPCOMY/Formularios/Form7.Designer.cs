@@ -351,6 +351,7 @@ namespace APPCOMY
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form7";
             this.Text = "Form7";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
