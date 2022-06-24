@@ -40,7 +40,9 @@ namespace APPCOMY
             this.btnRegresar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.checkBox21 = new System.Windows.Forms.CheckBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.checkBox20 = new System.Windows.Forms.CheckBox();
             this.checkBox19 = new System.Windows.Forms.CheckBox();
             this.checkBox16 = new System.Windows.Forms.CheckBox();
@@ -56,14 +58,12 @@ namespace APPCOMY
             this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.label16 = new System.Windows.Forms.Label();
             this.checkBox9 = new System.Windows.Forms.CheckBox();
             this.checkBox8 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -232,6 +232,17 @@ namespace APPCOMY
             this.groupBox1.Text = "groupBox1";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Verdana", 11F);
+            this.label16.ForeColor = System.Drawing.Color.Black;
+            this.label16.Location = new System.Drawing.Point(637, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(44, 18);
+            this.label16.TabIndex = 8;
+            this.label16.Text = "Hora";
+            // 
             // checkBox21
             // 
             this.checkBox21.AutoSize = true;
@@ -242,6 +253,17 @@ namespace APPCOMY
             this.checkBox21.TabIndex = 28;
             this.checkBox21.Text = "checkBox21";
             this.checkBox21.UseVisualStyleBackColor = true;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Verdana", 11F);
+            this.label13.ForeColor = System.Drawing.Color.Black;
+            this.label13.Location = new System.Drawing.Point(549, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(75, 18);
+            this.label13.TabIndex = 6;
+            this.label13.Text = "Domingo";
             // 
             // checkBox20
             // 
@@ -408,17 +430,6 @@ namespace APPCOMY
             this.checkBox7.Text = "checkBox7";
             this.checkBox7.UseVisualStyleBackColor = true;
             // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Verdana", 11F);
-            this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(637, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(44, 18);
-            this.label16.TabIndex = 8;
-            this.label16.Text = "Hora";
-            // 
             // checkBox9
             // 
             this.checkBox9.AutoSize = true;
@@ -484,17 +495,6 @@ namespace APPCOMY
             this.label15.Size = new System.Drawing.Size(52, 18);
             this.label15.TabIndex = 7;
             this.label15.Text = "Fecha";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Verdana", 11F);
-            this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(549, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(75, 18);
-            this.label13.TabIndex = 6;
-            this.label13.Text = "Domingo";
             // 
             // label12
             // 
@@ -565,10 +565,10 @@ namespace APPCOMY
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Black;
+            this.label4.BackColor = System.Drawing.Color.Teal;
             this.label4.Font = new System.Drawing.Font("Verdana", 14F);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(12, 220);
+            this.label4.Location = new System.Drawing.Point(21, 218);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(25, 23);
             this.label4.TabIndex = 52;
@@ -577,10 +577,10 @@ namespace APPCOMY
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Black;
+            this.label5.BackColor = System.Drawing.Color.Teal;
             this.label5.Font = new System.Drawing.Font("Verdana", 14F);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(12, 296);
+            this.label5.Location = new System.Drawing.Point(21, 300);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(23, 23);
             this.label5.TabIndex = 53;
@@ -589,10 +589,10 @@ namespace APPCOMY
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Black;
+            this.label6.BackColor = System.Drawing.Color.Teal;
             this.label6.Font = new System.Drawing.Font("Verdana", 14F);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(12, 373);
+            this.label6.Location = new System.Drawing.Point(21, 377);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(23, 23);
             this.label6.TabIndex = 54;

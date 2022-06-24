@@ -38,7 +38,7 @@ namespace APPCOMY
             this.txtApellidos = new System.Windows.Forms.TextBox();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.txtCorreo_Electronico = new System.Windows.Forms.TextBox();
-            this.txtConfirmar_Contraseña = new System.Windows.Forms.TextBox();
+            this.txtConfirmar_contraseña = new System.Windows.Forms.TextBox();
             this.txtNumero_Telefono = new System.Windows.Forms.TextBox();
             this.btnAcceder = new System.Windows.Forms.Button();
             this.btnRegresar = new System.Windows.Forms.Button();
@@ -100,7 +100,7 @@ namespace APPCOMY
             this.txtNombres.Name = "txtNombres";
             this.txtNombres.Size = new System.Drawing.Size(239, 29);
             this.txtNombres.TabIndex = 6;
-            this.txtNombres.Text = "   Nombre";
+            this.txtNombres.Text = "   Nombres";
             // 
             // txtApellidos
             // 
@@ -132,15 +132,15 @@ namespace APPCOMY
             this.txtCorreo_Electronico.TabIndex = 9;
             this.txtCorreo_Electronico.Text = "  Correo Electronico";
             // 
-            // txtConfirmar_Contraseña
+            // txtConfirmar_contraseña
             // 
-            this.txtConfirmar_Contraseña.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfirmar_Contraseña.ForeColor = System.Drawing.Color.Gray;
-            this.txtConfirmar_Contraseña.Location = new System.Drawing.Point(220, 314);
-            this.txtConfirmar_Contraseña.Name = "txtConfirmar_Contraseña";
-            this.txtConfirmar_Contraseña.Size = new System.Drawing.Size(239, 29);
-            this.txtConfirmar_Contraseña.TabIndex = 10;
-            this.txtConfirmar_Contraseña.Text = "  Confirmar Contraseña";
+            this.txtConfirmar_contraseña.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConfirmar_contraseña.ForeColor = System.Drawing.Color.Gray;
+            this.txtConfirmar_contraseña.Location = new System.Drawing.Point(220, 314);
+            this.txtConfirmar_contraseña.Name = "txtConfirmar_contraseña";
+            this.txtConfirmar_contraseña.Size = new System.Drawing.Size(239, 29);
+            this.txtConfirmar_contraseña.TabIndex = 10;
+            this.txtConfirmar_contraseña.Text = "  Confirmar Contraseña";
             // 
             // txtNumero_Telefono
             // 
@@ -190,7 +190,7 @@ namespace APPCOMY
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnAcceder);
             this.Controls.Add(this.txtNumero_Telefono);
-            this.Controls.Add(this.txtConfirmar_Contraseña);
+            this.Controls.Add(this.txtConfirmar_contraseña);
             this.Controls.Add(this.txtCorreo_Electronico);
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.txtApellidos);
@@ -219,7 +219,7 @@ namespace APPCOMY
         private System.Windows.Forms.TextBox txtApellidos;
         private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.TextBox txtCorreo_Electronico;
-        private System.Windows.Forms.TextBox txtConfirmar_Contraseña;
+        private System.Windows.Forms.TextBox txtConfirmar_contraseña;
         private System.Windows.Forms.TextBox txtNumero_Telefono;
         private System.Windows.Forms.Button btnAcceder;
         private System.Windows.Forms.Button btnRegresar;

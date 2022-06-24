@@ -33,7 +33,7 @@ namespace APPCOMY
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnGuardar_datos = new System.Windows.Forms.Button();
             this.txtNombres = new System.Windows.Forms.TextBox();
             this.txtApellidos = new System.Windows.Forms.TextBox();
             this.txtTelefono = new System.Windows.Forms.TextBox();
@@ -98,17 +98,18 @@ namespace APPCOMY
             this.label3.TabIndex = 5;
             this.label3.Text = "UNAN_MANAGUA";
             // 
-            // button1
+            // btnGuardar_datos
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.button1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(256, 424);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(168, 49);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Guardar datos";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnGuardar_datos.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.btnGuardar_datos.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar_datos.ForeColor = System.Drawing.Color.Black;
+            this.btnGuardar_datos.Location = new System.Drawing.Point(256, 424);
+            this.btnGuardar_datos.Name = "btnGuardar_datos";
+            this.btnGuardar_datos.Size = new System.Drawing.Size(168, 49);
+            this.btnGuardar_datos.TabIndex = 6;
+            this.btnGuardar_datos.Text = "Guardar datos";
+            this.btnGuardar_datos.UseVisualStyleBackColor = false;
+            this.btnGuardar_datos.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtNombres
             // 
@@ -412,7 +413,7 @@ namespace APPCOMY
             this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.txtApellidos);
             this.Controls.Add(this.txtNombres);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnGuardar_datos);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnBuscar);
@@ -434,7 +435,7 @@ namespace APPCOMY
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnGuardar_datos;
         private System.Windows.Forms.TextBox txtNombres;
         private System.Windows.Forms.TextBox txtApellidos;
         private System.Windows.Forms.TextBox txtTelefono;
