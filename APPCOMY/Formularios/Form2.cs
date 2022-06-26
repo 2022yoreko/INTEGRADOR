@@ -42,6 +42,7 @@ namespace APPCOMY
                 MessageBox.Show("Bienvenido");
             }
 
+            
 
 
         }
@@ -66,13 +67,28 @@ namespace APPCOMY
 
         }
 
-        private void txtUsuario_TextChanged(object sender, EventArgs e)
+      
+        private void txtUsuario_Enter(object sender, EventArgs e)
         {
-            if (txtUsuario.Text == "Usuario") 
+            if (txtUsuario.Text == "Usuario")
             {
                 txtUsuario.Text = "";
-                txtUsuario.ForeColor = Color.LightGray;
+                txtUsuario.ForeColor = Color.DarkGray;
             }
+        }
+
+        private void txtUsuario_Leave(object sender, EventArgs e)
+        {
+            if (txtUsuario.Text == "")
+            {
+                txtUsuario.Text = "Usuario";
+                txtUsuario.ForeColor = Color.DarkGray;
+            }
+        }
+
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

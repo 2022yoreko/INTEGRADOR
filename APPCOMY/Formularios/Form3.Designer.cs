@@ -100,7 +100,7 @@ namespace APPCOMY
             this.txtNombres.Name = "txtNombres";
             this.txtNombres.Size = new System.Drawing.Size(239, 29);
             this.txtNombres.TabIndex = 6;
-            this.txtNombres.Text = "   Nombres";
+            this.txtNombres.Text = "Nombres";
             // 
             // txtApellidos
             // 
@@ -110,7 +110,7 @@ namespace APPCOMY
             this.txtApellidos.Name = "txtApellidos";
             this.txtApellidos.Size = new System.Drawing.Size(237, 29);
             this.txtApellidos.TabIndex = 7;
-            this.txtApellidos.Text = "   Apellidos";
+            this.txtApellidos.Text = "Apellidos";
             // 
             // txtContraseña
             // 
@@ -120,7 +120,7 @@ namespace APPCOMY
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(237, 29);
             this.txtContraseña.TabIndex = 8;
-            this.txtContraseña.Text = "  Contraseña";
+            this.txtContraseña.Text = "Contraseña";
             // 
             // txtCorreo_Electronico
             // 
@@ -130,7 +130,7 @@ namespace APPCOMY
             this.txtCorreo_Electronico.Name = "txtCorreo_Electronico";
             this.txtCorreo_Electronico.Size = new System.Drawing.Size(241, 29);
             this.txtCorreo_Electronico.TabIndex = 9;
-            this.txtCorreo_Electronico.Text = "  Correo Electronico";
+            this.txtCorreo_Electronico.Text = "Correo Electronico";
             // 
             // txtConfirmar_contraseña
             // 
@@ -140,7 +140,7 @@ namespace APPCOMY
             this.txtConfirmar_contraseña.Name = "txtConfirmar_contraseña";
             this.txtConfirmar_contraseña.Size = new System.Drawing.Size(239, 29);
             this.txtConfirmar_contraseña.TabIndex = 10;
-            this.txtConfirmar_contraseña.Text = "  Confirmar Contraseña";
+            this.txtConfirmar_contraseña.Text = "Confirmar Contraseña";
             // 
             // txtNumero_Telefono
             // 
@@ -150,7 +150,7 @@ namespace APPCOMY
             this.txtNumero_Telefono.Name = "txtNumero_Telefono";
             this.txtNumero_Telefono.Size = new System.Drawing.Size(241, 29);
             this.txtNumero_Telefono.TabIndex = 11;
-            this.txtNumero_Telefono.Text = "  Numero de Telefono";
+            this.txtNumero_Telefono.Text = "Numero de Telefono";
             this.txtNumero_Telefono.TextChanged += new System.EventHandler(this.txtNumero_Telefono_TextChanged);
             // 
             // btnAcceder
@@ -204,6 +204,7 @@ namespace APPCOMY
             this.MaximumSize = new System.Drawing.Size(670, 550);
             this.Name = "Form3";
             this.Text = "Form3";
+            this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

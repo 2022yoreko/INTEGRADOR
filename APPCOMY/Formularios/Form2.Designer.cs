@@ -38,7 +38,6 @@ namespace APPCOMY
             this.btnAcceder = new System.Windows.Forms.Button();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.Recordar_Contraseña = new System.Windows.Forms.CheckBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -120,8 +119,10 @@ namespace APPCOMY
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(209, 29);
             this.txtUsuario.TabIndex = 8;
-            this.txtUsuario.Text = "         Usuario";
+            this.txtUsuario.Text = "Usuario";
             this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
+            this.txtUsuario.Enter += new System.EventHandler(this.txtUsuario_Enter);
+            this.txtUsuario.Leave += new System.EventHandler(this.txtUsuario_Leave);
             // 
             // Recordar_Contraseña
             // 
@@ -137,27 +138,12 @@ namespace APPCOMY
             this.Recordar_Contraseña.UseVisualStyleBackColor = false;
             this.Recordar_Contraseña.CheckedChanged += new System.EventHandler(this.Recordar_Contraseña_CheckedChanged);
             // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.ForeColor = System.Drawing.Color.Crimson;
-            this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(273, 476);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(127, 16);
-            this.linkLabel1.TabIndex = 10;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Olvide la Contraseña";
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(654, 510);
-            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.Recordar_Contraseña);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.btnAcceder);
@@ -187,6 +173,5 @@ namespace APPCOMY
         private System.Windows.Forms.Button btnAcceder;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.CheckBox Recordar_Contraseña;
-        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
