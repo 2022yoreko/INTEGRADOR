@@ -39,7 +39,7 @@ namespace APPCOMY
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.txtCorreo_Electronico = new System.Windows.Forms.TextBox();
             this.txtConfirmar_contraseña = new System.Windows.Forms.TextBox();
-            this.txtNumero_Telefono = new System.Windows.Forms.TextBox();
+            this.txtNumero_telefono = new System.Windows.Forms.TextBox();
             this.btnAcceder = new System.Windows.Forms.Button();
             this.btnRegresar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -101,6 +101,8 @@ namespace APPCOMY
             this.txtNombres.Size = new System.Drawing.Size(239, 29);
             this.txtNombres.TabIndex = 6;
             this.txtNombres.Text = "Nombres";
+            this.txtNombres.Enter += new System.EventHandler(this.txtNombres_Enter);
+            this.txtNombres.Leave += new System.EventHandler(this.txtNombres_Leave);
             // 
             // txtApellidos
             // 
@@ -111,6 +113,8 @@ namespace APPCOMY
             this.txtApellidos.Size = new System.Drawing.Size(237, 29);
             this.txtApellidos.TabIndex = 7;
             this.txtApellidos.Text = "Apellidos";
+            this.txtApellidos.Enter += new System.EventHandler(this.txtApellidos_Enter);
+            this.txtApellidos.Leave += new System.EventHandler(this.txtApellidos_Leave);
             // 
             // txtContraseña
             // 
@@ -121,6 +125,8 @@ namespace APPCOMY
             this.txtContraseña.Size = new System.Drawing.Size(237, 29);
             this.txtContraseña.TabIndex = 8;
             this.txtContraseña.Text = "Contraseña";
+            this.txtContraseña.Enter += new System.EventHandler(this.txtContraseña_Enter);
+            this.txtContraseña.Leave += new System.EventHandler(this.txtContraseña_Leave);
             // 
             // txtCorreo_Electronico
             // 
@@ -131,6 +137,8 @@ namespace APPCOMY
             this.txtCorreo_Electronico.Size = new System.Drawing.Size(241, 29);
             this.txtCorreo_Electronico.TabIndex = 9;
             this.txtCorreo_Electronico.Text = "Correo Electronico";
+            this.txtCorreo_Electronico.Enter += new System.EventHandler(this.txtCorreo_Electronico_Enter);
+            this.txtCorreo_Electronico.Leave += new System.EventHandler(this.txtCorreo_Electronico_leave);
             // 
             // txtConfirmar_contraseña
             // 
@@ -141,17 +149,20 @@ namespace APPCOMY
             this.txtConfirmar_contraseña.Size = new System.Drawing.Size(239, 29);
             this.txtConfirmar_contraseña.TabIndex = 10;
             this.txtConfirmar_contraseña.Text = "Confirmar Contraseña";
+            this.txtConfirmar_contraseña.Enter += new System.EventHandler(this.txtConfirmar_Contraseña_Enter);
+            this.txtConfirmar_contraseña.Leave += new System.EventHandler(this.txtConfirmar_contraseña_Leave);
             // 
-            // txtNumero_Telefono
+            // txtNumero_telefono
             // 
-            this.txtNumero_Telefono.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumero_Telefono.ForeColor = System.Drawing.Color.Gray;
-            this.txtNumero_Telefono.Location = new System.Drawing.Point(220, 384);
-            this.txtNumero_Telefono.Name = "txtNumero_Telefono";
-            this.txtNumero_Telefono.Size = new System.Drawing.Size(241, 29);
-            this.txtNumero_Telefono.TabIndex = 11;
-            this.txtNumero_Telefono.Text = "Numero de Telefono";
-            this.txtNumero_Telefono.TextChanged += new System.EventHandler(this.txtNumero_Telefono_TextChanged);
+            this.txtNumero_telefono.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumero_telefono.ForeColor = System.Drawing.Color.Gray;
+            this.txtNumero_telefono.Location = new System.Drawing.Point(220, 384);
+            this.txtNumero_telefono.Name = "txtNumero_telefono";
+            this.txtNumero_telefono.Size = new System.Drawing.Size(241, 29);
+            this.txtNumero_telefono.TabIndex = 11;
+            this.txtNumero_telefono.Text = "Numero de Telefono";
+            this.txtNumero_telefono.Enter += new System.EventHandler(this.txtNumero_telefono_Enter);
+            this.txtNumero_telefono.Leave += new System.EventHandler(this.txtNumero_Telefono_Leave);
             // 
             // btnAcceder
             // 
@@ -189,7 +200,7 @@ namespace APPCOMY
             this.ClientSize = new System.Drawing.Size(654, 510);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnAcceder);
-            this.Controls.Add(this.txtNumero_Telefono);
+            this.Controls.Add(this.txtNumero_telefono);
             this.Controls.Add(this.txtConfirmar_contraseña);
             this.Controls.Add(this.txtCorreo_Electronico);
             this.Controls.Add(this.txtContraseña);
@@ -222,7 +233,7 @@ namespace APPCOMY
         private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.TextBox txtCorreo_Electronico;
         private System.Windows.Forms.TextBox txtConfirmar_contraseña;
-        private System.Windows.Forms.TextBox txtNumero_Telefono;
+        private System.Windows.Forms.TextBox txtNumero_telefono;
         private System.Windows.Forms.Button btnAcceder;
         private System.Windows.Forms.Button btnRegresar;
     }
