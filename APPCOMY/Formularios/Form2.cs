@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Office.Interop;
+using System.Runtime.InteropServices;
 
 namespace APPCOMY
 {
@@ -42,7 +44,25 @@ namespace APPCOMY
                 MessageBox.Show("Bienvenido");
             }
 
-            
+            DateTime fecha = DateTime.Now;
+
+            Microsoft.Office.Interop.Excel.Application app;
+            app = (Microsoft.Office.Interop.Excel.Application)Marshal.GetActiveObject("Excel.Application");
+            Microsoft.Office.Interop.Excel.Workbook activeWB = app.ActiveWorkbook;
+
+            for (int X = 2; X <= 50; X++) 
+            {
+                  if (Convert.ToString(app.Sheets[1].cells(X,1).text) == "")
+                  {
+                    app.Sheets[1].cells(X, 1).value = txtUsuario.Text;
+                    app.Sheets[1].cells(X, 2).value = txtUsuario.Text;
+                    app.Sheets[1].cells(X, 3).value = fecha;
+                    break;
+
+                  }
+
+            }
+
 
 
         }

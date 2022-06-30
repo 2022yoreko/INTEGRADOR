@@ -46,7 +46,6 @@ namespace APPCOMY
             
             }
             else
-
                 if (Contraseña.Length > 0)
             {
             

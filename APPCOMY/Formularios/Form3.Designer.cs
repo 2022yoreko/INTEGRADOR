@@ -161,7 +161,6 @@ namespace APPCOMY
             this.txtNumero_telefono.Size = new System.Drawing.Size(241, 29);
             this.txtNumero_telefono.TabIndex = 11;
             this.txtNumero_telefono.Text = "Numero de Telefono";
-            this.txtNumero_telefono.Enter += new System.EventHandler(this.txtNumero_telefono_Enter);
             this.txtNumero_telefono.Leave += new System.EventHandler(this.txtNumero_Telefono_Leave);
             // 
             // btnAcceder

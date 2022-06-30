@@ -51,14 +51,14 @@ namespace APPCOMY
             // 
             this.txtIniciar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
             this.txtIniciar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtIniciar.BackgroundImage")));
-            this.txtIniciar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.txtIniciar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.txtIniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.txtIniciar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
             this.txtIniciar.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.txtIniciar.Location = new System.Drawing.Point(12, 428);
-            this.txtIniciar.MaximumSize = new System.Drawing.Size(70, 70);
+            this.txtIniciar.Location = new System.Drawing.Point(12, 408);
+            this.txtIniciar.MaximumSize = new System.Drawing.Size(90, 90);
             this.txtIniciar.Name = "txtIniciar";
-            this.txtIniciar.Size = new System.Drawing.Size(70, 70);
+            this.txtIniciar.Size = new System.Drawing.Size(90, 90);
             this.txtIniciar.TabIndex = 2;
             this.txtIniciar.UseVisualStyleBackColor = false;
             this.txtIniciar.Click += new System.EventHandler(this.txtIniciar_Click);
@@ -70,10 +70,10 @@ namespace APPCOMY
             this.txtRegistrate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.txtRegistrate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.txtRegistrate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.txtRegistrate.Location = new System.Drawing.Point(12, 362);
-            this.txtRegistrate.MaximumSize = new System.Drawing.Size(60, 60);
+            this.txtRegistrate.Location = new System.Drawing.Point(27, 346);
+            this.txtRegistrate.MaximumSize = new System.Drawing.Size(65, 65);
             this.txtRegistrate.Name = "txtRegistrate";
-            this.txtRegistrate.Size = new System.Drawing.Size(60, 60);
+            this.txtRegistrate.Size = new System.Drawing.Size(65, 65);
             this.txtRegistrate.TabIndex = 3;
             this.txtRegistrate.UseVisualStyleBackColor = false;
             this.txtRegistrate.Click += new System.EventHandler(this.txtRegistrate_Click);

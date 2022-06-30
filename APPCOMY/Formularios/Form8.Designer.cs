@@ -230,7 +230,6 @@ namespace APPCOMY
             this.groupBox1.TabIndex = 51;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
-           
             // 
             // label16
             // 
@@ -565,7 +564,7 @@ namespace APPCOMY
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Teal;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Verdana", 14F);
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(21, 218);
@@ -577,7 +576,7 @@ namespace APPCOMY
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Teal;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Verdana", 14F);
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(21, 300);
@@ -589,7 +588,7 @@ namespace APPCOMY
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Teal;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Verdana", 14F);
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(21, 377);
@@ -603,7 +602,7 @@ namespace APPCOMY
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(764, 500);
+            this.ClientSize = new System.Drawing.Size(780, 500);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);

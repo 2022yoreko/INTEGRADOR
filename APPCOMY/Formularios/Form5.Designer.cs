@@ -292,7 +292,7 @@ namespace APPCOMY
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(58, 357);
+            this.label12.Location = new System.Drawing.Point(68, 357);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(44, 22);
             this.label12.TabIndex = 28;
@@ -389,7 +389,7 @@ namespace APPCOMY
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(654, 510);
+            this.ClientSize = new System.Drawing.Size(700, 520);
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.btnRegresar);
@@ -420,7 +420,7 @@ namespace APPCOMY
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximumSize = new System.Drawing.Size(670, 550);
+            this.MaximumSize = new System.Drawing.Size(700, 520);
             this.Name = "Form5";
             this.Text = "Form5";
             this.Load += new System.EventHandler(this.Form5_Load);
