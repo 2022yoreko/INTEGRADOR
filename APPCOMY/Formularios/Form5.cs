@@ -102,6 +102,33 @@ namespace APPCOMY
             
             }
             MessageBox.Show("Registro exitoso");
+
+            DateTime fecha = DateTime.Now;
+
+            Microsoft.Office.Interop.Excel.Application app;
+            app = (Microsoft.Office.Interop.Excel.Application)Marshal.GetActiveObject("Excel.Application");
+            Microsoft.Office.Interop.Excel.Workbook activeWB = app.ActiveWorkbook;
+
+            for (int X = 2; X <= 50; X++)
+            {
+                if (Convert.ToString(app.Sheets[1].cells(X, 1).text) == "")
+                {
+                    app.Sheets[1].cells(X, 1).value = txtNombres.Text;
+                    app.Sheets[2].cells(X, 2).value = txtApellidos.Text;
+                    app.Sheets[3].cells(X, 3).value = txtFacultad.Text;
+                    app.Sheets[4].cells(X, 4).value = txtCarrera.Text;
+                    app.Sheets[5].cells(X, 5).value = txtAño.Text;
+                    app.Sheets[6].cells(X, 6).value = txtPromedio.Text;
+                    app.Sheets[7].cells(X, 7).value = txtDepto.Text;
+                    app.Sheets[8].cells(X, 8).value = txtTelefono.Text;
+                    app.Sheets[9].cells(X, 9).value = fecha;
+                    break;
+
+                }
+
+            }
+
+
         }
     }
 }

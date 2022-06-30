@@ -161,5 +161,8 @@
   <ItemGroup>
     <None Include="Resources\Icono de iniciar.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Formularios\Usuario.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

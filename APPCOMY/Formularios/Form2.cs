@@ -9,11 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Office.Interop;
 using System.Runtime.InteropServices;
+using System.IO;
 
 namespace APPCOMY
 {
     public partial class Form2 : Form
     {
+        bool valido = true;
         public Form2()
         {
             InitializeComponent();
@@ -21,28 +23,52 @@ namespace APPCOMY
 
         private void btnAcceder_Click(object sender, EventArgs e)
         {
+
+            string rutaBase = Directory.GetCurrentDirectory();
+            string rutArch = rutaBase.Replace(@"\bin\Debug", @"ficheros\Usuario");
+            StreamReader Leer;
+            Leer = new StreamReader(rutArch);
+
+            bool encontrado = false;
+            string Usuario;
+            string Contraseña;
+
+            Usuario = Leer.ReadLine();
+            Contraseña = Leer.ReadLine();
+
+            while (!encontrado && Usuario != null) 
+            {
+                if(txtUsuario.Text.Equals(Usuario) && txtContraseña.Text.Equals(Contraseña)) 
+                {
+                    encontrado = true;
+                }
+                else 
+                {
+                    Usuario = Leer.ReadLine();
+                    Contraseña = Leer.ReadLine();
+                
+                }
+            
+            }
+
+            if (encontrado) 
+            {
+                Form4 frmNav = new Form4();
+                frmNav.MdiParent = this.MdiParent;
+                frmNav.Show();
+                this.Close();
+            
+            }
+            else 
+            {
+                MessageBox.Show("El usuario no existe");
+            }
+
+
             Form4 administrador = new Form4();
             administrador.ShowDialog();
 
-            string login = txtUsuario.Text;
-            string contraseña = txtContraseña.Text;
-            bool Acceder = false;
-
-
-            if (login.Length > 0)
-            {
-                Acceder = true;
-            }
-            else
-
-                if (contraseña.Length > 0)
-            {
-                Acceder = true;
-            }
-            if (Acceder)
-            {
-                MessageBox.Show("Bienvenido");
-            }
+           
 
             DateTime fecha = DateTime.Now;
 
