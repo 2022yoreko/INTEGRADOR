@@ -127,7 +127,7 @@ namespace APPCOMY
             if (txtUsuario.Text == "Usuario")
             {
                 txtUsuario.Text = "";
-                txtUsuario.ForeColor = Color.DarkGray;
+                txtUsuario.ForeColor = Color.DarkSlateBlue;
             }
         }
 
@@ -136,7 +136,7 @@ namespace APPCOMY
             if (txtUsuario.Text == "")
             {
                 txtUsuario.Text = "Usuario";
-                txtUsuario.ForeColor = Color.DarkGray;
+                txtUsuario.ForeColor = Color.DarkSlateBlue;
             }
         }
 
@@ -145,7 +145,7 @@ namespace APPCOMY
             if (txtContraseña.Text == "Contraseña") 
             {
                 txtContraseña.Text = "";
-                txtContraseña.ForeColor = Color.DarkGray;
+                txtContraseña.ForeColor = Color.DarkSlateBlue;
             
             }
         }
@@ -155,7 +155,7 @@ namespace APPCOMY
             if(txtContraseña.Text == "") 
             {
                 txtContraseña.Text = "Contraseña";
-                txtContraseña.ForeColor = Color.DarkGray;
+                txtContraseña.ForeColor = Color.DarkSlateBlue;
             
             }
         }
