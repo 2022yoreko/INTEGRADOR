@@ -93,12 +93,14 @@ namespace APPCOMY
             // 
             this.txtContraseña.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseña.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtContraseña.Location = new System.Drawing.Point(238, 282);
+            this.txtContraseña.Location = new System.Drawing.Point(216, 283);
             this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(209, 29);
+            this.txtContraseña.Size = new System.Drawing.Size(243, 29);
             this.txtContraseña.TabIndex = 5;
             this.txtContraseña.Text = "Contraseña";
             this.txtContraseña.UseSystemPasswordChar = true;
+            this.txtContraseña.Enter += new System.EventHandler(this.txtContraseña_Enter);
+            this.txtContraseña.Leave += new System.EventHandler(this.txtContraseña_Leave);
             // 
             // btnEntrar
             // 
@@ -116,12 +118,11 @@ namespace APPCOMY
             // 
             this.txtUsuario.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtUsuario.Location = new System.Drawing.Point(238, 237);
+            this.txtUsuario.Location = new System.Drawing.Point(216, 237);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(209, 29);
+            this.txtUsuario.Size = new System.Drawing.Size(243, 29);
             this.txtUsuario.TabIndex = 8;
             this.txtUsuario.Text = "Usuario";
-            this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
             this.txtUsuario.Enter += new System.EventHandler(this.txtUsuario_Enter);
             this.txtUsuario.Leave += new System.EventHandler(this.txtUsuario_Leave);
             // 
@@ -157,7 +158,6 @@ namespace APPCOMY
             this.MaximumSize = new System.Drawing.Size(670, 550);
             this.Name = "Form2";
             this.Text = "Form2";
-            this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

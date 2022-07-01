@@ -102,36 +102,12 @@ namespace APPCOMY
                 MessageBox.Show("Credenciales no validad", "Acceso Denegado");
             }
 
-            DateTime fecha = DateTime.Now;
+          
 
-            Microsoft.Office.Interop.Excel.Application app;
-            app = (Microsoft.Office.Interop.Excel.Application)Marshal.GetActiveObject("Excel.Application");
-            Microsoft.Office.Interop.Excel.Workbook activeWB = app.ActiveWorkbook;
-
-            for (int X = 2; X <= 50; X++) 
-            {
-                  if (Convert.ToString(app.Sheets[1].cells(X,1).text) == "")
-                  {
-                    app.Sheets[1].cells(X, 1).value = txtUsuario.Text;
-                    app.Sheets[2].cells(X, 2).value = txtUsuario.Text;
-                    app.Sheets[3].cells(X, 3).value = fecha;
-                    break;
-
-                  }
-
-            }
-
-
-
+           
         }
 
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        
-
-        }
-
+       
         private void Recordar_Contraseña_CheckedChanged(object sender, EventArgs e)
         {
             if (Recordar_Contraseña.Checked) 
@@ -151,7 +127,7 @@ namespace APPCOMY
             if (txtUsuario.Text == "Usuario")
             {
                 txtUsuario.Text = "";
-                txtUsuario.ForeColor = Color.DarkBlue;
+                txtUsuario.ForeColor = Color.DarkGray;
             }
         }
 
@@ -160,13 +136,28 @@ namespace APPCOMY
             if (txtUsuario.Text == "")
             {
                 txtUsuario.Text = "Usuario";
-                txtUsuario.ForeColor = Color.DarkBlue;
+                txtUsuario.ForeColor = Color.DarkGray;
             }
         }
 
-        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        private void txtContraseña_Enter(object sender, EventArgs e)
         {
+            if (txtContraseña.Text == "Contraseña") 
+            {
+                txtContraseña.Text = "";
+                txtContraseña.ForeColor = Color.DarkGray;
+            
+            }
+        }
 
+        private void txtContraseña_Leave(object sender, EventArgs e)
+        {
+            if(txtContraseña.Text == "") 
+            {
+                txtContraseña.Text = "Contraseña";
+                txtContraseña.ForeColor = Color.DarkGray;
+            
+            }
         }
     }
 }
