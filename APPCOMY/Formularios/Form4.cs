@@ -12,6 +12,8 @@ namespace APPCOMY
 {
     public partial class Form4 : Form
     {
+        public static bool PnlVisible { get; internal set; }
+
         public Form4()
         {
             InitializeComponent();

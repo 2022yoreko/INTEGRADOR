@@ -4,9 +4,13 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
+using Microsoft.Office.Interop;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
+
 
 namespace APPCOMY
 {
@@ -71,6 +75,29 @@ namespace APPCOMY
             if (Acceder) 
             {
                 Acceder = true;
+            }
+
+            DateTime fecha = DateTime.Now;
+
+            Microsoft.Office.Interop.Excel.Application app;
+            app = (Microsoft.Office.Interop.Excel.Application)Marshal.GetActiveObject("Excel.Application");
+            Microsoft.Office.Interop.Excel.Workbook activeWB = app.ActiveWorkbook;
+
+            for (int X = 2; X <= 50; X++)
+            {
+                if (Convert.ToString(app.Sheets[1].cells(X, 1).text) == "")
+                {
+                    app.Sheets[1].cells(X, 1).value = txtNombres.Text;
+                    app.Sheets[2].cells(X, 2).value = txtApellidos.Text;
+                    app.Sheets[2].cells(X, 2).value = txtContraseña.Text;
+                    app.Sheets[1].cells(X, 1).value = txtConfirmar_contraseña.Text;
+                    app.Sheets[1].cells(X, 1).value = txtCorreo_Electronico.Text;
+                    app.Sheets[1].cells(X, 1).value = txtNumero_telefono.Text;
+                    app.Sheets[3].cells(X, 3).value = fecha;
+                    break;
+
+                }
+
             }
 
 

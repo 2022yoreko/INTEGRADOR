@@ -35,7 +35,7 @@ namespace APPCOMY
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtContraseña = new System.Windows.Forms.TextBox();
-            this.btnAcceder = new System.Windows.Forms.Button();
+            this.btnEntrar = new System.Windows.Forms.Button();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.Recordar_Contraseña = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -100,17 +100,17 @@ namespace APPCOMY
             this.txtContraseña.Text = "Contraseña";
             this.txtContraseña.UseSystemPasswordChar = true;
             // 
-            // btnAcceder
+            // btnEntrar
             // 
-            this.btnAcceder.BackColor = System.Drawing.Color.Silver;
-            this.btnAcceder.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAcceder.Location = new System.Drawing.Point(260, 366);
-            this.btnAcceder.Name = "btnAcceder";
-            this.btnAcceder.Size = new System.Drawing.Size(157, 49);
-            this.btnAcceder.TabIndex = 7;
-            this.btnAcceder.Text = "Acceder";
-            this.btnAcceder.UseVisualStyleBackColor = false;
-            this.btnAcceder.Click += new System.EventHandler(this.btnAcceder_Click);
+            this.btnEntrar.BackColor = System.Drawing.Color.Silver;
+            this.btnEntrar.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEntrar.Location = new System.Drawing.Point(260, 366);
+            this.btnEntrar.Name = "btnEntrar";
+            this.btnEntrar.Size = new System.Drawing.Size(157, 49);
+            this.btnEntrar.TabIndex = 7;
+            this.btnEntrar.Text = "Entrar";
+            this.btnEntrar.UseVisualStyleBackColor = false;
+            this.btnEntrar.Click += new System.EventHandler(this.btnAcceder_Click);
             // 
             // txtUsuario
             // 
@@ -147,7 +147,7 @@ namespace APPCOMY
             this.ClientSize = new System.Drawing.Size(654, 510);
             this.Controls.Add(this.Recordar_Contraseña);
             this.Controls.Add(this.txtUsuario);
-            this.Controls.Add(this.btnAcceder);
+            this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -171,7 +171,7 @@ namespace APPCOMY
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtContraseña;
-        private System.Windows.Forms.Button btnAcceder;
+        private System.Windows.Forms.Button btnEntrar;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.CheckBox Recordar_Contraseña;
     }

@@ -390,7 +390,7 @@ namespace APPCOMY
             // Form4
             // 
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(676, 574);
+            this.ClientSize = new System.Drawing.Size(687, 574);
             this.Controls.Add(this.btnRetroceder);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
@@ -399,6 +399,7 @@ namespace APPCOMY
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MinimumSize = new System.Drawing.Size(687, 574);
             this.Name = "Form4";
             this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

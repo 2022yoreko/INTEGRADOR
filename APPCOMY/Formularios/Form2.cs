@@ -23,6 +23,9 @@ namespace APPCOMY
 
         private void btnAcceder_Click(object sender, EventArgs e)
         {
+            Form4 administrador = new Form4();
+            administrador.ShowDialog();
+
 
             string rutaBase = Directory.GetCurrentDirectory();
             string rutArch = rutaBase.Replace(@"\bin\Debug", @"ficheros\Usuario");
@@ -36,39 +39,68 @@ namespace APPCOMY
             Usuario = Leer.ReadLine();
             Contraseña = Leer.ReadLine();
 
-            while (!encontrado && Usuario != null) 
+            while (!encontrado && Usuario != null)
             {
-                if(txtUsuario.Text.Equals(Usuario) && txtContraseña.Text.Equals(Contraseña)) 
+                if (txtUsuario.Text.Equals(Usuario) && txtContraseña.Text.Equals(Contraseña))
                 {
                     encontrado = true;
                 }
-                else 
+                else
                 {
                     Usuario = Leer.ReadLine();
                     Contraseña = Leer.ReadLine();
-                
+
                 }
-            
+
             }
 
-            if (encontrado) 
+            if (encontrado)
             {
                 Form4 frmNav = new Form4();
                 frmNav.MdiParent = this.MdiParent;
                 frmNav.Show();
                 this.Close();
-            
+
             }
-            else 
+            else
             {
                 MessageBox.Show("El usuario no existe");
             }
 
 
-            Form4 administrador = new Form4();
-            administrador.ShowDialog();
+            if (string.IsNullOrWhiteSpace(txtUsuario.Text))
+            {
+                MessageBox.Show("Campo usuario requerido", "Error usuario");
+            }
+            else
+            {
+                if (string.IsNullOrWhiteSpace(txtContraseña.Text))
+                {
+                    MessageBox.Show("Se requiere escribir una contraseña", "Error contraseña");
+                }
 
-           
+            }
+
+            try
+            {
+                var addr = new System.Net.MailAddress(txtUsuario.Text);
+            }
+            catch 
+            {
+                txtUsuario.Text = "";
+                MessageBox.Show("Usuario no valido, error en el email", "Error de usuario");
+            }
+
+
+            if (txtUsuario.Text == "katherinesofia719@gmail.com" && txtContraseña.Text == "22040128") 
+            {
+                Form4.PnlVisible = true;
+                this.Dispose();
+            }
+            else 
+            {
+                MessageBox.Show("Credenciales no validad", "Acceso Denegado");
+            }
 
             DateTime fecha = DateTime.Now;
 
@@ -81,8 +113,8 @@ namespace APPCOMY
                   if (Convert.ToString(app.Sheets[1].cells(X,1).text) == "")
                   {
                     app.Sheets[1].cells(X, 1).value = txtUsuario.Text;
-                    app.Sheets[1].cells(X, 2).value = txtUsuario.Text;
-                    app.Sheets[1].cells(X, 3).value = fecha;
+                    app.Sheets[2].cells(X, 2).value = txtUsuario.Text;
+                    app.Sheets[3].cells(X, 3).value = fecha;
                     break;
 
                   }
@@ -119,7 +151,7 @@ namespace APPCOMY
             if (txtUsuario.Text == "Usuario")
             {
                 txtUsuario.Text = "";
-                txtUsuario.ForeColor = Color.DarkGray;
+                txtUsuario.ForeColor = Color.DarkBlue;
             }
         }
 
@@ -128,7 +160,7 @@ namespace APPCOMY
             if (txtUsuario.Text == "")
             {
                 txtUsuario.Text = "Usuario";
-                txtUsuario.ForeColor = Color.DarkGray;
+                txtUsuario.ForeColor = Color.DarkBlue;
             }
         }
 
