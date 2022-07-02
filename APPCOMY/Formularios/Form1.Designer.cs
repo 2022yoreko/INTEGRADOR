@@ -1,7 +1,7 @@
 ﻿
 namespace APPCOMY
 {
-    partial class Form1
+    partial class FrmPresentacion
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,7 +29,7 @@ namespace APPCOMY
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPresentacion));
             this.label1 = new System.Windows.Forms.Label();
             this.txtIniciar = new System.Windows.Forms.Button();
             this.txtRegistrate = new System.Windows.Forms.Button();
@@ -78,7 +78,7 @@ namespace APPCOMY
             this.txtRegistrate.UseVisualStyleBackColor = false;
             this.txtRegistrate.Click += new System.EventHandler(this.txtRegistrate_Click);
             // 
-            // Form1
+            // FrmPresentacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -89,9 +89,9 @@ namespace APPCOMY
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(670, 550);
-            this.Name = "Form1";
+            this.Name = "FrmPresentacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "Form1";
+            this.Text = "Presentacion";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

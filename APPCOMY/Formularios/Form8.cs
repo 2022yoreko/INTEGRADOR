@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace APPCOMY
 {
-    public partial class Form8 : Form
+    public partial class FrmAsistencia : Form
     {
-        public Form8()
+        public FrmAsistencia()
         {
             InitializeComponent();
         }
@@ -20,7 +20,7 @@ namespace APPCOMY
         private void btnRegresar_Click(object sender, EventArgs e)
         {
             this.Close();
-            Form4 back = new Form4();
+            FrmMenu back = new FrmMenu();
             back.Show();
 
 
@@ -28,7 +28,7 @@ namespace APPCOMY
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            var newForm4 = new Form4();
+            var newForm4 = new FrmMenu();
             newForm4.Show();
             this.Hide();
         }

@@ -1,7 +1,7 @@
 ﻿
 namespace APPCOMY
 {
-    partial class Form5
+    partial class FrmGuardar_Registro
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace APPCOMY
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGuardar_Registro));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -384,7 +384,7 @@ namespace APPCOMY
             this.btnMenu.UseVisualStyleBackColor = false;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
-            // Form5
+            // FrmGuardar_Registro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -421,8 +421,8 @@ namespace APPCOMY
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(700, 520);
-            this.Name = "Form5";
-            this.Text = "Form5";
+            this.Name = "FrmGuardar_Registro";
+            this.Text = "Guardar Registro";
             this.Load += new System.EventHandler(this.Form5_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

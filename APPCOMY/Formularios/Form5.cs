@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace APPCOMY
 {
-    public partial class Form5 : Form
+    public partial class FrmGuardar_Registro : Form
     {
-        public Form5()
+        public FrmGuardar_Registro()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace APPCOMY
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
-            var newForm4 = new Form4();
+            var newForm4 = new FrmMenu();
             newForm4.Show();
             this.Hide();
                 
@@ -32,7 +32,7 @@ namespace APPCOMY
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            var newForm4 = new Form4();
+            var newForm4 = new FrmMenu();
             newForm4.Show();
             this.Hide();
         }

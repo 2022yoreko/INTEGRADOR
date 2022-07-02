@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace APPCOMY
 {
-    public partial class Form4 : Form
+    public partial class FrmMenu : Form
     {
         public static bool PnlVisible { get; internal set; }
 
-        public Form4()
+        public FrmMenu()
         {
             InitializeComponent();
         }
@@ -26,31 +26,31 @@ namespace APPCOMY
 
         private void btnRegistro_Estudiantes_Click(object sender, EventArgs e)
         {
-            Form5 administrador = new Form5();
+            FrmGuardar_Registro administrador = new FrmGuardar_Registro();
             administrador.ShowDialog();
         }
 
         private void btnPerfil_Alumnos_Click(object sender, EventArgs e)
         {
-            Form7 administrador = new Form7();
+            FrmPerfil administrador = new FrmPerfil();
             administrador.ShowDialog();
         }
 
         private void btnRegistro_Click(object sender, EventArgs e)
         {
-            Form5 administrador = new Form5();
+            FrmGuardar_Registro administrador = new FrmGuardar_Registro();
             administrador.ShowDialog();
         }
 
         private void btnInformacion_Personal_Click(object sender, EventArgs e)
         {
-            Form7 administrador = new Form7();
+            FrmPerfil administrador = new FrmPerfil();
             administrador.ShowDialog();
         }
 
         private void btnTabla_Asistencia_Click(object sender, EventArgs e)
         {
-            Form8 administrador = new Form8();
+            FrmAsistencia administrador = new FrmAsistencia();
             administrador.ShowDialog();
         }
 
@@ -61,7 +61,7 @@ namespace APPCOMY
 
         private void btnPerfil_Click(object sender, EventArgs e)
         {
-            Form7 administrador = new Form7();
+            FrmPerfil administrador = new FrmPerfil();
             administrador.ShowDialog();
         }
 

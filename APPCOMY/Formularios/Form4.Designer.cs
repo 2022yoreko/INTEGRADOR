@@ -1,7 +1,7 @@
 ﻿
 namespace APPCOMY
 {
-    partial class Form4
+    partial class FrmMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace APPCOMY
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenu));
             this.btnPerfil = new System.Windows.Forms.Button();
             this.btnRegistro = new System.Windows.Forms.Button();
             this.btnInformacion_Personal = new System.Windows.Forms.Button();
@@ -387,7 +387,7 @@ namespace APPCOMY
             this.btnRetroceder.TabIndex = 42;
             this.btnRetroceder.UseVisualStyleBackColor = false;
             // 
-            // Form4
+            // FrmMenu
             // 
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(687, 574);
@@ -400,7 +400,8 @@ namespace APPCOMY
             this.Controls.Add(this.pictureBox4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimumSize = new System.Drawing.Size(687, 574);
-            this.Name = "Form4";
+            this.Name = "FrmMenu";
+            this.Text = "Menu";
             this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();

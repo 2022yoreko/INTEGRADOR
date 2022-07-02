@@ -1,7 +1,7 @@
 ﻿
 namespace APPCOMY
 {
-    partial class Form2
+    partial class FrmLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace APPCOMY
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -140,7 +140,7 @@ namespace APPCOMY
             this.Recordar_Contraseña.UseVisualStyleBackColor = false;
             this.Recordar_Contraseña.CheckedChanged += new System.EventHandler(this.Recordar_Contraseña_CheckedChanged);
             // 
-            // Form2
+            // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -156,8 +156,8 @@ namespace APPCOMY
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(670, 550);
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.Name = "FrmLogin";
+            this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -1,7 +1,7 @@
 ﻿
 namespace APPCOMY
 {
-    partial class Form8
+    partial class FrmAsistencia
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace APPCOMY
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form8));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAsistencia));
             this.btnMenu = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -597,7 +597,7 @@ namespace APPCOMY
             this.label6.TabIndex = 54;
             this.label6.Text = "C";
             // 
-            // Form8
+            // FrmAsistencia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -618,8 +618,8 @@ namespace APPCOMY
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(780, 540);
-            this.Name = "Form8";
-            this.Text = "Form8";
+            this.Name = "FrmAsistencia";
+            this.Text = "Asistencia";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox1.ResumeLayout(false);

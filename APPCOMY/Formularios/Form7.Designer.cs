@@ -1,7 +1,7 @@
 ﻿
 namespace APPCOMY
 {
-    partial class Form7
+    partial class FrmPerfil
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace APPCOMY
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form7));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPerfil));
             this.btnMenu = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -538,7 +538,7 @@ namespace APPCOMY
             this.panel1.Size = new System.Drawing.Size(513, 477);
             this.panel1.TabIndex = 73;
             // 
-            // Form7
+            // FrmPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -559,8 +559,8 @@ namespace APPCOMY
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimumSize = new System.Drawing.Size(700, 630);
-            this.Name = "Form7";
-            this.Text = "Form6";
+            this.Name = "FrmPerfil";
+            this.Text = "Perfil";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgPerfil)).EndInit();

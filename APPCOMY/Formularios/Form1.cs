@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace APPCOMY
 {
-    public partial class Form1 : Form
+    public partial class FrmPresentacion : Form
     {
-        public Form1()
+        public FrmPresentacion()
         {
             InitializeComponent();
         }
@@ -24,13 +24,13 @@ namespace APPCOMY
 
         private void txtRegistrate_Click(object sender, EventArgs e)
         {
-            Form3 administrador = new Form3();
+            FrmRegistrate administrador = new FrmRegistrate();
             administrador.ShowDialog();
         }
 
         private void txtIniciar_Click(object sender, EventArgs e)
         {
-            Form2 administrador = new Form2();
+            FrmLogin administrador = new FrmLogin();
             administrador.ShowDialog();
         }
     }

@@ -8,13 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace APPCOMY.Formularios
+namespace APPCOMY
 {
-    public partial class FrmAyuda : Form
+    public partial class FrmMdi : Form
     {
-        public FrmAyuda()
+        public FrmMdi()
         {
             InitializeComponent();
+        }
+
+        private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmMdi Form4 = new FrmMdi();
+            Form4.MdiParent = this;
+            Form4.Show();
         }
     }
 }

@@ -14,9 +14,9 @@ using System.Windows.Forms;
 
 namespace APPCOMY
 {
-    public partial class Form3 : Form
+    public partial class FrmRegistrate : Form
     {
-        public Form3()
+        public FrmRegistrate()
         {
             InitializeComponent();
         }
@@ -28,8 +28,7 @@ namespace APPCOMY
 
         private void btnAcceder_Click(object sender, EventArgs e)
         {
-            Form4 administrador = new Form4();
-            administrador.ShowDialog();
+          
 
             string Nombres = txtNombres.Text;
             string Apellidos = txtApellidos.Text;
@@ -37,45 +36,23 @@ namespace APPCOMY
             string Confirmar_Contraseña = txtConfirmar_contraseña.Text;
             string Correo_electronico = txtCorreo_Electronico.Text;
             string Numero_telefono = txtNumero_telefono.Text;
-            bool Acceder = false;
+            bool Guardar = false;
 
-            if (Nombres.Length > 0)
-            {
+            FileStream fs;
+            StreamWriter escribe;
+            string linea;
+            string rutbase = System.IO.Directory.GetCurrentDirectory();
+            string rutarchivo = rutbase.Replace(@"\bin\Debug", @"\Archivos\Usuario.txt");
 
-            }
-            else
+            //falta mas codigo
 
-               if (Apellidos.Length > 0)
-            {
-            
-            }
-            else
-                if (Contraseña.Length > 0)
-            {
-            
-            }
-            else
 
-                if (Confirmar_Contraseña.Length > 0)
-            {
-            
-            }
-            else
 
-                if (Correo_electronico.Length > 0)
-            {
 
-            }
-            else
 
-                if (Numero_telefono.Length > 0)
-            {
-                          
-            }
-            if (Acceder) 
-            {
-                Acceder = true;
-            }
+
+
+
 
             DateTime fecha = DateTime.Now;
 
@@ -99,7 +76,8 @@ namespace APPCOMY
                 }
 
             }
-
+            FrmMenu administrador = new FrmMenu();
+            administrador.ShowDialog();
 
         }
 

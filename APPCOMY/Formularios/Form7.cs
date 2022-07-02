@@ -10,24 +10,24 @@ using System.Windows.Forms;
 
 namespace APPCOMY
 {
-    public partial class Form7 : Form
+    public partial class FrmPerfil : Form
     {
 
-        public Form7()
+        public FrmPerfil()
         {
             InitializeComponent();
         }
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
-            var newForm4 = new Form4();
+            var newForm4 = new FrmMenu();
             newForm4.Show();
             this.Hide();
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            var newForm4 = new Form4();
+            var newForm4 = new FrmMenu();
             newForm4.Show();
             this.Hide();
         }
