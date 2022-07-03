@@ -1,7 +1,7 @@
 ﻿
 namespace APPCOMY
 {
-    partial class FrmGuardar_Registro
+    partial class FrmRegistro_Estudiantes
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace APPCOMY
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGuardar_Registro));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistro_Estudiantes));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,8 +50,6 @@ namespace APPCOMY
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.cmbFoto = new System.Windows.Forms.ComboBox();
             this.btnRegresar = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label14 = new System.Windows.Forms.Label();
@@ -289,27 +287,6 @@ namespace APPCOMY
             this.label12.TabIndex = 28;
             this.label12.Text = "Año";
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(461, 451);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(49, 22);
-            this.label13.TabIndex = 29;
-            this.label13.Text = "Foto";
-            // 
-            // cmbFoto
-            // 
-            this.cmbFoto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbFoto.FormattingEnabled = true;
-            this.cmbFoto.Location = new System.Drawing.Point(572, 450);
-            this.cmbFoto.Name = "cmbFoto";
-            this.cmbFoto.Size = new System.Drawing.Size(146, 28);
-            this.cmbFoto.TabIndex = 30;
-            // 
             // btnRegresar
             // 
             this.btnRegresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
@@ -480,7 +457,7 @@ namespace APPCOMY
             this.txtCorreo.Size = new System.Drawing.Size(208, 26);
             this.txtCorreo.TabIndex = 43;
             // 
-            // FrmGuardar_Registro
+            // FrmRegistro_Estudiantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -497,8 +474,6 @@ namespace APPCOMY
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.btnRegresar);
-            this.Controls.Add(this.cmbFoto);
-            this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -522,8 +497,9 @@ namespace APPCOMY
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmGuardar_Registro";
-            this.Text = "Guardar Registro";
+            this.Name = "FrmRegistro_Estudiantes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Registro de estudiantes";
             this.Load += new System.EventHandler(this.Form5_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -554,8 +530,6 @@ namespace APPCOMY
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.ComboBox cmbFoto;
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label14;

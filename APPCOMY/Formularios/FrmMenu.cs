@@ -26,7 +26,7 @@ namespace APPCOMY
 
         private void btnRegistro_Estudiantes_Click(object sender, EventArgs e)
         {
-            FrmGuardar_Registro administrador = new FrmGuardar_Registro();
+            FrmRegistro_Estudiantes administrador = new FrmRegistro_Estudiantes();
             administrador.ShowDialog();
         }
 
@@ -38,7 +38,7 @@ namespace APPCOMY
 
         private void btnRegistro_Click(object sender, EventArgs e)
         {
-            FrmGuardar_Registro administrador = new FrmGuardar_Registro();
+            FrmRegistro_Estudiantes administrador = new FrmRegistro_Estudiantes();
             administrador.ShowDialog();
         }
 

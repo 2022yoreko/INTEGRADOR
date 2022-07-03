@@ -51,53 +51,53 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Formularios\FileStream.cs" />
-    <Compile Include="Formularios\Form6.cs">
+    <Compile Include="Formularios\FrmAyuda.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Form6.Designer.cs">
-      <DependentUpon>Form6.cs</DependentUpon>
+    <Compile Include="Formularios\FrmAyuda.Designer.cs">
+      <DependentUpon>FrmAyuda.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Form8.cs">
+    <Compile Include="Formularios\FrmAsistencia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Form8.Designer.cs">
-      <DependentUpon>Form8.cs</DependentUpon>
+    <Compile Include="Formularios\FrmAsistencia.Designer.cs">
+      <DependentUpon>FrmAsistencia.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Form7.cs">
+    <Compile Include="Formularios\FrmPerfil.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Form7.Designer.cs">
-      <DependentUpon>Form7.cs</DependentUpon>
+    <Compile Include="Formularios\FrmPerfil.Designer.cs">
+      <DependentUpon>FrmPerfil.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Form2.cs">
+    <Compile Include="Formularios\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="Formularios\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Form3.cs">
+    <Compile Include="Formularios\FrmRegistro_Usuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="Formularios\FrmRegistro_Usuario.Designer.cs">
+      <DependentUpon>FrmRegistro_Usuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Form4.cs">
+    <Compile Include="Formularios\FrmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="Formularios\FrmMenu.Designer.cs">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Form5.cs">
+    <Compile Include="Formularios\FrmRegistro_estudiantes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Form5.Designer.cs">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <Compile Include="Formularios\FrmRegistro_estudiantes.Designer.cs">
+      <DependentUpon>FrmRegistro_estudiantes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Form1.cs">
+    <Compile Include="Formularios\FrmPresentacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Formularios\FrmPresentacion.Designer.cs">
+      <DependentUpon>FrmPresentacion.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\StreamWriter.cs" />
     <Compile Include="FrmMdi.cs">
@@ -109,29 +109,29 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="System\Net\MailAddress.cs" />
-    <EmbeddedResource Include="Formularios\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\FrmPresentacion.resx">
+      <DependentUpon>FrmPresentacion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\FrmRegistro_Usuario.resx">
+      <DependentUpon>FrmRegistro_Usuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\FrmMenu.resx">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Form5.resx">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\FrmRegistro_estudiantes.resx">
+      <DependentUpon>FrmRegistro_estudiantes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Form6.resx">
-      <DependentUpon>Form6.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\FrmAyuda.resx">
+      <DependentUpon>FrmAyuda.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Form7.resx">
-      <DependentUpon>Form7.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\FrmPerfil.resx">
+      <DependentUpon>FrmPerfil.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Form8.resx">
-      <DependentUpon>Form8.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\FrmAsistencia.resx">
+      <DependentUpon>FrmAsistencia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMdi.resx">
       <DependentUpon>FrmMdi.cs</DependentUpon>

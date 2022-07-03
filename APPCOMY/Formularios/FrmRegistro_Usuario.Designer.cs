@@ -1,7 +1,7 @@
 ﻿
 namespace APPCOMY
 {
-    partial class FrmRegistrate
+    partial class FrmRegistro_Usuario
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace APPCOMY
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistrate));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistro_Usuario));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,10 +38,10 @@ namespace APPCOMY
             this.txtApellidos = new System.Windows.Forms.TextBox();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.txtCorreo_Electronico = new System.Windows.Forms.TextBox();
-            this.txtConfirmar_contraseña = new System.Windows.Forms.TextBox();
-            this.txtNumero_telefono = new System.Windows.Forms.TextBox();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnRegresar = new System.Windows.Forms.Button();
+            this.txtC_Contraseña = new System.Windows.Forms.TextBox();
+            this.txtN_telefono = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -140,29 +140,6 @@ namespace APPCOMY
             this.txtCorreo_Electronico.Enter += new System.EventHandler(this.txtCorreo_Electronico_Enter);
             this.txtCorreo_Electronico.Leave += new System.EventHandler(this.txtCorreo_Electronico_leave);
             // 
-            // txtConfirmar_contraseña
-            // 
-            this.txtConfirmar_contraseña.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfirmar_contraseña.ForeColor = System.Drawing.Color.Gray;
-            this.txtConfirmar_contraseña.Location = new System.Drawing.Point(220, 314);
-            this.txtConfirmar_contraseña.Name = "txtConfirmar_contraseña";
-            this.txtConfirmar_contraseña.Size = new System.Drawing.Size(239, 29);
-            this.txtConfirmar_contraseña.TabIndex = 10;
-            this.txtConfirmar_contraseña.Text = "Confirmar Contraseña";
-            this.txtConfirmar_contraseña.Enter += new System.EventHandler(this.txtConfirmar_Contraseña_Enter);
-            this.txtConfirmar_contraseña.Leave += new System.EventHandler(this.txtConfirmar_contraseña_Leave);
-            // 
-            // txtNumero_telefono
-            // 
-            this.txtNumero_telefono.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumero_telefono.ForeColor = System.Drawing.Color.Gray;
-            this.txtNumero_telefono.Location = new System.Drawing.Point(220, 384);
-            this.txtNumero_telefono.Name = "txtNumero_telefono";
-            this.txtNumero_telefono.Size = new System.Drawing.Size(241, 29);
-            this.txtNumero_telefono.TabIndex = 11;
-            this.txtNumero_telefono.Text = "Numero de Telefono";
-            this.txtNumero_telefono.Leave += new System.EventHandler(this.txtNumero_Telefono_Leave);
-            // 
             // btnGuardar
             // 
             this.btnGuardar.BackColor = System.Drawing.SystemColors.ScrollBar;
@@ -190,17 +167,42 @@ namespace APPCOMY
             this.btnRegresar.UseVisualStyleBackColor = false;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
-            // FrmRegistrate
+            // txtC_Contraseña
+            // 
+            this.txtC_Contraseña.Font = new System.Drawing.Font("Arial", 14.25F);
+            this.txtC_Contraseña.ForeColor = System.Drawing.Color.Gray;
+            this.txtC_Contraseña.Location = new System.Drawing.Point(220, 314);
+            this.txtC_Contraseña.Name = "txtC_Contraseña";
+            this.txtC_Contraseña.Size = new System.Drawing.Size(241, 29);
+            this.txtC_Contraseña.TabIndex = 14;
+            this.txtC_Contraseña.Text = "Confirmar Contraseña";
+            this.txtC_Contraseña.TextChanged += new System.EventHandler(this.txtC_Contraseña_TextChanged);
+            this.txtC_Contraseña.Enter += new System.EventHandler(this.txtC_Contraseña_Enter);
+            this.txtC_Contraseña.Leave += new System.EventHandler(this.txtC_Contraseña_leave);
+            // 
+            // txtN_telefono
+            // 
+            this.txtN_telefono.Font = new System.Drawing.Font("Arial", 14.25F);
+            this.txtN_telefono.ForeColor = System.Drawing.Color.Gray;
+            this.txtN_telefono.Location = new System.Drawing.Point(222, 384);
+            this.txtN_telefono.Name = "txtN_telefono";
+            this.txtN_telefono.Size = new System.Drawing.Size(239, 29);
+            this.txtN_telefono.TabIndex = 15;
+            this.txtN_telefono.Text = "Numero de Telefono";
+            this.txtN_telefono.Enter += new System.EventHandler(this.txtN_telefono_Enter);
+            this.txtN_telefono.Leave += new System.EventHandler(this.txtN_telefono_Leave);
+            // 
+            // FrmRegistro_Usuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(654, 510);
+            this.Controls.Add(this.txtN_telefono);
+            this.Controls.Add(this.txtC_Contraseña);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.txtNumero_telefono);
-            this.Controls.Add(this.txtConfirmar_contraseña);
             this.Controls.Add(this.txtCorreo_Electronico);
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.txtApellidos);
@@ -212,8 +214,9 @@ namespace APPCOMY
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(670, 550);
-            this.Name = "FrmRegistrate";
-            this.Text = "Registrate";
+            this.Name = "FrmRegistro_Usuario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Registro de usuario";
             this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -231,9 +234,9 @@ namespace APPCOMY
         private System.Windows.Forms.TextBox txtApellidos;
         private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.TextBox txtCorreo_Electronico;
-        private System.Windows.Forms.TextBox txtConfirmar_contraseña;
-        private System.Windows.Forms.TextBox txtNumero_telefono;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnRegresar;
+        private System.Windows.Forms.TextBox txtC_Contraseña;
+        private System.Windows.Forms.TextBox txtN_telefono;
     }
 }

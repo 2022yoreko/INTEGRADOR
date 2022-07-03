@@ -19,9 +19,10 @@ namespace APPCOMY
 
         private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmMdi Form4 = new FrmMdi();
-            Form4.MdiParent = this;
-            Form4.Show();
+            FrmMenu frmNav = new FrmMenu();
+            frmNav.MdiParent = this.MdiParent;
+            frmNav.Show();
+            this.Close();
         }
     }
 }

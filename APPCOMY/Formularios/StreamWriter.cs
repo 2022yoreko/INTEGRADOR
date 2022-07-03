@@ -11,6 +11,10 @@ namespace APPCOMY
             this.fs = fs;
         }
 
+        public StreamWriter()
+        {
+        }
+
         internal void WriteLine(object text)
         {
             throw new NotImplementedException();

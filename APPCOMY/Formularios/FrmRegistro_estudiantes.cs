@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace APPCOMY
 {
-    public partial class FrmGuardar_Registro : Form
+    public partial class FrmRegistro_Estudiantes : Form
     {
-        public FrmGuardar_Registro()
+        public FrmRegistro_Estudiantes()
         {
             InitializeComponent();
         }
@@ -40,36 +40,28 @@ namespace APPCOMY
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string N_Carne = txtN_carne.Text;
-            string Nombres = txtNombres.Text;
-            string Apellidos = txtApellidos.Text;
-            string Facultad = (cmbFacultad.SelectedItem.ToString());
-            string Carrera = txtCarrera.Text;
-            string Año = txtAño.Text;
-            string Promedio = txtPromedio.Text;
-            string Depto = (cmbDepto.SelectedItem.ToString());
-            string Telefono = txtTelefono.Text;
-            string Foto = (cmbFoto.SelectedItem.ToString());
-
+           
 
             FileStream fs;
             StreamWriter escribe;
+            string linea;
 
             string rutbase = Directory.GetCurrentDirectory();
             string rutarchivo = rutbase.Replace(@"\bin\Debug", @"\Archivos\Usuario.txt");
             fs = new FileStream(rutarchivo, FileMode.Append);
+            escribe = new StreamWriter(fs);
 
             escribe = new StreamWriter(fs);
-            escribe.WriteLine(txtN_carne.Text);
-            escribe.WriteLine(txtNombres.Text);
-            escribe.WriteLine(txtApellidos.Text);
-            escribe.WriteLine(cmbFacultad.SelectedItem.ToString());
-            escribe.WriteLine(txtCarrera.Text);
-            escribe.WriteLine(txtAño.Text);
-            escribe.WriteLine(txtPromedio.Text);
-            escribe.WriteLine(cmbDepto.Text);
-            escribe.WriteLine(txtTelefono.Text);
-            escribe.WriteLine(cmbFoto.SelectedItem.ToString());
+            linea = txtN_carne.Text + ";";
+            linea += txtNombres.Text + ";";
+            linea += txtApellidos.Text + ";";
+            linea += cmbFacultad.SelectedItem.ToString();
+            linea += txtCarrera.Text + ";";
+            linea += txtAño.Text + ";";
+            linea += txtPromedio.Text +";";
+            linea += txtTelefono.Text + ";";
+            linea += cmbDepto.SelectedItem.ToString();
+            escribe.WriteLine(linea.ToUpper());
             escribe.Close();
             
 
