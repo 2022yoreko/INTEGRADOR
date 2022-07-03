@@ -23,7 +23,8 @@ namespace APPCOMY
 
         private void btnAcceder_Click(object sender, EventArgs e)
         {
-            
+            //Form4 administrador = new Form4();
+            //administrador.ShowDialog();
             if (!string.IsNullOrWhiteSpace(txtUsuario.Text))
             {
                 try
@@ -44,8 +45,8 @@ namespace APPCOMY
 
             if (valido)
             {
-                string ruta = Directory.GetCurrentDirectory();
-                string rutArch = ruta.Replace(@"\bin\Debug", @"\Archivos\Usuario.txt");
+                string rutaBase = Directory.GetCurrentDirectory();
+                string rutArch = rutaBase.Replace(@"\bin\Debug", @"\Archivos\Usuario.txt");
                 StreamReader Leer;
                 Leer = new StreamReader(rutArch);
 
@@ -82,7 +83,7 @@ namespace APPCOMY
                 }
                 else
                 {
-                    MessageBox.Show("Usuario no valido");
+                    MessageBox.Show("El usuario no existe");
                 }
 
             }//fin if de busqueda
@@ -90,8 +91,7 @@ namespace APPCOMY
 
             FrmMenu administrador = new FrmMenu();
             administrador.ShowDialog();
-            FrmMenu form = new FrmMenu();
-            form.Show();
+
 
         }
 

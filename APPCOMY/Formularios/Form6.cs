@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace APPCOMY.Archivos
+namespace APPCOMY.Formularios
 {
-    public partial class FrmAyudas : Form
+    public partial class FrmAyuda : Form
     {
-        public FrmAyudas()
+        public FrmAyuda()
         {
             InitializeComponent();
         }

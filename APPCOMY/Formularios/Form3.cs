@@ -9,13 +9,14 @@ using Microsoft.Office.Interop;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
+
+
 
 namespace APPCOMY
 {
-    public partial class FrmRegistro_Usuario : Form
+    public partial class FrmRegistrate : Form
     {
-        public FrmRegistro_Usuario()
+        public FrmRegistrate()
         {
             InitializeComponent();
         }
@@ -27,33 +28,54 @@ namespace APPCOMY
 
         private void btnAcceder_Click(object sender, EventArgs e)
         {
-
+          
 
             string Nombres = txtNombres.Text;
             string Apellidos = txtApellidos.Text;
             string Contraseña = txtContraseña.Text;
-            string Confirmar_Contraseña = txtC_Contraseña.Text;
+            string Confirmar_Contraseña = txtConfirmar_contraseña.Text;
             string Correo_electronico = txtCorreo_Electronico.Text;
-            string Numero_telefono = txtN_telefono.Text;
+            string Numero_telefono = txtNumero_telefono.Text;
             bool Guardar = false;
 
             FileStream fs;
             StreamWriter escribe;
-
-            string rutbase = Directory.GetCurrentDirectory();
+            string linea;
+            string rutbase = System.IO.Directory.GetCurrentDirectory();
             string rutarchivo = rutbase.Replace(@"\bin\Debug", @"\Archivos\Usuario.txt");
-            fs = new FileStream(rutarchivo, FileMode.Append);
 
-            escribe = new StreamWriter(fs);
-            escribe.WriteLine(txtNombres.Text);
-            escribe.WriteLine(txtApellidos.Text);
-            escribe.WriteLine(txtContraseña.Text);
-            escribe.WriteLine(txtC_Contraseña.Text);
-            escribe.WriteLine(txtCorreo_Electronico.Text);
-            escribe.WriteLine(txtN_telefono.Text);
-            escribe.Close();
+            //falta mas codigo
 
 
+
+
+
+
+
+
+
+            DateTime fecha = DateTime.Now;
+
+            Microsoft.Office.Interop.Excel.Application app;
+            app = (Microsoft.Office.Interop.Excel.Application)Marshal.GetActiveObject("Excel.Application");
+            Microsoft.Office.Interop.Excel.Workbook activeWB = app.ActiveWorkbook;
+
+            for (int X = 2; X <= 50; X++)
+            {
+                if (Convert.ToString(app.Sheets[1].cells(X, 1).text) == "")
+                {
+                    app.Sheets[1].cells(X, 1).value = txtNombres.Text;
+                    app.Sheets[2].cells(X, 2).value = txtApellidos.Text;
+                    app.Sheets[2].cells(X, 2).value = txtContraseña.Text;
+                    app.Sheets[1].cells(X, 1).value = txtConfirmar_contraseña.Text;
+                    app.Sheets[1].cells(X, 1).value = txtCorreo_Electronico.Text;
+                    app.Sheets[1].cells(X, 1).value = txtNumero_telefono.Text;
+                    app.Sheets[3].cells(X, 3).value = fecha;
+                    break;
+
+                }
+
+            }
             FrmMenu administrador = new FrmMenu();
             administrador.ShowDialog();
 
@@ -125,7 +147,24 @@ namespace APPCOMY
             }
         }
 
-        
+        private void txtConfirmar_Contraseña_Enter(object sender, EventArgs e)
+        {
+            if (txtConfirmar_contraseña.Text == "Confirmar contraseña")
+            {
+                txtConfirmar_contraseña.Text = "";
+                txtConfirmar_contraseña.ForeColor = Color.DarkBlue;
+            }
+        }
+
+        private void txtConfirmar_contraseña_Leave(object sender, EventArgs e)
+        {
+            if (txtConfirmar_contraseña.Text == "")
+            {
+                txtConfirmar_contraseña.Text = "Confirmar contraseña";
+                txtConfirmar_contraseña.ForeColor = Color.DarkBlue;
+            }
+        }
+
         private void txtCorreo_Electronico_Enter(object sender, EventArgs e)
         {
             if (txtCorreo_Electronico.Text == "Correo Electronico")
@@ -144,46 +183,25 @@ namespace APPCOMY
             }
         }
 
-        
-
-        private void txtC_Contraseña_TextChanged(object sender, EventArgs e)
+        private void txtNumero_Telefono_Enter(object sender, EventArgs e)
         {
-
-        }
-
-        private void txtC_Contraseña_Enter(object sender, EventArgs e)
-        {
-            if (txtC_Contraseña.Text == "Confirmar Contraseña") 
+            if (txtNumero_telefono.Text == "Numero de telefono")
             {
-                txtC_Contraseña.Text = "";
-                txtC_Contraseña.ForeColor = Color.Gray;
+                txtNumero_telefono.Text = "";
+                txtNumero_telefono.ForeColor = Color.DarkBlue;
             }
         }
 
-        private void txtC_Contraseña_leave(object sender, EventArgs e)
-        {
-            if (txtC_Contraseña.Text == "")
-            {
-                txtC_Contraseña.Text = "Confirmar contraseña";
-               
-            }
-        }
 
-        private void txtN_telefono_Enter(object sender, EventArgs e)
+        private void txtNumero_Telefono_Leave(object sender, EventArgs e)
         {
-            if (txtN_telefono.Text == "Numero de telefono") 
+            if (txtNumero_telefono.Text == "")
             {
-                txtN_telefono.Text = "";
-          
+                txtNumero_telefono.Text = "Numero Telefono";
+                txtNumero_telefono.ForeColor = Color.DarkBlue;
             }
-        }
-
-        private void txtN_telefono_Leave(object sender, EventArgs e)
-        {
-            if (txtN_telefono.Text == "") 
-            {
-                txtN_telefono.Text = "Numero de telefono";
-            }
+         
+            
         }
     }
 }
