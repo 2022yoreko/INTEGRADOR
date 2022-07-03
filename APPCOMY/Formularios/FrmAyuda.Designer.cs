@@ -40,6 +40,7 @@ namespace APPCOMY.Formularios
             this.linkLabel4 = new System.Windows.Forms.LinkLabel();
             this.linkLabel5 = new System.Windows.Forms.LinkLabel();
             this.linkLabel6 = new System.Windows.Forms.LinkLabel();
+            this.btnRegresar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,7 +97,7 @@ namespace APPCOMY.Formularios
             this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel1.Font = new System.Drawing.Font("Verdana", 13F);
             this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.linkLabel1.Location = new System.Drawing.Point(85, 209);
+            this.linkLabel1.Location = new System.Drawing.Point(60, 203);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(101, 22);
             this.linkLabel1.TabIndex = 7;
@@ -109,7 +110,7 @@ namespace APPCOMY.Formularios
             this.linkLabel2.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel2.Font = new System.Drawing.Font("Verdana", 13F);
             this.linkLabel2.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.linkLabel2.Location = new System.Drawing.Point(88, 242);
+            this.linkLabel2.Location = new System.Drawing.Point(60, 250);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(101, 22);
             this.linkLabel2.TabIndex = 8;
@@ -122,7 +123,7 @@ namespace APPCOMY.Formularios
             this.linkLabel3.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel3.Font = new System.Drawing.Font("Verdana", 13F);
             this.linkLabel3.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.linkLabel3.Location = new System.Drawing.Point(88, 272);
+            this.linkLabel3.Location = new System.Drawing.Point(60, 285);
             this.linkLabel3.Name = "linkLabel3";
             this.linkLabel3.Size = new System.Drawing.Size(101, 22);
             this.linkLabel3.TabIndex = 9;
@@ -135,7 +136,7 @@ namespace APPCOMY.Formularios
             this.linkLabel4.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel4.Font = new System.Drawing.Font("Verdana", 13F);
             this.linkLabel4.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.linkLabel4.Location = new System.Drawing.Point(91, 307);
+            this.linkLabel4.Location = new System.Drawing.Point(60, 322);
             this.linkLabel4.Name = "linkLabel4";
             this.linkLabel4.Size = new System.Drawing.Size(101, 22);
             this.linkLabel4.TabIndex = 10;
@@ -148,7 +149,7 @@ namespace APPCOMY.Formularios
             this.linkLabel5.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel5.Font = new System.Drawing.Font("Verdana", 13F);
             this.linkLabel5.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.linkLabel5.Location = new System.Drawing.Point(94, 344);
+            this.linkLabel5.Location = new System.Drawing.Point(60, 364);
             this.linkLabel5.Name = "linkLabel5";
             this.linkLabel5.Size = new System.Drawing.Size(101, 22);
             this.linkLabel5.TabIndex = 11;
@@ -161,12 +162,26 @@ namespace APPCOMY.Formularios
             this.linkLabel6.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel6.Font = new System.Drawing.Font("Verdana", 13F);
             this.linkLabel6.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.linkLabel6.Location = new System.Drawing.Point(97, 380);
+            this.linkLabel6.Location = new System.Drawing.Point(60, 400);
             this.linkLabel6.Name = "linkLabel6";
             this.linkLabel6.Size = new System.Drawing.Size(101, 22);
             this.linkLabel6.TabIndex = 12;
             this.linkLabel6.TabStop = true;
             this.linkLabel6.Text = "linkLabel6";
+            // 
+            // btnRegresar
+            // 
+            this.btnRegresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
+            this.btnRegresar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRegresar.BackgroundImage")));
+            this.btnRegresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
+            this.btnRegresar.Location = new System.Drawing.Point(613, 12);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(46, 39);
+            this.btnRegresar.TabIndex = 32;
+            this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // FrmAyuda
             // 
@@ -174,6 +189,7 @@ namespace APPCOMY.Formularios
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(671, 507);
+            this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.linkLabel6);
             this.Controls.Add(this.linkLabel5);
             this.Controls.Add(this.linkLabel4);
@@ -184,6 +200,7 @@ namespace APPCOMY.Formularios
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmAyuda";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ayuda";
@@ -205,5 +222,6 @@ namespace APPCOMY.Formularios
         private System.Windows.Forms.LinkLabel linkLabel4;
         private System.Windows.Forms.LinkLabel linkLabel5;
         private System.Windows.Forms.LinkLabel linkLabel6;
+        private System.Windows.Forms.Button btnRegresar;
     }
 }

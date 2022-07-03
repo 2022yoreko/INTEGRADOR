@@ -38,6 +38,7 @@ namespace APPCOMY
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.Recordar_Contraseña = new System.Windows.Forms.CheckBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnRetroceder = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -139,12 +140,27 @@ namespace APPCOMY
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
             // 
+            // btnRetroceder
+            // 
+            this.btnRetroceder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
+            this.btnRetroceder.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRetroceder.BackgroundImage")));
+            this.btnRetroceder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRetroceder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRetroceder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
+            this.btnRetroceder.Location = new System.Drawing.Point(583, 18);
+            this.btnRetroceder.Name = "btnRetroceder";
+            this.btnRetroceder.Size = new System.Drawing.Size(48, 40);
+            this.btnRetroceder.TabIndex = 43;
+            this.btnRetroceder.UseVisualStyleBackColor = false;
+            this.btnRetroceder.Click += new System.EventHandler(this.btnRetroceder_Click);
+            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(654, 510);
+            this.Controls.Add(this.btnRetroceder);
             this.Controls.Add(this.Recordar_Contraseña);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.btnEntrar);
@@ -173,5 +189,6 @@ namespace APPCOMY
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.CheckBox Recordar_Contraseña;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btnRetroceder;
     }
 }

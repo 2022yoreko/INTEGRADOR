@@ -1,4 +1,5 @@
-﻿using System;
+﻿using APPCOMY.Formularios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -54,10 +55,6 @@ namespace APPCOMY
             administrador.ShowDialog();
         }
 
-        private void btnCalendario_Click(object sender, EventArgs e)
-        {
-           
-        }
 
         private void btnPerfil_Click(object sender, EventArgs e)
         {
@@ -71,18 +68,17 @@ namespace APPCOMY
 
         }
 
-        private void Form4_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAyuda_Click(object sender, EventArgs e)
         {
-
+            FrmAyuda administrador = new FrmAyuda();
+            administrador.ShowDialog();
         }
 
-      
-
-        
+        private void btnRetroceder_Click(object sender, EventArgs e)
+        {
+            var newForm1 = new FrmMenu();
+            newForm1.Show();
+            this.Hide();
+        }
     }
 }

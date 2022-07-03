@@ -106,7 +106,7 @@ namespace APPCOMY
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(138, 27);
+            this.label2.Location = new System.Drawing.Point(161, 27);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(154, 23);
             this.label2.TabIndex = 38;
@@ -118,7 +118,7 @@ namespace APPCOMY
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(162, 51);
+            this.label3.Location = new System.Drawing.Point(181, 51);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(167, 21);
             this.label3.TabIndex = 39;
@@ -129,7 +129,8 @@ namespace APPCOMY
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(287, 17);
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Location = new System.Drawing.Point(335, 17);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(262, 55);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -143,7 +144,7 @@ namespace APPCOMY
             this.btnRegresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.btnRegresar.Location = new System.Drawing.Point(596, 17);
+            this.btnRegresar.Location = new System.Drawing.Point(678, 17);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(46, 39);
             this.btnRegresar.TabIndex = 44;
@@ -157,7 +158,7 @@ namespace APPCOMY
             this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.btnBuscar.Location = new System.Drawing.Point(529, 25);
+            this.btnBuscar.Location = new System.Drawing.Point(597, 25);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 31);
             this.btnBuscar.TabIndex = 45;
@@ -169,7 +170,7 @@ namespace APPCOMY
             this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
             this.label14.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(438, 31);
+            this.label14.Location = new System.Drawing.Point(494, 33);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(85, 17);
             this.label14.TabIndex = 46;
@@ -181,7 +182,7 @@ namespace APPCOMY
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(162, 90);
+            this.label1.Location = new System.Drawing.Point(186, 93);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(321, 22);
             this.label1.TabIndex = 47;
@@ -201,6 +202,7 @@ namespace APPCOMY
             // 
             // imgPerfil
             // 
+            this.imgPerfil.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.imgPerfil.Location = new System.Drawing.Point(612, 272);
             this.imgPerfil.Name = "imgPerfil";
             this.imgPerfil.Size = new System.Drawing.Size(96, 95);
@@ -228,6 +230,7 @@ namespace APPCOMY
             // img1
             // 
             this.img1.BackColor = System.Drawing.Color.White;
+            this.img1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.img1.Location = new System.Drawing.Point(31, 23);
             this.img1.Name = "img1";
             this.img1.Size = new System.Drawing.Size(88, 95);
@@ -250,6 +253,7 @@ namespace APPCOMY
             // img2
             // 
             this.img2.BackColor = System.Drawing.Color.White;
+            this.img2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.img2.Location = new System.Drawing.Point(158, 23);
             this.img2.Name = "img2";
             this.img2.Size = new System.Drawing.Size(84, 95);
@@ -260,6 +264,7 @@ namespace APPCOMY
             // img3
             // 
             this.img3.BackColor = System.Drawing.Color.White;
+            this.img3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.img3.Location = new System.Drawing.Point(275, 23);
             this.img3.Name = "img3";
             this.img3.Size = new System.Drawing.Size(84, 95);
@@ -270,6 +275,7 @@ namespace APPCOMY
             // img12
             // 
             this.img12.BackColor = System.Drawing.Color.White;
+            this.img12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.img12.Location = new System.Drawing.Point(396, 318);
             this.img12.Name = "img12";
             this.img12.Size = new System.Drawing.Size(84, 95);
@@ -280,6 +286,7 @@ namespace APPCOMY
             // img4
             // 
             this.img4.BackColor = System.Drawing.Color.White;
+            this.img4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.img4.Location = new System.Drawing.Point(396, 23);
             this.img4.Name = "img4";
             this.img4.Size = new System.Drawing.Size(84, 95);
@@ -290,6 +297,7 @@ namespace APPCOMY
             // img11
             // 
             this.img11.BackColor = System.Drawing.Color.White;
+            this.img11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.img11.Location = new System.Drawing.Point(275, 318);
             this.img11.Name = "img11";
             this.img11.Size = new System.Drawing.Size(84, 95);
@@ -300,6 +308,7 @@ namespace APPCOMY
             // img7
             // 
             this.img7.BackColor = System.Drawing.Color.White;
+            this.img7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.img7.Location = new System.Drawing.Point(275, 169);
             this.img7.Name = "img7";
             this.img7.Size = new System.Drawing.Size(84, 95);
@@ -310,6 +319,7 @@ namespace APPCOMY
             // img10
             // 
             this.img10.BackColor = System.Drawing.Color.White;
+            this.img10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.img10.Location = new System.Drawing.Point(158, 318);
             this.img10.Name = "img10";
             this.img10.Size = new System.Drawing.Size(84, 95);
@@ -320,6 +330,7 @@ namespace APPCOMY
             // img5
             // 
             this.img5.BackColor = System.Drawing.Color.White;
+            this.img5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.img5.Location = new System.Drawing.Point(33, 168);
             this.img5.Name = "img5";
             this.img5.Size = new System.Drawing.Size(88, 95);
@@ -330,6 +341,7 @@ namespace APPCOMY
             // img9
             // 
             this.img9.BackColor = System.Drawing.Color.White;
+            this.img9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.img9.Location = new System.Drawing.Point(35, 318);
             this.img9.Name = "img9";
             this.img9.Size = new System.Drawing.Size(84, 95);
@@ -340,6 +352,7 @@ namespace APPCOMY
             // img6
             // 
             this.img6.BackColor = System.Drawing.Color.White;
+            this.img6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.img6.Location = new System.Drawing.Point(158, 171);
             this.img6.Name = "img6";
             this.img6.Size = new System.Drawing.Size(84, 93);
@@ -350,6 +363,7 @@ namespace APPCOMY
             // img8
             // 
             this.img8.BackColor = System.Drawing.Color.White;
+            this.img8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.img8.Location = new System.Drawing.Point(396, 171);
             this.img8.Name = "img8";
             this.img8.Size = new System.Drawing.Size(84, 95);
@@ -530,8 +544,9 @@ namespace APPCOMY
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
+            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(63, 17);
+            this.pictureBox3.Location = new System.Drawing.Point(72, 17);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(93, 86);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

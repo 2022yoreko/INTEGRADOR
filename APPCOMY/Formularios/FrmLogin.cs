@@ -114,7 +114,7 @@ namespace APPCOMY
             if (txtUsuario.Text == "Usuario")
             {
                 txtUsuario.Text = "";
-                txtUsuario.ForeColor = Color.DarkSlateBlue;
+                txtUsuario.ForeColor = Color.DimGray;
             }
         }
 
@@ -123,7 +123,7 @@ namespace APPCOMY
             if (txtUsuario.Text == "")
             {
                 txtUsuario.Text = "Usuario";
-                txtUsuario.ForeColor = Color.DarkSlateBlue;
+                txtUsuario.ForeColor = Color.DimGray;
             }
         }
 
@@ -132,7 +132,7 @@ namespace APPCOMY
             if (txtContraseña.Text == "Contraseña")
             {
                 txtContraseña.Text = "";
-                txtContraseña.ForeColor = Color.DarkSlateBlue;
+                txtContraseña.ForeColor = Color.DimGray;
 
             }
         }
@@ -142,9 +142,16 @@ namespace APPCOMY
             if (txtContraseña.Text == "")
             {
                 txtContraseña.Text = "Contraseña";
-                txtContraseña.ForeColor = Color.DarkSlateBlue;
+                txtContraseña.ForeColor = Color.DimGray;
 
             }
+        }
+
+        private void btnRetroceder_Click(object sender, EventArgs e)
+        {
+            var newForm1 = new FrmMenu();
+            newForm1.Show();
+            this.Hide();
         }
     }
 }

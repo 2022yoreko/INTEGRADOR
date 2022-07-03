@@ -387,6 +387,7 @@ namespace APPCOMY
             this.btnRetroceder.Size = new System.Drawing.Size(48, 40);
             this.btnRetroceder.TabIndex = 42;
             this.btnRetroceder.UseVisualStyleBackColor = false;
+            this.btnRetroceder.Click += new System.EventHandler(this.btnRetroceder_Click);
             // 
             // FrmMenu
             // 
@@ -404,7 +405,6 @@ namespace APPCOMY
             this.Name = "FrmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
-            this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel1.ResumeLayout(false);
