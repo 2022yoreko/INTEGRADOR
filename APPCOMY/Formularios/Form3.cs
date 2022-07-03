@@ -9,8 +9,7 @@ using Microsoft.Office.Interop;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
-
+using System.IO;
 
 namespace APPCOMY
 {
@@ -40,11 +39,14 @@ namespace APPCOMY
 
             FileStream fs;
             StreamWriter escribe;
-            string linea;
-            string rutbase = System.IO.Directory.GetCurrentDirectory();
-            string rutarchivo = rutbase.Replace(@"\bin\Debug", @"\Archivos\Usuario.txt");
 
-            //falta mas codigo
+            string rutbase = Directory.GetCurrentDirectory();
+            string rutarchivo = rutbase.Replace(@"\bin\Debug", @"\Archivos\Usuario.txt");
+            fs = new FileStream(rutarchivo, FileMode.Append);
+
+            escribe = new StreamWriter(fs);
+            escribe.WriteLine(txtCarne.Text);
+
 
 
 
