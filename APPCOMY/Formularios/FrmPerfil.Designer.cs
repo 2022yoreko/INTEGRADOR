@@ -33,7 +33,6 @@ namespace APPCOMY
             this.btnMenu = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnRegresar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
@@ -68,7 +67,7 @@ namespace APPCOMY
             this.btnAdjuntar11 = new System.Windows.Forms.Button();
             this.btnAdjuntar12 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgPerfil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img1)).BeginInit();
@@ -84,6 +83,7 @@ namespace APPCOMY
             ((System.ComponentModel.ISupportInitialize)(this.img6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img8)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // btnMenu
@@ -123,17 +123,6 @@ namespace APPCOMY
             this.label3.Size = new System.Drawing.Size(167, 21);
             this.label3.TabIndex = 39;
             this.label3.Text = "UNAN_MANAGUA";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(62, 25);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(86, 63);
-            this.pictureBox1.TabIndex = 42;
-            this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -538,6 +527,17 @@ namespace APPCOMY
             this.panel1.Size = new System.Drawing.Size(513, 477);
             this.panel1.TabIndex = 73;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(63, 17);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(93, 86);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 75;
+            this.pictureBox3.TabStop = false;
+            // 
             // FrmPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -555,14 +555,13 @@ namespace APPCOMY
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pictureBox3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimumSize = new System.Drawing.Size(700, 630);
             this.Name = "FrmPerfil";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Perfil";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgPerfil)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img1)).EndInit();
@@ -579,6 +578,7 @@ namespace APPCOMY
             ((System.ComponentModel.ISupportInitialize)(this.img8)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -589,7 +589,6 @@ namespace APPCOMY
         private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Button btnBuscar;
@@ -624,5 +623,6 @@ namespace APPCOMY
         private System.Windows.Forms.Button btnAdjuntar11;
         private System.Windows.Forms.Button btnAdjuntar12;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
