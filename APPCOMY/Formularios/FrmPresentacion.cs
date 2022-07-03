@@ -24,7 +24,7 @@ namespace APPCOMY
 
         private void txtRegistrate_Click(object sender, EventArgs e)
         {
-            FrmRegistrate administrador = new FrmRegistrate();
+            FrmRegistro_Usuario administrador = new FrmRegistro_Usuario();
             administrador.ShowDialog();
         }
 

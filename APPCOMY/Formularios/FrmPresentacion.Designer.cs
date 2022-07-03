@@ -90,7 +90,7 @@ namespace APPCOMY
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(670, 550);
             this.Name = "FrmPresentacion";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Presentacion";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

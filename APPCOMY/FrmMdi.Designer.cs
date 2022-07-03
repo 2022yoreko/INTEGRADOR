@@ -68,6 +68,7 @@ namespace APPCOMY
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmMdi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "FrmMdi";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

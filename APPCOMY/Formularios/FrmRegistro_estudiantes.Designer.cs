@@ -1,7 +1,7 @@
 ﻿
 namespace APPCOMY
 {
-    partial class FrmGuardar_Registro
+    partial class FrmRegistro_Estudiantes
     {
         /// <summary>
         /// Required designer variable.
@@ -29,8 +29,7 @@ namespace APPCOMY
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGuardar_Registro));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistro_Estudiantes));
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnGuardar_datos = new System.Windows.Forms.Button();
@@ -44,35 +43,29 @@ namespace APPCOMY
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txtCarrera = new System.Windows.Forms.TextBox();
-            this.txtFacultad = new System.Windows.Forms.TextBox();
             this.txtPromedio = new System.Windows.Forms.TextBox();
-            this.txtDepto = new System.Windows.Forms.TextBox();
             this.txtAño = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.cbxFoto = new System.Windows.Forms.ComboBox();
             this.btnRegresar = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label14 = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnMenu = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.cmbFacultad = new System.Windows.Forms.ComboBox();
+            this.cmbDepto = new System.Windows.Forms.ComboBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txtN_carne = new System.Windows.Forms.TextBox();
+            this.txtDomicilio = new System.Windows.Forms.TextBox();
+            this.txtCorreo = new System.Windows.Forms.TextBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(62, 35);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(86, 63);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // label2
             // 
@@ -103,7 +96,7 @@ namespace APPCOMY
             this.btnGuardar_datos.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.btnGuardar_datos.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar_datos.ForeColor = System.Drawing.Color.Black;
-            this.btnGuardar_datos.Location = new System.Drawing.Point(256, 424);
+            this.btnGuardar_datos.Location = new System.Drawing.Point(319, 515);
             this.btnGuardar_datos.Name = "btnGuardar_datos";
             this.btnGuardar_datos.Size = new System.Drawing.Size(168, 49);
             this.btnGuardar_datos.TabIndex = 6;
@@ -115,18 +108,18 @@ namespace APPCOMY
             // 
             this.txtNombres.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombres.ForeColor = System.Drawing.Color.Gray;
-            this.txtNombres.Location = new System.Drawing.Point(161, 184);
+            this.txtNombres.Location = new System.Drawing.Point(164, 232);
             this.txtNombres.Name = "txtNombres";
-            this.txtNombres.Size = new System.Drawing.Size(167, 26);
+            this.txtNombres.Size = new System.Drawing.Size(208, 26);
             this.txtNombres.TabIndex = 7;
             // 
             // txtApellidos
             // 
             this.txtApellidos.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellidos.ForeColor = System.Drawing.Color.Gray;
-            this.txtApellidos.Location = new System.Drawing.Point(161, 224);
+            this.txtApellidos.Location = new System.Drawing.Point(164, 288);
             this.txtApellidos.Name = "txtApellidos";
-            this.txtApellidos.Size = new System.Drawing.Size(167, 26);
+            this.txtApellidos.Size = new System.Drawing.Size(208, 26);
             this.txtApellidos.TabIndex = 8;
             this.txtApellidos.Text = " ";
             // 
@@ -134,20 +127,20 @@ namespace APPCOMY
             // 
             this.txtTelefono.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefono.ForeColor = System.Drawing.Color.Gray;
-            this.txtTelefono.Location = new System.Drawing.Point(468, 266);
+            this.txtTelefono.Location = new System.Drawing.Point(164, 398);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(146, 26);
+            this.txtTelefono.Size = new System.Drawing.Size(208, 26);
             this.txtTelefono.TabIndex = 12;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(57, 184);
+            this.label1.Location = new System.Drawing.Point(60, 236);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 22);
+            this.label1.Size = new System.Drawing.Size(93, 24);
             this.label1.TabIndex = 13;
             this.label1.Text = "Nombres";
             // 
@@ -155,11 +148,11 @@ namespace APPCOMY
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(58, 224);
+            this.label4.Location = new System.Drawing.Point(60, 292);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(89, 22);
+            this.label4.Size = new System.Drawing.Size(93, 24);
             this.label4.TabIndex = 14;
             this.label4.Text = "Apellidos";
             // 
@@ -167,11 +160,11 @@ namespace APPCOMY
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(369, 263);
+            this.label5.Location = new System.Drawing.Point(59, 398);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 22);
+            this.label5.Size = new System.Drawing.Size(89, 24);
             this.label5.TabIndex = 15;
             this.label5.Text = "Telefono";
             // 
@@ -181,7 +174,7 @@ namespace APPCOMY
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(177, 121);
+            this.label6.Location = new System.Drawing.Point(177, 105);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(346, 26);
             this.label6.TabIndex = 16;
@@ -193,7 +186,7 @@ namespace APPCOMY
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(58, 270);
+            this.label7.Location = new System.Drawing.Point(461, 288);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(82, 22);
             this.label7.TabIndex = 17;
@@ -205,7 +198,7 @@ namespace APPCOMY
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(58, 312);
+            this.label8.Location = new System.Drawing.Point(461, 343);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(73, 22);
             this.label8.TabIndex = 18;
@@ -214,41 +207,26 @@ namespace APPCOMY
             // txtCarrera
             // 
             this.txtCarrera.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCarrera.Location = new System.Drawing.Point(161, 312);
+            this.txtCarrera.Location = new System.Drawing.Point(572, 345);
             this.txtCarrera.Name = "txtCarrera";
-            this.txtCarrera.Size = new System.Drawing.Size(167, 26);
+            this.txtCarrera.Size = new System.Drawing.Size(146, 26);
             this.txtCarrera.TabIndex = 19;
-            // 
-            // txtFacultad
-            // 
-            this.txtFacultad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFacultad.Location = new System.Drawing.Point(161, 267);
-            this.txtFacultad.Name = "txtFacultad";
-            this.txtFacultad.Size = new System.Drawing.Size(167, 26);
-            this.txtFacultad.TabIndex = 20;
             // 
             // txtPromedio
             // 
             this.txtPromedio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPromedio.Location = new System.Drawing.Point(468, 178);
+            this.txtPromedio.Location = new System.Drawing.Point(572, 398);
             this.txtPromedio.Name = "txtPromedio";
             this.txtPromedio.Size = new System.Drawing.Size(146, 26);
             this.txtPromedio.TabIndex = 21;
             // 
-            // txtDepto
-            // 
-            this.txtDepto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDepto.Location = new System.Drawing.Point(468, 220);
-            this.txtDepto.Name = "txtDepto";
-            this.txtDepto.Size = new System.Drawing.Size(146, 26);
-            this.txtDepto.TabIndex = 22;
-            // 
             // txtAño
             // 
             this.txtAño.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAño.Location = new System.Drawing.Point(161, 353);
+            this.txtAño.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtAño.Location = new System.Drawing.Point(572, 231);
             this.txtAño.Name = "txtAño";
-            this.txtAño.Size = new System.Drawing.Size(167, 26);
+            this.txtAño.Size = new System.Drawing.Size(146, 26);
             this.txtAño.TabIndex = 24;
             // 
             // label9
@@ -257,7 +235,7 @@ namespace APPCOMY
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(369, 178);
+            this.label9.Location = new System.Drawing.Point(461, 398);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(93, 22);
             this.label9.TabIndex = 25;
@@ -280,7 +258,7 @@ namespace APPCOMY
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(378, 224);
+            this.label11.Location = new System.Drawing.Point(461, 177);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(62, 22);
             this.label11.TabIndex = 27;
@@ -292,32 +270,11 @@ namespace APPCOMY
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(68, 357);
+            this.label12.Location = new System.Drawing.Point(461, 231);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(44, 22);
             this.label12.TabIndex = 28;
             this.label12.Text = "Año";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(391, 313);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(49, 22);
-            this.label13.TabIndex = 29;
-            this.label13.Text = "Foto";
-            // 
-            // cbxFoto
-            // 
-            this.cbxFoto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxFoto.FormattingEnabled = true;
-            this.cbxFoto.Location = new System.Drawing.Point(468, 311);
-            this.cbxFoto.Name = "cbxFoto";
-            this.cbxFoto.Size = new System.Drawing.Size(146, 28);
-            this.cbxFoto.TabIndex = 30;
             // 
             // btnRegresar
             // 
@@ -384,25 +341,146 @@ namespace APPCOMY
             this.btnMenu.UseVisualStyleBackColor = false;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
-            // FrmGuardar_Registro
+            // cmbFacultad
+            // 
+            this.cmbFacultad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbFacultad.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.cmbFacultad.FormattingEnabled = true;
+            this.cmbFacultad.Items.AddRange(new object[] {
+            "Ciencias Económicas",
+            "Ciencias e Ingeniería",
+            "Ciencias Médicas",
+            "Educación e Idiomas",
+            "Humanidades y Ciencias Jurídicas",
+            "Instituto Politécnico de la Salud"});
+            this.cmbFacultad.Location = new System.Drawing.Point(572, 286);
+            this.cmbFacultad.Name = "cmbFacultad";
+            this.cmbFacultad.Size = new System.Drawing.Size(146, 28);
+            this.cmbFacultad.TabIndex = 36;
+            // 
+            // cmbDepto
+            // 
+            this.cmbDepto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbDepto.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.cmbDepto.FormattingEnabled = true;
+            this.cmbDepto.Items.AddRange(new object[] {
+            "Boaco",
+            "Carazo",
+            "Chinandega",
+            "Chontales",
+            "Costa Caribe Norte",
+            "Costa Caribe Sur",
+            "Esteli",
+            "Granada",
+            "Jinotega",
+            "Leon",
+            "Madriz",
+            "Managua",
+            "Masaya",
+            "Matagalpa",
+            "Nueva Segovia ",
+            "Rio San Juan",
+            "Rivas"});
+            this.cmbDepto.Location = new System.Drawing.Point(572, 174);
+            this.cmbDepto.Name = "cmbDepto";
+            this.cmbDepto.Size = new System.Drawing.Size(146, 28);
+            this.cmbDepto.TabIndex = 37;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(60, 178);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(95, 24);
+            this.label15.TabIndex = 38;
+            this.label15.Text = "N° Carné";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(60, 451);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(95, 24);
+            this.label16.TabIndex = 39;
+            this.label16.Text = "Domicilio";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(60, 345);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(75, 24);
+            this.label17.TabIndex = 40;
+            this.label17.Text = "Correo";
+            // 
+            // txtN_carne
+            // 
+            this.txtN_carne.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtN_carne.Location = new System.Drawing.Point(164, 176);
+            this.txtN_carne.Name = "txtN_carne";
+            this.txtN_carne.Size = new System.Drawing.Size(208, 26);
+            this.txtN_carne.TabIndex = 41;
+            // 
+            // txtDomicilio
+            // 
+            this.txtDomicilio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDomicilio.Location = new System.Drawing.Point(164, 451);
+            this.txtDomicilio.Name = "txtDomicilio";
+            this.txtDomicilio.Size = new System.Drawing.Size(208, 26);
+            this.txtDomicilio.TabIndex = 42;
+            // 
+            // txtCorreo
+            // 
+            this.txtCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCorreo.Location = new System.Drawing.Point(164, 343);
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.Size = new System.Drawing.Size(208, 26);
+            this.txtCorreo.TabIndex = 43;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(58, 19);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(90, 93);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 44;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // FrmRegistro_Estudiantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(700, 520);
+            this.ClientSize = new System.Drawing.Size(798, 597);
+            this.Controls.Add(this.txtCorreo);
+            this.Controls.Add(this.txtDomicilio);
+            this.Controls.Add(this.txtN_carne);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.cmbDepto);
+            this.Controls.Add(this.cmbFacultad);
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.btnRegresar);
-            this.Controls.Add(this.cbxFoto);
-            this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtAño);
-            this.Controls.Add(this.txtDepto);
             this.Controls.Add(this.txtPromedio);
-            this.Controls.Add(this.txtFacultad);
             this.Controls.Add(this.txtCarrera);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -417,23 +495,21 @@ namespace APPCOMY
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximumSize = new System.Drawing.Size(700, 520);
-            this.Name = "FrmGuardar_Registro";
-            this.Text = "Guardar Registro";
+            this.Name = "FrmRegistro_Estudiantes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Registro de estudiantes";
             this.Load += new System.EventHandler(this.Form5_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnGuardar_datos;
@@ -447,20 +523,25 @@ namespace APPCOMY
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtCarrera;
-        private System.Windows.Forms.TextBox txtFacultad;
         private System.Windows.Forms.TextBox txtPromedio;
-        private System.Windows.Forms.TextBox txtDepto;
         private System.Windows.Forms.TextBox txtAño;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.ComboBox cbxFoto;
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnMenu;
+        private System.Windows.Forms.ComboBox cmbFacultad;
+        private System.Windows.Forms.ComboBox cmbDepto;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox txtN_carne;
+        private System.Windows.Forms.TextBox txtDomicilio;
+        private System.Windows.Forms.TextBox txtCorreo;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
