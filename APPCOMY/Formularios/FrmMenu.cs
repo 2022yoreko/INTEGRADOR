@@ -26,7 +26,7 @@ namespace APPCOMY
 
         private void btnRegistro_Estudiantes_Click(object sender, EventArgs e)
         {
-            FrmGuardar_Registro administrador = new FrmGuardar_Registro();
+            FrmRegistro_Estudiantes administrador = new FrmRegistro_Estudiantes();
             administrador.ShowDialog();
         }
 
@@ -38,7 +38,7 @@ namespace APPCOMY
 
         private void btnRegistro_Click(object sender, EventArgs e)
         {
-            FrmGuardar_Registro administrador = new FrmGuardar_Registro();
+            FrmRegistro_Estudiantes administrador = new FrmRegistro_Estudiantes();
             administrador.ShowDialog();
         }
 
@@ -64,7 +64,11 @@ namespace APPCOMY
             FrmPerfil administrador = new FrmPerfil();
             administrador.ShowDialog();
         }
-
+        private void btnAyuda_Click(object sender, EventArgs e)
+        {
+            FrmAyudas administrador = new FrmAyudas();
+            administrador.ShowDialog();
+        }
         private void btnSalir_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.Exit();
@@ -76,13 +80,6 @@ namespace APPCOMY
 
         }
 
-        private void btnAyuda_Click(object sender, EventArgs e)
-        {
-
-        }
-
-      
-
-        
+       
     }
 }

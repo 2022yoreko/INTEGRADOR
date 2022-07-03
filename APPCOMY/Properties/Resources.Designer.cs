@@ -89,5 +89,15 @@ namespace APPCOMY.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imagen_degradada_de_APPCOMY {
+            get {
+                object obj = ResourceManager.GetObject("imagen degradada de APPCOMY", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
