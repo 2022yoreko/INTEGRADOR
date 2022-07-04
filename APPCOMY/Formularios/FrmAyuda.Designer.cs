@@ -41,7 +41,13 @@ namespace APPCOMY.Formularios
             this.linkLabel5 = new System.Windows.Forms.LinkLabel();
             this.linkLabel6 = new System.Windows.Forms.LinkLabel();
             this.btnRegresar = new System.Windows.Forms.Button();
+            this.btnMenu = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -50,7 +56,7 @@ namespace APPCOMY.Formularios
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Verdana", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(278, 114);
+            this.label1.Location = new System.Drawing.Point(273, 101);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(84, 28);
             this.label1.TabIndex = 0;
@@ -62,7 +68,7 @@ namespace APPCOMY.Formularios
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 14.75F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(118, 37);
+            this.label2.Location = new System.Drawing.Point(169, 38);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(146, 22);
             this.label2.TabIndex = 4;
@@ -74,7 +80,7 @@ namespace APPCOMY.Formularios
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 13.75F);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(137, 60);
+            this.label3.Location = new System.Drawing.Point(190, 60);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(167, 21);
             this.label3.TabIndex = 5;
@@ -84,90 +90,94 @@ namespace APPCOMY.Formularios
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(21, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(80, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(119, 118);
+            this.pictureBox1.Size = new System.Drawing.Size(104, 108);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
             // linkLabel1
             // 
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.White;
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel1.BackColor = System.Drawing.Color.Gainsboro;
+            this.linkLabel1.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.linkLabel1.Font = new System.Drawing.Font("Verdana", 13F);
-            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.linkLabel1.Location = new System.Drawing.Point(60, 203);
+            this.linkLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.linkLabel1.LinkColor = System.Drawing.Color.Navy;
+            this.linkLabel1.Location = new System.Drawing.Point(29, 34);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(101, 22);
+            this.linkLabel1.Size = new System.Drawing.Size(356, 22);
             this.linkLabel1.TabIndex = 7;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "linkLabel1";
+            this.linkLabel1.Text = "¿Cómo puedo registrar un estudiante?";
             // 
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
-            this.linkLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel2.BackColor = System.Drawing.Color.Gainsboro;
             this.linkLabel2.Font = new System.Drawing.Font("Verdana", 13F);
-            this.linkLabel2.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.linkLabel2.Location = new System.Drawing.Point(60, 250);
+            this.linkLabel2.LinkColor = System.Drawing.Color.Navy;
+            this.linkLabel2.Location = new System.Drawing.Point(29, 84);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(101, 22);
+            this.linkLabel2.Size = new System.Drawing.Size(400, 22);
             this.linkLabel2.TabIndex = 8;
             this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "linkLabel2";
+            this.linkLabel2.Text = "¿Cómo borrar el registro de un estudiante?";
             // 
             // linkLabel3
             // 
             this.linkLabel3.AutoSize = true;
-            this.linkLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel3.BackColor = System.Drawing.Color.Gainsboro;
             this.linkLabel3.Font = new System.Drawing.Font("Verdana", 13F);
-            this.linkLabel3.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.linkLabel3.Location = new System.Drawing.Point(60, 285);
+            this.linkLabel3.LinkColor = System.Drawing.Color.Navy;
+            this.linkLabel3.Location = new System.Drawing.Point(29, 131);
             this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(101, 22);
+            this.linkLabel3.Size = new System.Drawing.Size(277, 22);
             this.linkLabel3.TabIndex = 9;
             this.linkLabel3.TabStop = true;
-            this.linkLabel3.Text = "linkLabel3";
+            this.linkLabel3.Text = "¿Cómo restaurar un registro?";
             // 
             // linkLabel4
             // 
             this.linkLabel4.AutoSize = true;
-            this.linkLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel4.BackColor = System.Drawing.Color.Gainsboro;
             this.linkLabel4.Font = new System.Drawing.Font("Verdana", 13F);
-            this.linkLabel4.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.linkLabel4.Location = new System.Drawing.Point(60, 322);
+            this.linkLabel4.LinkColor = System.Drawing.Color.Navy;
+            this.linkLabel4.Location = new System.Drawing.Point(29, 181);
             this.linkLabel4.Name = "linkLabel4";
-            this.linkLabel4.Size = new System.Drawing.Size(101, 22);
+            this.linkLabel4.Size = new System.Drawing.Size(102, 22);
             this.linkLabel4.TabIndex = 10;
             this.linkLabel4.TabStop = true;
-            this.linkLabel4.Text = "linkLabel4";
+            this.linkLabel4.Text = "Requisitos";
+            this.linkLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // linkLabel5
             // 
             this.linkLabel5.AutoSize = true;
-            this.linkLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel5.BackColor = System.Drawing.Color.Gainsboro;
             this.linkLabel5.Font = new System.Drawing.Font("Verdana", 13F);
-            this.linkLabel5.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.linkLabel5.Location = new System.Drawing.Point(60, 364);
+            this.linkLabel5.LinkColor = System.Drawing.Color.Navy;
+            this.linkLabel5.Location = new System.Drawing.Point(29, 228);
             this.linkLabel5.Name = "linkLabel5";
-            this.linkLabel5.Size = new System.Drawing.Size(101, 22);
+            this.linkLabel5.Size = new System.Drawing.Size(175, 22);
             this.linkLabel5.TabIndex = 11;
             this.linkLabel5.TabStop = true;
-            this.linkLabel5.Text = "linkLabel5";
+            this.linkLabel5.Text = "Enviar comentario";
             // 
             // linkLabel6
             // 
             this.linkLabel6.AutoSize = true;
-            this.linkLabel6.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel6.BackColor = System.Drawing.Color.Gainsboro;
             this.linkLabel6.Font = new System.Drawing.Font("Verdana", 13F);
-            this.linkLabel6.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.linkLabel6.Location = new System.Drawing.Point(60, 400);
+            this.linkLabel6.LinkColor = System.Drawing.Color.Navy;
+            this.linkLabel6.Location = new System.Drawing.Point(29, 279);
             this.linkLabel6.Name = "linkLabel6";
-            this.linkLabel6.Size = new System.Drawing.Size(101, 22);
+            this.linkLabel6.Size = new System.Drawing.Size(159, 22);
             this.linkLabel6.TabIndex = 12;
             this.linkLabel6.TabStop = true;
-            this.linkLabel6.Text = "linkLabel6";
+            this.linkLabel6.Text = "Acerca de la app";
             // 
             // btnRegresar
             // 
@@ -176,12 +186,65 @@ namespace APPCOMY.Formularios
             this.btnRegresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.btnRegresar.Location = new System.Drawing.Point(613, 12);
+            this.btnRegresar.Location = new System.Drawing.Point(604, 21);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(46, 39);
             this.btnRegresar.TabIndex = 32;
             this.btnRegresar.UseVisualStyleBackColor = false;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
+            this.btnMenu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMenu.BackgroundImage")));
+            this.btnMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
+            this.btnMenu.Location = new System.Drawing.Point(30, 22);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(44, 38);
+            this.btnMenu.TabIndex = 39;
+            this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.Location = new System.Drawing.Point(345, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(262, 55);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 44;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
+            this.label14.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(498, 31);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(85, 17);
+            this.label14.TabIndex = 47;
+            this.label14.Text = "APPCOMY";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel1.Controls.Add(this.linkLabel1);
+            this.panel1.Controls.Add(this.linkLabel2);
+            this.panel1.Controls.Add(this.linkLabel3);
+            this.panel1.Controls.Add(this.linkLabel6);
+            this.panel1.Controls.Add(this.linkLabel4);
+            this.panel1.Controls.Add(this.linkLabel5);
+            this.panel1.ForeColor = System.Drawing.Color.LightGray;
+            this.panel1.Location = new System.Drawing.Point(68, 147);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(491, 336);
+            this.panel1.TabIndex = 48;
             // 
             // FrmAyuda
             // 
@@ -189,22 +252,25 @@ namespace APPCOMY.Formularios
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(671, 507);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.btnRegresar);
-            this.Controls.Add(this.linkLabel6);
-            this.Controls.Add(this.linkLabel5);
-            this.Controls.Add(this.linkLabel4);
-            this.Controls.Add(this.linkLabel3);
-            this.Controls.Add(this.linkLabel2);
-            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(671, 507);
             this.Name = "FrmAyuda";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ayuda";
+            this.Load += new System.EventHandler(this.FrmAyuda_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,5 +289,9 @@ namespace APPCOMY.Formularios
         private System.Windows.Forms.LinkLabel linkLabel5;
         private System.Windows.Forms.LinkLabel linkLabel6;
         private System.Windows.Forms.Button btnRegresar;
+        private System.Windows.Forms.Button btnMenu;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Panel panel1;
     }
 }

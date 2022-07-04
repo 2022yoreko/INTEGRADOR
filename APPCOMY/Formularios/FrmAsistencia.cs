@@ -39,5 +39,12 @@ namespace APPCOMY
         {
 
         }
+
+        private void FrmAsistencia_Load(object sender, EventArgs e)
+        {
+            var newForm4 = new FrmMenu();
+            newForm4.Show();
+            this.Hide();
+        }
     }
 }

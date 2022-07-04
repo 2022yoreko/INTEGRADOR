@@ -40,18 +40,19 @@ namespace APPCOMY
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
 
-            FileStream fs;
+            FileStream fs;  
             StreamWriter escribe;
             string linea;
 
             string rutbase = Directory.GetCurrentDirectory();
+
             string rutarchivo = rutbase.Replace(@"\bin\Debug", @"\Archivos\Usuario.txt");
+
             fs = new FileStream(rutarchivo, FileMode.Append);
-            escribe = new StreamWriter(fs);
 
             escribe = new StreamWriter(fs);
+            
             linea = txtN_carne.Text + ";";
             linea += txtNombres.Text + ";";
             linea += txtApellidos.Text + ";";
@@ -64,74 +65,6 @@ namespace APPCOMY
             escribe.WriteLine(linea.ToUpper());
             escribe.Close();
             
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            /* if (Nombres.Length > 0)
-              {
-
-              }
-              else
-
-                if (Apellidos.Length > 0)
-              {
-
-              }
-              else
-
-              if (Facultad.Length > 0)
-              {
-
-              }
-              else
-
-              if (Carrera.Length > 0)
-              {
-
-              }
-              else
-
-              if (Año.Length > 2000)
-              {
-
-              }
-              else
-
-              if (Promedio.Length >= 80)
-              {
-
-              }
-              else
-
-              if (Depto.Length > 0)
-              {
-
-              }
-              else
-
-              if (Telefono.Length > 0)
-              {
-
-              }
-              else 
-
-               if (Foto.Length > 0)
-              {
-
-              }
-              MessageBox.Show("Registro exitoso");*/
 
 
         }

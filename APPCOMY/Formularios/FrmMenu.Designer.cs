@@ -42,9 +42,8 @@ namespace APPCOMY
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelMenu = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -55,10 +54,11 @@ namespace APPCOMY
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnRetroceder = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.panelMenu.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // btnPerfil
@@ -182,10 +182,8 @@ namespace APPCOMY
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.PowderBlue;
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(85, 2);
             this.pictureBox3.Name = "pictureBox3";
@@ -223,24 +221,11 @@ namespace APPCOMY
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(277, 119);
+            this.label7.Location = new System.Drawing.Point(275, 140);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(297, 21);
             this.label7.TabIndex = 38;
             this.label7.Text = "FORMANDO PARTE DEL CAMBIO";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(267, 12);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(88, 89);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 39;
-            this.pictureBox4.TabStop = false;
             // 
             // button1
             // 
@@ -249,37 +234,37 @@ namespace APPCOMY
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.button1.Location = new System.Drawing.Point(545, 32);
+            this.button1.Location = new System.Drawing.Point(545, 40);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 31);
             this.button1.TabIndex = 40;
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // panel1
+            // panelMenu
             // 
-            this.panel1.BackColor = System.Drawing.Color.Lavender;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.label15);
-            this.panel1.Controls.Add(this.label14);
-            this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.btnPerfil);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.btnAjustes);
-            this.panel1.Controls.Add(this.btnEditar);
-            this.panel1.Controls.Add(this.btnRegistro);
-            this.panel1.Controls.Add(this.btnSalir);
-            this.panel1.Controls.Add(this.btnAyuda);
-            this.panel1.Controls.Add(this.btnInformacion_Personal);
-            this.panel1.Controls.Add(this.btnAsistencia);
-            this.panel1.Location = new System.Drawing.Point(0, -1);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(246, 587);
-            this.panel1.TabIndex = 41;
+            this.panelMenu.BackColor = System.Drawing.Color.Lavender;
+            this.panelMenu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelMenu.Controls.Add(this.label15);
+            this.panelMenu.Controls.Add(this.label14);
+            this.panelMenu.Controls.Add(this.label13);
+            this.panelMenu.Controls.Add(this.label12);
+            this.panelMenu.Controls.Add(this.label11);
+            this.panelMenu.Controls.Add(this.label10);
+            this.panelMenu.Controls.Add(this.label9);
+            this.panelMenu.Controls.Add(this.label8);
+            this.panelMenu.Controls.Add(this.btnPerfil);
+            this.panelMenu.Controls.Add(this.panel2);
+            this.panelMenu.Controls.Add(this.btnAjustes);
+            this.panelMenu.Controls.Add(this.btnEditar);
+            this.panelMenu.Controls.Add(this.btnRegistro);
+            this.panelMenu.Controls.Add(this.btnSalir);
+            this.panelMenu.Controls.Add(this.btnAyuda);
+            this.panelMenu.Controls.Add(this.btnInformacion_Personal);
+            this.panelMenu.Controls.Add(this.btnAsistencia);
+            this.panelMenu.Location = new System.Drawing.Point(0, -1);
+            this.panelMenu.Name = "panelMenu";
+            this.panelMenu.Size = new System.Drawing.Size(257, 587);
+            this.panelMenu.TabIndex = 41;
             // 
             // label15
             // 
@@ -382,19 +367,30 @@ namespace APPCOMY
             this.btnRetroceder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnRetroceder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRetroceder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.btnRetroceder.Location = new System.Drawing.Point(616, 26);
+            this.btnRetroceder.Location = new System.Drawing.Point(613, 35);
             this.btnRetroceder.Name = "btnRetroceder";
             this.btnRetroceder.Size = new System.Drawing.Size(48, 40);
             this.btnRetroceder.TabIndex = 42;
             this.btnRetroceder.UseVisualStyleBackColor = false;
             this.btnRetroceder.Click += new System.EventHandler(this.btnRetroceder_Click);
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(263, 8);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(109, 108);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 56;
+            this.pictureBox4.TabStop = false;
+            // 
             // FrmMenu
             // 
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(687, 574);
             this.Controls.Add(this.btnRetroceder);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -405,11 +401,12 @@ namespace APPCOMY
             this.Name = "FrmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
+            this.Load += new System.EventHandler(this.FrmMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelMenu.ResumeLayout(false);
+            this.panelMenu.PerformLayout();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -448,9 +445,8 @@ namespace APPCOMY
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnRetroceder;
         private System.Windows.Forms.Label label11;
@@ -462,5 +458,6 @@ namespace APPCOMY
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

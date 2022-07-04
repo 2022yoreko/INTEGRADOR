@@ -252,5 +252,10 @@ namespace APPCOMY
                 MessageBox.Show("No selecciono ninguna imagen", "Sin selecion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
+
+        private void FrmPerfil_Load(object sender, EventArgs e)
+        {
+            panelPerfil.BackColor = Color.FromArgb(50, 0, 0, 0);
+        }
     }
 }

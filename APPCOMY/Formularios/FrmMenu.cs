@@ -80,5 +80,10 @@ namespace APPCOMY
             newForm1.Show();
             this.Hide();
         }
+
+        private void FrmMenu_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

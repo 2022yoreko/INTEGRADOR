@@ -73,11 +73,11 @@ namespace APPCOMY
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 15.25F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(101, 136);
+            this.label1.Location = new System.Drawing.Point(154, 141);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(455, 31);
+            this.label1.Size = new System.Drawing.Size(347, 24);
             this.label1.TabIndex = 5;
             this.label1.Text = "FORMANDO PARTE DEL CAMBIO";
             // 
@@ -85,9 +85,9 @@ namespace APPCOMY
             // 
             this.txtNombres.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombres.ForeColor = System.Drawing.Color.Gray;
-            this.txtNombres.Location = new System.Drawing.Point(220, 209);
+            this.txtNombres.Location = new System.Drawing.Point(84, 220);
             this.txtNombres.Name = "txtNombres";
-            this.txtNombres.Size = new System.Drawing.Size(239, 29);
+            this.txtNombres.Size = new System.Drawing.Size(222, 29);
             this.txtNombres.TabIndex = 6;
             this.txtNombres.Text = "Nombres";
             this.txtNombres.Enter += new System.EventHandler(this.txtNombres_Enter);
@@ -97,9 +97,9 @@ namespace APPCOMY
             // 
             this.txtApellidos.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellidos.ForeColor = System.Drawing.Color.Gray;
-            this.txtApellidos.Location = new System.Drawing.Point(222, 244);
+            this.txtApellidos.Location = new System.Drawing.Point(84, 269);
             this.txtApellidos.Name = "txtApellidos";
-            this.txtApellidos.Size = new System.Drawing.Size(237, 29);
+            this.txtApellidos.Size = new System.Drawing.Size(222, 29);
             this.txtApellidos.TabIndex = 7;
             this.txtApellidos.Text = "Apellidos";
             this.txtApellidos.Enter += new System.EventHandler(this.txtApellidos_Enter);
@@ -109,9 +109,9 @@ namespace APPCOMY
             // 
             this.txtContraseña.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseña.ForeColor = System.Drawing.Color.Gray;
-            this.txtContraseña.Location = new System.Drawing.Point(222, 279);
+            this.txtContraseña.Location = new System.Drawing.Point(84, 322);
             this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(237, 29);
+            this.txtContraseña.Size = new System.Drawing.Size(222, 29);
             this.txtContraseña.TabIndex = 8;
             this.txtContraseña.Text = "Contraseña";
             this.txtContraseña.Enter += new System.EventHandler(this.txtContraseña_Enter);
@@ -121,9 +121,9 @@ namespace APPCOMY
             // 
             this.txtCorreo_Electronico.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCorreo_Electronico.ForeColor = System.Drawing.Color.Gray;
-            this.txtCorreo_Electronico.Location = new System.Drawing.Point(220, 349);
+            this.txtCorreo_Electronico.Location = new System.Drawing.Point(358, 269);
             this.txtCorreo_Electronico.Name = "txtCorreo_Electronico";
-            this.txtCorreo_Electronico.Size = new System.Drawing.Size(241, 29);
+            this.txtCorreo_Electronico.Size = new System.Drawing.Size(231, 29);
             this.txtCorreo_Electronico.TabIndex = 9;
             this.txtCorreo_Electronico.Text = "Correo Electronico";
             this.txtCorreo_Electronico.Enter += new System.EventHandler(this.txtCorreo_Electronico_Enter);
@@ -134,7 +134,7 @@ namespace APPCOMY
             this.btnGuardar.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.btnGuardar.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.Black;
-            this.btnGuardar.Location = new System.Drawing.Point(261, 431);
+            this.btnGuardar.Location = new System.Drawing.Point(262, 407);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(138, 56);
             this.btnGuardar.TabIndex = 12;
@@ -149,7 +149,7 @@ namespace APPCOMY
             this.btnRegresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.btnRegresar.Location = new System.Drawing.Point(596, 12);
+            this.btnRegresar.Location = new System.Drawing.Point(583, 23);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(46, 39);
             this.btnRegresar.TabIndex = 13;
@@ -160,9 +160,9 @@ namespace APPCOMY
             // 
             this.txtC_Contraseña.Font = new System.Drawing.Font("Arial", 14.25F);
             this.txtC_Contraseña.ForeColor = System.Drawing.Color.Gray;
-            this.txtC_Contraseña.Location = new System.Drawing.Point(220, 314);
+            this.txtC_Contraseña.Location = new System.Drawing.Point(358, 220);
             this.txtC_Contraseña.Name = "txtC_Contraseña";
-            this.txtC_Contraseña.Size = new System.Drawing.Size(241, 29);
+            this.txtC_Contraseña.Size = new System.Drawing.Size(231, 29);
             this.txtC_Contraseña.TabIndex = 14;
             this.txtC_Contraseña.Text = "Confirmar Contraseña";
             this.txtC_Contraseña.TextChanged += new System.EventHandler(this.txtC_Contraseña_TextChanged);
@@ -173,9 +173,9 @@ namespace APPCOMY
             // 
             this.txtN_telefono.Font = new System.Drawing.Font("Arial", 14.25F);
             this.txtN_telefono.ForeColor = System.Drawing.Color.Gray;
-            this.txtN_telefono.Location = new System.Drawing.Point(222, 384);
+            this.txtN_telefono.Location = new System.Drawing.Point(360, 322);
             this.txtN_telefono.Name = "txtN_telefono";
-            this.txtN_telefono.Size = new System.Drawing.Size(239, 29);
+            this.txtN_telefono.Size = new System.Drawing.Size(229, 29);
             this.txtN_telefono.TabIndex = 15;
             this.txtN_telefono.Text = "Numero de Telefono";
             this.txtN_telefono.Enter += new System.EventHandler(this.txtN_telefono_Enter);

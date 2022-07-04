@@ -63,6 +63,16 @@ namespace APPCOMY.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap clave {
+            get {
+                object obj = ResourceManager.GetObject("clave", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Icono_de_iniciar {
             get {
                 object obj = ResourceManager.GetObject("Icono de iniciar", resourceCulture);
@@ -86,6 +96,26 @@ namespace APPCOMY.Properties {
         internal static System.Drawing.Bitmap Imagen_de_APPCOMY2 {
             get {
                 object obj = ResourceManager.GetObject("Imagen de APPCOMY2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap usuario {
+            get {
+                object obj = ResourceManager.GetObject("usuario", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap usuario__1_ {
+            get {
+                object obj = ResourceManager.GetObject("usuario (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

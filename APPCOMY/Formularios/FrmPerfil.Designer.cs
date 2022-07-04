@@ -66,7 +66,7 @@ namespace APPCOMY
             this.btnAdjuntar10 = new System.Windows.Forms.Button();
             this.btnAdjuntar11 = new System.Windows.Forms.Button();
             this.btnAdjuntar12 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelPerfil = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgPerfil)).BeginInit();
@@ -82,7 +82,7 @@ namespace APPCOMY
             ((System.ComponentModel.ISupportInitialize)(this.img9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img8)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.panelPerfil.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -126,10 +126,9 @@ namespace APPCOMY
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Location = new System.Drawing.Point(335, 17);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(262, 55);
@@ -144,7 +143,7 @@ namespace APPCOMY
             this.btnRegresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.btnRegresar.Location = new System.Drawing.Point(678, 17);
+            this.btnRegresar.Location = new System.Drawing.Point(678, 23);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(46, 39);
             this.btnRegresar.TabIndex = 44;
@@ -203,7 +202,7 @@ namespace APPCOMY
             // imgPerfil
             // 
             this.imgPerfil.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.imgPerfil.Location = new System.Drawing.Point(612, 272);
+            this.imgPerfil.Location = new System.Drawing.Point(612, 271);
             this.imgPerfil.Name = "imgPerfil";
             this.imgPerfil.Size = new System.Drawing.Size(96, 95);
             this.imgPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -508,43 +507,42 @@ namespace APPCOMY
             this.btnAdjuntar12.UseVisualStyleBackColor = true;
             this.btnAdjuntar12.Click += new System.EventHandler(this.button12_Click);
             // 
-            // panel1
+            // panelPerfil
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.panel1.Controls.Add(this.btnAdjuntar12);
-            this.panel1.Controls.Add(this.btnAdjuntar11);
-            this.panel1.Controls.Add(this.btnAdjuntar10);
-            this.panel1.Controls.Add(this.btnAdjuntar9);
-            this.panel1.Controls.Add(this.btnAdjuntar8);
-            this.panel1.Controls.Add(this.btnAdjuntar7);
-            this.panel1.Controls.Add(this.btnAdjuntar6);
-            this.panel1.Controls.Add(this.btnAdjuntar5);
-            this.panel1.Controls.Add(this.btnAdjuntar4);
-            this.panel1.Controls.Add(this.btnAdjuntar3);
-            this.panel1.Controls.Add(this.btnAdjuntar2);
-            this.panel1.Controls.Add(this.btnAdjuntar1);
-            this.panel1.Controls.Add(this.img8);
-            this.panel1.Controls.Add(this.img6);
-            this.panel1.Controls.Add(this.img9);
-            this.panel1.Controls.Add(this.img5);
-            this.panel1.Controls.Add(this.img10);
-            this.panel1.Controls.Add(this.img7);
-            this.panel1.Controls.Add(this.img11);
-            this.panel1.Controls.Add(this.img4);
-            this.panel1.Controls.Add(this.img12);
-            this.panel1.Controls.Add(this.img3);
-            this.panel1.Controls.Add(this.img2);
-            this.panel1.Controls.Add(this.Perfil);
-            this.panel1.Controls.Add(this.img1);
-            this.panel1.Location = new System.Drawing.Point(27, 127);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(513, 477);
-            this.panel1.TabIndex = 73;
+            this.panelPerfil.BackColor = System.Drawing.Color.Lavender;
+            this.panelPerfil.Controls.Add(this.btnAdjuntar12);
+            this.panelPerfil.Controls.Add(this.btnAdjuntar11);
+            this.panelPerfil.Controls.Add(this.btnAdjuntar10);
+            this.panelPerfil.Controls.Add(this.btnAdjuntar9);
+            this.panelPerfil.Controls.Add(this.btnAdjuntar8);
+            this.panelPerfil.Controls.Add(this.btnAdjuntar7);
+            this.panelPerfil.Controls.Add(this.btnAdjuntar6);
+            this.panelPerfil.Controls.Add(this.btnAdjuntar5);
+            this.panelPerfil.Controls.Add(this.btnAdjuntar4);
+            this.panelPerfil.Controls.Add(this.btnAdjuntar3);
+            this.panelPerfil.Controls.Add(this.btnAdjuntar2);
+            this.panelPerfil.Controls.Add(this.btnAdjuntar1);
+            this.panelPerfil.Controls.Add(this.img8);
+            this.panelPerfil.Controls.Add(this.img6);
+            this.panelPerfil.Controls.Add(this.img9);
+            this.panelPerfil.Controls.Add(this.img5);
+            this.panelPerfil.Controls.Add(this.img10);
+            this.panelPerfil.Controls.Add(this.img7);
+            this.panelPerfil.Controls.Add(this.img11);
+            this.panelPerfil.Controls.Add(this.img4);
+            this.panelPerfil.Controls.Add(this.img12);
+            this.panelPerfil.Controls.Add(this.img3);
+            this.panelPerfil.Controls.Add(this.img2);
+            this.panelPerfil.Controls.Add(this.Perfil);
+            this.panelPerfil.Controls.Add(this.img1);
+            this.panelPerfil.Location = new System.Drawing.Point(38, 132);
+            this.panelPerfil.Name = "panelPerfil";
+            this.panelPerfil.Size = new System.Drawing.Size(519, 477);
+            this.panelPerfil.TabIndex = 73;
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(72, 17);
             this.pictureBox3.Name = "pictureBox3";
@@ -558,7 +556,7 @@ namespace APPCOMY
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(748, 630);
+            this.ClientSize = new System.Drawing.Size(756, 636);
             this.Controls.Add(this.btnExaminar);
             this.Controls.Add(this.imgPerfil);
             this.Controls.Add(this.label5);
@@ -570,13 +568,15 @@ namespace APPCOMY
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelPerfil);
             this.Controls.Add(this.pictureBox3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(756, 636);
             this.MinimumSize = new System.Drawing.Size(700, 630);
             this.Name = "FrmPerfil";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Perfil";
+            this.Load += new System.EventHandler(this.FrmPerfil_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgPerfil)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img1)).EndInit();
@@ -591,8 +591,8 @@ namespace APPCOMY
             ((System.ComponentModel.ISupportInitialize)(this.img9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img8)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelPerfil.ResumeLayout(false);
+            this.panelPerfil.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -637,7 +637,7 @@ namespace APPCOMY
         private System.Windows.Forms.Button btnAdjuntar10;
         private System.Windows.Forms.Button btnAdjuntar11;
         private System.Windows.Forms.Button btnAdjuntar12;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelPerfil;
         private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

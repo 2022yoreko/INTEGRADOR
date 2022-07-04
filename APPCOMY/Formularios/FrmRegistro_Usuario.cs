@@ -76,7 +76,7 @@ namespace APPCOMY
             if (txtNombres.Text == "Nombres")
             {
                 txtNombres.Text = "";
-                txtNombres.ForeColor = Color.DarkBlue;
+                txtNombres.ForeColor = Color.DimGray;
             }
         }
 
@@ -85,7 +85,7 @@ namespace APPCOMY
             if (txtNombres.Text == "")
             {
                 txtNombres.Text = "Nombres";
-                txtNombres.ForeColor = Color.DarkBlue;
+                txtNombres.ForeColor = Color.DimGray;
             }
         }
 
@@ -94,7 +94,7 @@ namespace APPCOMY
             if (txtApellidos.Text == "Apellidos")
             {
                 txtApellidos.Text = "";
-                txtApellidos.ForeColor = Color.DarkBlue;
+                txtApellidos.ForeColor = Color.DimGray;
             }
         }
 
@@ -103,7 +103,7 @@ namespace APPCOMY
             if (txtApellidos.Text == "")
             {
                 txtApellidos.Text = "Apellidos";
-                txtApellidos.ForeColor = Color.DarkBlue;
+                txtApellidos.ForeColor = Color.DimGray;
             }
         }
 
@@ -112,7 +112,7 @@ namespace APPCOMY
             if (txtContraseña.Text == "Contraseña")
             {
                 txtContraseña.Text = "";
-                txtContraseña.ForeColor = Color.DarkBlue;
+                txtContraseña.ForeColor = Color.DimGray;
             }
         }
 
@@ -121,7 +121,7 @@ namespace APPCOMY
             if (txtContraseña.Text == "")
             {
                 txtContraseña.Text = "Contraseña";
-                txtContraseña.ForeColor = Color.DarkBlue;
+                txtContraseña.ForeColor = Color.DimGray;
             }
         }
 
@@ -131,7 +131,7 @@ namespace APPCOMY
             if (txtCorreo_Electronico.Text == "Correo Electronico")
             {
                 txtCorreo_Electronico.Text = "";
-                txtCorreo_Electronico.ForeColor = Color.DarkBlue;
+                txtCorreo_Electronico.ForeColor = Color.DimGray;
             }
         }
 
@@ -140,7 +140,7 @@ namespace APPCOMY
             if (txtCorreo_Electronico.Text == "")
             {
                 txtCorreo_Electronico.Text = "Correo Electronico";
-                txtCorreo_Electronico.ForeColor = Color.DarkBlue;
+                txtCorreo_Electronico.ForeColor = Color.DimGray;
             }
         }
 
@@ -156,7 +156,7 @@ namespace APPCOMY
             if (txtC_Contraseña.Text == "Confirmar Contraseña") 
             {
                 txtC_Contraseña.Text = "";
-                txtC_Contraseña.ForeColor = Color.Gray;
+                txtC_Contraseña.ForeColor = Color.DimGray;
             }
         }
 
@@ -165,6 +165,7 @@ namespace APPCOMY
             if (txtC_Contraseña.Text == "")
             {
                 txtC_Contraseña.Text = "Confirmar contraseña";
+                txtC_Contraseña.ForeColor = Color.DimGray;
                
             }
         }
@@ -174,6 +175,7 @@ namespace APPCOMY
             if (txtN_telefono.Text == "Numero de telefono") 
             {
                 txtN_telefono.Text = "";
+                txtN_telefono.ForeColor = Color.DimGray;
           
             }
         }
@@ -183,6 +185,7 @@ namespace APPCOMY
             if (txtN_telefono.Text == "") 
             {
                 txtN_telefono.Text = "Numero de telefono";
+                txtN_telefono.ForeColor = Color.DimGray;
             }
         }
     }

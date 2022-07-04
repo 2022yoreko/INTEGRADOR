@@ -23,5 +23,18 @@ namespace APPCOMY.Formularios
             newForm4.Show();
             this.Hide();
         }
+
+        private void FrmAyuda_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            var newForm4 = new FrmMenu();
+            newForm4.Show();
+            this.Hide();
+
+        }
     }
 }

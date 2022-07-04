@@ -283,7 +283,7 @@ namespace APPCOMY
             this.btnRegresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.btnRegresar.Location = new System.Drawing.Point(727, 22);
+            this.btnRegresar.Location = new System.Drawing.Point(728, 18);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(46, 39);
             this.btnRegresar.TabIndex = 31;
@@ -292,7 +292,7 @@ namespace APPCOMY
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox2.Location = new System.Drawing.Point(396, 12);
@@ -308,7 +308,7 @@ namespace APPCOMY
             this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
             this.label14.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(553, 28);
+            this.label14.Location = new System.Drawing.Point(547, 32);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(85, 17);
             this.label14.TabIndex = 33;
@@ -321,7 +321,7 @@ namespace APPCOMY
             this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.btnBuscar.Location = new System.Drawing.Point(655, 27);
+            this.btnBuscar.Location = new System.Drawing.Point(647, 22);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 31);
             this.btnBuscar.TabIndex = 34;
@@ -449,7 +449,6 @@ namespace APPCOMY
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(58, 19);
             this.pictureBox3.Name = "pictureBox3";
