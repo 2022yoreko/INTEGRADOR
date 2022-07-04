@@ -102,7 +102,7 @@ namespace APPCOMY
             // 
             this.btnEntrar.BackColor = System.Drawing.Color.DarkGray;
             this.btnEntrar.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEntrar.Location = new System.Drawing.Point(260, 419);
+            this.btnEntrar.Location = new System.Drawing.Point(260, 414);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(157, 49);
             this.btnEntrar.TabIndex = 7;
@@ -129,7 +129,7 @@ namespace APPCOMY
             this.Recordar_Contraseña.BackColor = System.Drawing.Color.Transparent;
             this.Recordar_Contraseña.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Recordar_Contraseña.ForeColor = System.Drawing.Color.Silver;
-            this.Recordar_Contraseña.Location = new System.Drawing.Point(240, 363);
+            this.Recordar_Contraseña.Location = new System.Drawing.Point(260, 362);
             this.Recordar_Contraseña.Name = "Recordar_Contraseña";
             this.Recordar_Contraseña.Size = new System.Drawing.Size(177, 22);
             this.Recordar_Contraseña.TabIndex = 9;
@@ -177,6 +177,7 @@ namespace APPCOMY
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.LightGray;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox3.Image = global::APPCOMY.Properties.Resources.usuario__1_;
             this.pictureBox3.Location = new System.Drawing.Point(211, 268);
             this.pictureBox3.Name = "pictureBox3";
@@ -188,6 +189,7 @@ namespace APPCOMY
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.LightGray;
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox4.Image = global::APPCOMY.Properties.Resources.clave;
             this.pictureBox4.Location = new System.Drawing.Point(211, 317);
             this.pictureBox4.Name = "pictureBox4";
