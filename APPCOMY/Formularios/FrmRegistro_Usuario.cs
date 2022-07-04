@@ -39,7 +39,6 @@ namespace APPCOMY
 
             FileStream fs;
             StreamWriter escribe;
-
             string rutbase = Directory.GetCurrentDirectory();
             string rutarchivo = rutbase.Replace(@"\bin\Debug", @"\Archivos\Usuario.txt");
             fs = new FileStream(rutarchivo, FileMode.Append);

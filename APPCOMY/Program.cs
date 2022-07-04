@@ -16,7 +16,7 @@ namespace APPCOMY
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmPresentacion());
+            Application.Run(new FrmMdi());
         }
     }
 }

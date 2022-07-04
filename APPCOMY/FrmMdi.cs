@@ -24,5 +24,12 @@ namespace APPCOMY
             frmNav.Show();
             this.Close();
         }
+
+        private void presentacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmPresentacion P = new FrmPresentacion();
+            P.MdiParent = this;
+            P.Show();
+        }
     }
 }
