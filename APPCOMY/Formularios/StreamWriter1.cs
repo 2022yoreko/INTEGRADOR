@@ -13,12 +13,12 @@ namespace APPCOMY
 
         internal void WriteLine(string text)
         {
-            throw new NotImplementedException();
+           
         }
 
         internal void Close()
         {
-            throw new NotImplementedException();
+
         }
     }
 }

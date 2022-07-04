@@ -91,7 +91,7 @@ namespace APPCOMY
             this.txtContraseña.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtContraseña.Location = new System.Drawing.Point(240, 317);
             this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(219, 29);
+            this.txtContraseña.Size = new System.Drawing.Size(226, 29);
             this.txtContraseña.TabIndex = 5;
             this.txtContraseña.Text = "Contraseña";
             this.txtContraseña.UseSystemPasswordChar = true;
@@ -117,7 +117,7 @@ namespace APPCOMY
             this.txtUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtUsuario.Location = new System.Drawing.Point(240, 268);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(219, 29);
+            this.txtUsuario.Size = new System.Drawing.Size(226, 29);
             this.txtUsuario.TabIndex = 8;
             this.txtUsuario.Text = "Usuario";
             this.txtUsuario.Enter += new System.EventHandler(this.txtUsuario_Enter);
@@ -179,9 +179,9 @@ namespace APPCOMY
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox3.Image = global::APPCOMY.Properties.Resources.usuario__1_;
-            this.pictureBox3.Location = new System.Drawing.Point(211, 268);
+            this.pictureBox3.Location = new System.Drawing.Point(209, 268);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(27, 29);
+            this.pictureBox3.Size = new System.Drawing.Size(29, 29);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 45;
             this.pictureBox3.TabStop = false;
@@ -191,9 +191,9 @@ namespace APPCOMY
             this.pictureBox4.BackColor = System.Drawing.Color.LightGray;
             this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox4.Image = global::APPCOMY.Properties.Resources.clave;
-            this.pictureBox4.Location = new System.Drawing.Point(211, 317);
+            this.pictureBox4.Location = new System.Drawing.Point(209, 317);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(27, 29);
+            this.pictureBox4.Size = new System.Drawing.Size(29, 29);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 46;
             this.pictureBox4.TabStop = false;

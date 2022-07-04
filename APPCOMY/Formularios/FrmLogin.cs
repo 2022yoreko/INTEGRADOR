@@ -11,6 +11,7 @@ using Microsoft.Office.Interop;
 using System.Runtime.InteropServices;
 using System.IO;
 
+
 namespace APPCOMY
 {
     public partial class FrmLogin : Form
@@ -45,7 +46,7 @@ namespace APPCOMY
             if (valido)
             {
                 string ruta = Directory.GetCurrentDirectory();
-                string rutArch = ruta.Replace(@"\bin\Debug", @"\Archivos\Usuario.txt");
+                string rutArch = ruta.Replace(@"\bin\Debug", @"\Archivos\Usuarios.txt");
                 StreamReader Leer;
                 Leer = new StreamReader(rutArch);
 
@@ -66,7 +67,6 @@ namespace APPCOMY
                     {
                         Usuario = Leer.ReadLine();
                         Contraseña = Leer.ReadLine();
-
                     }
 
                 }//Fin del While
@@ -81,8 +81,10 @@ namespace APPCOMY
 
                 }
                 else
+                if(!encontrado)
                 {
                     MessageBox.Show("Usuario no valido");
+                   
                 }
 
             }//fin if de busqueda

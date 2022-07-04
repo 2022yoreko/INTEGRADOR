@@ -174,10 +174,12 @@
     <None Include="Resources\Icono de iniciar.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Archivos\Usuario.txt" />
     <None Include="Resources\clave.png" />
     <None Include="Resources\usuario %281%29.png" />
     <None Include="Resources\usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Archivos\Usuarios.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
