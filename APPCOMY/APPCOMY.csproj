@@ -50,7 +50,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Formularios\FileStream.cs" />
     <Compile Include="Formularios\FrmAyuda.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,8 +98,6 @@
     <Compile Include="Formularios\FrmPresentacion.Designer.cs">
       <DependentUpon>FrmPresentacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\StreamWriter.cs" />
-    <Compile Include="Formularios\StreamWriter1.cs" />
     <Compile Include="FrmMdi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,6 +175,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Archivos\Usuarios.txt" />
+    <Content Include="Archivos\Estudiantes.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
