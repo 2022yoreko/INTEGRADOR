@@ -27,8 +27,6 @@ namespace APPCOMY
 
         private void btnAcceder_Click(object sender, EventArgs e)
         {
-
-
             string Nombres = txtNombres.Text;
             string Apellidos = txtApellidos.Text;
             string Contraseña = txtContraseña.Text;
@@ -36,6 +34,49 @@ namespace APPCOMY
             string Correo_electronico = txtCorreo_Electronico.Text;
             string Numero_telefono = txtTelefono.Text;
             bool Guardar = false;
+
+            if (txtNombres.Text.Equals(Nombres))
+            {
+
+            }
+            else
+
+              if (txtApellidos.Text.Equals(Apellidos))
+            {
+
+            }
+            else
+
+              if (txtContraseña.Text.Equals(txtConfirmar))
+            {
+
+            }
+            else
+
+            if (!txtContraseña.Text.Equals(Confirmar_Contraseña))
+            {
+                MessageBox.Show("las contraseñas no coinciden");
+            
+            }
+            else
+
+            if (txtCorreo_Electronico.Text.Equals(Correo_electronico))
+                
+            {
+                
+            }
+            else 
+
+             if (txtTelefono.Text.Equals(Numero_telefono)) 
+            {
+            
+            
+            }
+            else 
+            {
+              
+            
+            }
 
             FileStream fs;
             StreamWriter escribe;
