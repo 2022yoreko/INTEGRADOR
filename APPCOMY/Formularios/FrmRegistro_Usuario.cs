@@ -32,24 +32,26 @@ namespace APPCOMY
             string Nombres = txtNombres.Text;
             string Apellidos = txtApellidos.Text;
             string Contraseña = txtContraseña.Text;
-            string Confirmar_Contraseña = txtC_Contraseña.Text;
+            string Confirmar_Contraseña = txtConfirmar.Text;
             string Correo_electronico = txtCorreo_Electronico.Text;
-            string Numero_telefono = txtN_telefono.Text;
+            string Numero_telefono = txtTelefono.Text;
             bool Guardar = false;
 
             FileStream fs;
             StreamWriter escribe;
+            string linea;
             string rutbase = Directory.GetCurrentDirectory();
-            string rutarchivo = rutbase.Replace(@"\bin\Debug", @"\Archivos\Usuario.txt");
+            string rutarchivo = rutbase.Replace(@"\bin\Debug", @"\Archivos\Usuarios.txt");
             fs = new FileStream(rutarchivo, FileMode.Append);
 
             escribe = new StreamWriter(fs);
-            escribe.WriteLine(txtNombres.Text);
-            escribe.WriteLine(txtApellidos.Text);
-            escribe.WriteLine(txtContraseña.Text);
-            escribe.WriteLine(txtC_Contraseña.Text);
-            escribe.WriteLine(txtCorreo_Electronico.Text);
-            escribe.WriteLine(txtN_telefono.Text);
+            linea = txtNombres.Text + ";";
+            linea += txtApellidos.Text + ";";
+            linea += txtContraseña.Text + ";";
+            linea += txtConfirmar.Text + ";";
+            linea += txtCorreo_Electronico.Text + ";";
+            linea += txtTelefono.Text + ";";
+            escribe.WriteLine(linea.ToUpper());
             escribe.Close();
 
 
@@ -134,7 +136,7 @@ namespace APPCOMY
             }
         }
 
-        private void txtCorreo_Electronico_leave(object sender, EventArgs e)
+        private void txtCorreo_Electronico_Leave(object sender, EventArgs e)
         {
             if (txtCorreo_Electronico.Text == "")
             {
@@ -143,48 +145,39 @@ namespace APPCOMY
             }
         }
 
-        
-
-        private void txtC_Contraseña_TextChanged(object sender, EventArgs e)
+        private void txtConfirmar_Enter(object sender, EventArgs e)
         {
-
-        }
-
-        private void txtC_Contraseña_Enter(object sender, EventArgs e)
-        {
-            if (txtC_Contraseña.Text == "Confirmar Contraseña") 
+            if (txtConfirmar.Text == "Confirmar") 
             {
-                txtC_Contraseña.Text = "";
-                txtC_Contraseña.ForeColor = Color.DimGray;
+                txtConfirmar.Text = "";
+                txtConfirmar.ForeColor = Color.DimGray;
             }
         }
 
-        private void txtC_Contraseña_leave(object sender, EventArgs e)
+        private void txtConfirmar_Leave(object sender, EventArgs e)
         {
-            if (txtC_Contraseña.Text == "")
+            if (txtConfirmar.Text == "") 
             {
-                txtC_Contraseña.Text = "Confirmar contraseña";
-                txtC_Contraseña.ForeColor = Color.DimGray;
-               
+                txtConfirmar.Text = "Confirmar";
+                txtConfirmar.ForeColor = Color.DimGray;
             }
         }
 
-        private void txtN_telefono_Enter(object sender, EventArgs e)
+        private void txtTelefono_Enter(object sender, EventArgs e)
         {
-            if (txtN_telefono.Text == "Numero de telefono") 
+            if (txtTelefono.Text == "Telefono") 
             {
-                txtN_telefono.Text = "";
-                txtN_telefono.ForeColor = Color.DimGray;
-          
+                txtTelefono.Text = "";
+                txtTelefono.ForeColor = Color.DimGray;
             }
         }
 
-        private void txtN_telefono_Leave(object sender, EventArgs e)
+        private void txtTelefono_Leave(object sender, EventArgs e)
         {
-            if (txtN_telefono.Text == "") 
+            if (txtTelefono.Text == "") 
             {
-                txtN_telefono.Text = "Numero de telefono";
-                txtN_telefono.ForeColor = Color.DimGray;
+                txtTelefono.Text = "Telefono";
+                txtTelefono.ForeColor = Color.DimGray;
             }
         }
     }

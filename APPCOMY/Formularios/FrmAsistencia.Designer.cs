@@ -73,6 +73,11 @@ namespace APPCOMY
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panelAsistencia.SuspendLayout();
@@ -228,6 +233,11 @@ namespace APPCOMY
             // 
             // panelAsistencia
             // 
+            this.panelAsistencia.Controls.Add(this.textBox1);
+            this.panelAsistencia.Controls.Add(this.textBox5);
+            this.panelAsistencia.Controls.Add(this.textBox4);
+            this.panelAsistencia.Controls.Add(this.textBox3);
+            this.panelAsistencia.Controls.Add(this.textBox2);
             this.panelAsistencia.Controls.Add(this.label17);
             this.panelAsistencia.Controls.Add(this.checkBox22);
             this.panelAsistencia.Controls.Add(this.label18);
@@ -258,9 +268,9 @@ namespace APPCOMY
             this.panelAsistencia.Controls.Add(this.label23);
             this.panelAsistencia.Controls.Add(this.label24);
             this.panelAsistencia.Controls.Add(this.label25);
-            this.panelAsistencia.Location = new System.Drawing.Point(52, 177);
+            this.panelAsistencia.Location = new System.Drawing.Point(61, 180);
             this.panelAsistencia.Name = "panelAsistencia";
-            this.panelAsistencia.Size = new System.Drawing.Size(707, 277);
+            this.panelAsistencia.Size = new System.Drawing.Size(751, 277);
             this.panelAsistencia.TabIndex = 56;
             // 
             // label17
@@ -280,9 +290,8 @@ namespace APPCOMY
             this.checkBox22.ForeColor = System.Drawing.Color.Transparent;
             this.checkBox22.Location = new System.Drawing.Point(582, 224);
             this.checkBox22.Name = "checkBox22";
-            this.checkBox22.Size = new System.Drawing.Size(86, 17);
+            this.checkBox22.Size = new System.Drawing.Size(15, 14);
             this.checkBox22.TabIndex = 58;
-            this.checkBox22.Text = "checkBox22";
             this.checkBox22.UseVisualStyleBackColor = true;
             // 
             // label18
@@ -302,9 +311,8 @@ namespace APPCOMY
             this.checkBox23.ForeColor = System.Drawing.Color.Transparent;
             this.checkBox23.Location = new System.Drawing.Point(582, 147);
             this.checkBox23.Name = "checkBox23";
-            this.checkBox23.Size = new System.Drawing.Size(86, 17);
+            this.checkBox23.Size = new System.Drawing.Size(15, 14);
             this.checkBox23.TabIndex = 57;
-            this.checkBox23.Text = "checkBox23";
             this.checkBox23.UseVisualStyleBackColor = true;
             // 
             // checkBox24
@@ -313,9 +321,8 @@ namespace APPCOMY
             this.checkBox24.ForeColor = System.Drawing.Color.Transparent;
             this.checkBox24.Location = new System.Drawing.Point(582, 71);
             this.checkBox24.Name = "checkBox24";
-            this.checkBox24.Size = new System.Drawing.Size(86, 17);
+            this.checkBox24.Size = new System.Drawing.Size(15, 14);
             this.checkBox24.TabIndex = 56;
-            this.checkBox24.Text = "checkBox24";
             this.checkBox24.UseVisualStyleBackColor = true;
             // 
             // checkBox25
@@ -324,9 +331,8 @@ namespace APPCOMY
             this.checkBox25.ForeColor = System.Drawing.Color.Transparent;
             this.checkBox25.Location = new System.Drawing.Point(504, 224);
             this.checkBox25.Name = "checkBox25";
-            this.checkBox25.Size = new System.Drawing.Size(86, 17);
+            this.checkBox25.Size = new System.Drawing.Size(15, 14);
             this.checkBox25.TabIndex = 53;
-            this.checkBox25.Text = "checkBox25";
             this.checkBox25.UseVisualStyleBackColor = true;
             // 
             // checkBox26
@@ -335,9 +341,8 @@ namespace APPCOMY
             this.checkBox26.ForeColor = System.Drawing.Color.Transparent;
             this.checkBox26.Location = new System.Drawing.Point(504, 147);
             this.checkBox26.Name = "checkBox26";
-            this.checkBox26.Size = new System.Drawing.Size(86, 17);
+            this.checkBox26.Size = new System.Drawing.Size(15, 14);
             this.checkBox26.TabIndex = 54;
-            this.checkBox26.Text = "checkBox26";
             this.checkBox26.UseVisualStyleBackColor = true;
             // 
             // checkBox27
@@ -346,9 +351,8 @@ namespace APPCOMY
             this.checkBox27.ForeColor = System.Drawing.Color.Transparent;
             this.checkBox27.Location = new System.Drawing.Point(504, 71);
             this.checkBox27.Name = "checkBox27";
-            this.checkBox27.Size = new System.Drawing.Size(86, 17);
+            this.checkBox27.Size = new System.Drawing.Size(15, 14);
             this.checkBox27.TabIndex = 55;
-            this.checkBox27.Text = "checkBox27";
             this.checkBox27.UseVisualStyleBackColor = true;
             // 
             // checkBox28
@@ -357,9 +361,8 @@ namespace APPCOMY
             this.checkBox28.ForeColor = System.Drawing.Color.Transparent;
             this.checkBox28.Location = new System.Drawing.Point(424, 147);
             this.checkBox28.Name = "checkBox28";
-            this.checkBox28.Size = new System.Drawing.Size(86, 17);
+            this.checkBox28.Size = new System.Drawing.Size(15, 14);
             this.checkBox28.TabIndex = 50;
-            this.checkBox28.Text = "checkBox28";
             this.checkBox28.UseVisualStyleBackColor = true;
             // 
             // checkBox29
@@ -368,9 +371,8 @@ namespace APPCOMY
             this.checkBox29.ForeColor = System.Drawing.Color.Transparent;
             this.checkBox29.Location = new System.Drawing.Point(424, 69);
             this.checkBox29.Name = "checkBox29";
-            this.checkBox29.Size = new System.Drawing.Size(86, 17);
+            this.checkBox29.Size = new System.Drawing.Size(15, 14);
             this.checkBox29.TabIndex = 51;
-            this.checkBox29.Text = "checkBox29";
             this.checkBox29.UseVisualStyleBackColor = true;
             // 
             // checkBox30
@@ -379,9 +381,8 @@ namespace APPCOMY
             this.checkBox30.ForeColor = System.Drawing.Color.Transparent;
             this.checkBox30.Location = new System.Drawing.Point(424, 224);
             this.checkBox30.Name = "checkBox30";
-            this.checkBox30.Size = new System.Drawing.Size(86, 17);
+            this.checkBox30.Size = new System.Drawing.Size(15, 14);
             this.checkBox30.TabIndex = 52;
-            this.checkBox30.Text = "checkBox30";
             this.checkBox30.UseVisualStyleBackColor = true;
             // 
             // checkBox31
@@ -390,9 +391,8 @@ namespace APPCOMY
             this.checkBox31.ForeColor = System.Drawing.Color.Transparent;
             this.checkBox31.Location = new System.Drawing.Point(342, 224);
             this.checkBox31.Name = "checkBox31";
-            this.checkBox31.Size = new System.Drawing.Size(86, 17);
+            this.checkBox31.Size = new System.Drawing.Size(15, 14);
             this.checkBox31.TabIndex = 47;
-            this.checkBox31.Text = "checkBox31";
             this.checkBox31.UseVisualStyleBackColor = true;
             // 
             // checkBox32
@@ -401,9 +401,8 @@ namespace APPCOMY
             this.checkBox32.ForeColor = System.Drawing.Color.Transparent;
             this.checkBox32.Location = new System.Drawing.Point(342, 147);
             this.checkBox32.Name = "checkBox32";
-            this.checkBox32.Size = new System.Drawing.Size(86, 17);
+            this.checkBox32.Size = new System.Drawing.Size(15, 14);
             this.checkBox32.TabIndex = 48;
-            this.checkBox32.Text = "checkBox32";
             this.checkBox32.UseVisualStyleBackColor = true;
             // 
             // checkBox33
@@ -412,9 +411,8 @@ namespace APPCOMY
             this.checkBox33.ForeColor = System.Drawing.Color.Transparent;
             this.checkBox33.Location = new System.Drawing.Point(342, 71);
             this.checkBox33.Name = "checkBox33";
-            this.checkBox33.Size = new System.Drawing.Size(86, 17);
+            this.checkBox33.Size = new System.Drawing.Size(15, 14);
             this.checkBox33.TabIndex = 49;
-            this.checkBox33.Text = "checkBox33";
             this.checkBox33.UseVisualStyleBackColor = true;
             // 
             // checkBox34
@@ -423,9 +421,8 @@ namespace APPCOMY
             this.checkBox34.ForeColor = System.Drawing.Color.Transparent;
             this.checkBox34.Location = new System.Drawing.Point(256, 69);
             this.checkBox34.Name = "checkBox34";
-            this.checkBox34.Size = new System.Drawing.Size(86, 17);
+            this.checkBox34.Size = new System.Drawing.Size(15, 14);
             this.checkBox34.TabIndex = 42;
-            this.checkBox34.Text = "checkBox34";
             this.checkBox34.UseVisualStyleBackColor = true;
             // 
             // checkBox35
@@ -434,9 +431,8 @@ namespace APPCOMY
             this.checkBox35.ForeColor = System.Drawing.Color.Transparent;
             this.checkBox35.Location = new System.Drawing.Point(256, 147);
             this.checkBox35.Name = "checkBox35";
-            this.checkBox35.Size = new System.Drawing.Size(86, 17);
+            this.checkBox35.Size = new System.Drawing.Size(15, 14);
             this.checkBox35.TabIndex = 43;
-            this.checkBox35.Text = "checkBox35";
             this.checkBox35.UseVisualStyleBackColor = true;
             // 
             // checkBox36
@@ -445,9 +441,8 @@ namespace APPCOMY
             this.checkBox36.ForeColor = System.Drawing.Color.Transparent;
             this.checkBox36.Location = new System.Drawing.Point(256, 224);
             this.checkBox36.Name = "checkBox36";
-            this.checkBox36.Size = new System.Drawing.Size(86, 17);
+            this.checkBox36.Size = new System.Drawing.Size(15, 14);
             this.checkBox36.TabIndex = 41;
-            this.checkBox36.Text = "checkBox36";
             this.checkBox36.UseVisualStyleBackColor = true;
             // 
             // checkBox37
@@ -456,9 +451,8 @@ namespace APPCOMY
             this.checkBox37.ForeColor = System.Drawing.Color.Transparent;
             this.checkBox37.Location = new System.Drawing.Point(182, 224);
             this.checkBox37.Name = "checkBox37";
-            this.checkBox37.Size = new System.Drawing.Size(86, 17);
+            this.checkBox37.Size = new System.Drawing.Size(15, 14);
             this.checkBox37.TabIndex = 44;
-            this.checkBox37.Text = "checkBox37";
             this.checkBox37.UseVisualStyleBackColor = true;
             // 
             // checkBox38
@@ -467,9 +461,8 @@ namespace APPCOMY
             this.checkBox38.ForeColor = System.Drawing.Color.Transparent;
             this.checkBox38.Location = new System.Drawing.Point(182, 69);
             this.checkBox38.Name = "checkBox38";
-            this.checkBox38.Size = new System.Drawing.Size(86, 17);
+            this.checkBox38.Size = new System.Drawing.Size(15, 14);
             this.checkBox38.TabIndex = 46;
-            this.checkBox38.Text = "checkBox38";
             this.checkBox38.UseVisualStyleBackColor = true;
             // 
             // checkBox39
@@ -478,9 +471,8 @@ namespace APPCOMY
             this.checkBox39.ForeColor = System.Drawing.Color.Transparent;
             this.checkBox39.Location = new System.Drawing.Point(182, 147);
             this.checkBox39.Name = "checkBox39";
-            this.checkBox39.Size = new System.Drawing.Size(86, 17);
+            this.checkBox39.Size = new System.Drawing.Size(15, 14);
             this.checkBox39.TabIndex = 45;
-            this.checkBox39.Text = "checkBox39";
             this.checkBox39.UseVisualStyleBackColor = true;
             // 
             // checkBox40
@@ -489,9 +481,8 @@ namespace APPCOMY
             this.checkBox40.ForeColor = System.Drawing.Color.Transparent;
             this.checkBox40.Location = new System.Drawing.Point(104, 224);
             this.checkBox40.Name = "checkBox40";
-            this.checkBox40.Size = new System.Drawing.Size(86, 17);
+            this.checkBox40.Size = new System.Drawing.Size(15, 14);
             this.checkBox40.TabIndex = 40;
-            this.checkBox40.Text = "checkBox40";
             this.checkBox40.UseVisualStyleBackColor = true;
             // 
             // checkBox41
@@ -500,9 +491,8 @@ namespace APPCOMY
             this.checkBox41.ForeColor = System.Drawing.Color.Transparent;
             this.checkBox41.Location = new System.Drawing.Point(104, 147);
             this.checkBox41.Name = "checkBox41";
-            this.checkBox41.Size = new System.Drawing.Size(86, 17);
+            this.checkBox41.Size = new System.Drawing.Size(15, 14);
             this.checkBox41.TabIndex = 39;
-            this.checkBox41.Text = "checkBox41";
             this.checkBox41.UseVisualStyleBackColor = true;
             // 
             // checkBox42
@@ -511,9 +501,8 @@ namespace APPCOMY
             this.checkBox42.ForeColor = System.Drawing.Color.Transparent;
             this.checkBox42.Location = new System.Drawing.Point(104, 72);
             this.checkBox42.Name = "checkBox42";
-            this.checkBox42.Size = new System.Drawing.Size(86, 17);
+            this.checkBox42.Size = new System.Drawing.Size(15, 14);
             this.checkBox42.TabIndex = 37;
-            this.checkBox42.Text = "checkBox42";
             this.checkBox42.UseVisualStyleBackColor = true;
             // 
             // label19
@@ -593,12 +582,47 @@ namespace APPCOMY
             this.label25.TabIndex = 29;
             this.label25.Text = "Lunes";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(19, 121);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(60, 20);
+            this.textBox1.TabIndex = 57;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(19, 63);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(60, 20);
+            this.textBox2.TabIndex = 59;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(634, 71);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(87, 20);
+            this.textBox3.TabIndex = 60;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(636, 141);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(85, 20);
+            this.textBox4.TabIndex = 61;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(636, 221);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(85, 20);
+            this.textBox5.TabIndex = 62;
+            // 
             // FrmAsistencia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(800, 510);
+            this.ClientSize = new System.Drawing.Size(850, 510);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -613,7 +637,7 @@ namespace APPCOMY
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.panelAsistencia);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximumSize = new System.Drawing.Size(800, 510);
+            this.MaximumSize = new System.Drawing.Size(850, 510);
             this.Name = "FrmAsistencia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Asistencia";
@@ -672,5 +696,10 @@ namespace APPCOMY
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
