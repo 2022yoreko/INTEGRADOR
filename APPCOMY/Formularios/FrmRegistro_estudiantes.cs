@@ -28,7 +28,7 @@ namespace APPCOMY
             var newForm4 = new FrmMenu();
             newForm4.Show();
             this.Hide();
-                
+
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
@@ -50,7 +50,8 @@ namespace APPCOMY
             string Promedio = txtPromedio.Text;
             string Telefono = txtTelefono.Text;
             string Depto = cmbDepto.SelectedItem.ToString();
-            bool Guardar;
+
+            bool Guardar = true;
 
             if (txtN_carnet.Text.Equals(N_carnet))
             {
@@ -93,26 +94,26 @@ namespace APPCOMY
             {
                 Guardar = true;
             }
-            else 
+            else
 
-               if (txtPromedio.Text.Equals(Promedio)) 
+               if (txtPromedio.Text.Equals(Promedio))
             {
                 Guardar = true;
             }
-            else 
+            else
 
-               if (txtTelefono.Text.Equals(Telefono)) 
+               if (txtTelefono.Text.Equals(Telefono))
             {
                 Guardar = true;
             }
-            else 
+            else
 
-               if (cmbDepto.SelectedItem.Equals(Depto)) 
+               if (cmbDepto.SelectedItem.Equals(Depto))
             {
                 Guardar = true;
             }
+
             
-
             FileStream fs;  
             StreamWriter escribe;
             string linea;

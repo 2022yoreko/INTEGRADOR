@@ -31,9 +31,9 @@ namespace APPCOMY
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPresentacion));
             this.label1 = new System.Windows.Forms.Label();
-            this.txtIniciar = new System.Windows.Forms.Button();
-            this.txtRegistrate = new System.Windows.Forms.Button();
+            this.btnIniciar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // label1
@@ -42,42 +42,27 @@ namespace APPCOMY
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Lucida Fax", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(176, 137);
+            this.label1.Location = new System.Drawing.Point(176, 141);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(330, 22);
             this.label1.TabIndex = 0;
             this.label1.Text = "FORMANDO PARTE DEL CAMBIO";
             // 
-            // txtIniciar
+            // btnIniciar
             // 
-            this.txtIniciar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.txtIniciar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtIniciar.BackgroundImage")));
-            this.txtIniciar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.txtIniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.txtIniciar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.txtIniciar.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.txtIniciar.Location = new System.Drawing.Point(12, 408);
-            this.txtIniciar.MaximumSize = new System.Drawing.Size(90, 90);
-            this.txtIniciar.Name = "txtIniciar";
-            this.txtIniciar.Size = new System.Drawing.Size(90, 90);
-            this.txtIniciar.TabIndex = 2;
-            this.txtIniciar.UseVisualStyleBackColor = false;
-            this.txtIniciar.Click += new System.EventHandler(this.txtIniciar_Click);
-            // 
-            // txtRegistrate
-            // 
-            this.txtRegistrate.BackColor = System.Drawing.Color.Transparent;
-            this.txtRegistrate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtRegistrate.BackgroundImage")));
-            this.txtRegistrate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.txtRegistrate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.txtRegistrate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.txtRegistrate.Location = new System.Drawing.Point(27, 346);
-            this.txtRegistrate.MaximumSize = new System.Drawing.Size(65, 65);
-            this.txtRegistrate.Name = "txtRegistrate";
-            this.txtRegistrate.Size = new System.Drawing.Size(65, 65);
-            this.txtRegistrate.TabIndex = 3;
-            this.txtRegistrate.UseVisualStyleBackColor = false;
-            this.txtRegistrate.Click += new System.EventHandler(this.txtRegistrate_Click);
+            this.btnIniciar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
+            this.btnIniciar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnIniciar.BackgroundImage")));
+            this.btnIniciar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnIniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIniciar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
+            this.btnIniciar.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnIniciar.Location = new System.Drawing.Point(552, 408);
+            this.btnIniciar.MaximumSize = new System.Drawing.Size(90, 90);
+            this.btnIniciar.Name = "btnIniciar";
+            this.btnIniciar.Size = new System.Drawing.Size(90, 90);
+            this.btnIniciar.TabIndex = 2;
+            this.btnIniciar.UseVisualStyleBackColor = false;
+            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
             // 
             // label2
             // 
@@ -85,11 +70,19 @@ namespace APPCOMY
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Lucida Bright", 20.75F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(236, 57);
+            this.label2.Location = new System.Drawing.Point(234, 67);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(196, 31);
             this.label2.TabIndex = 4;
             this.label2.Text = "BIENVENIDO";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Location = new System.Drawing.Point(-1, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(655, 33);
+            this.panel1.TabIndex = 5;
             // 
             // FrmPresentacion
             // 
@@ -97,9 +90,9 @@ namespace APPCOMY
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::APPCOMY.Properties.Resources.Imagen_de_APPCOMY2;
             this.ClientSize = new System.Drawing.Size(654, 510);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtRegistrate);
-            this.Controls.Add(this.txtIniciar);
+            this.Controls.Add(this.btnIniciar);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(670, 550);
@@ -115,9 +108,9 @@ namespace APPCOMY
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button txtIniciar;
-        private System.Windows.Forms.Button txtRegistrate;
+        private System.Windows.Forms.Button btnIniciar;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

@@ -55,6 +55,13 @@ namespace APPCOMY
             escribe.Close();
 
 
+            /* si hay problemas no olvides eliminar este if */
+            if (validate == true) 
+            {
+                MessageBox.Show("Bienvenido" + (Nombres));
+            }
+
+
             FrmMenu administrador = new FrmMenu();
             administrador.ShowDialog();
             this.Close();

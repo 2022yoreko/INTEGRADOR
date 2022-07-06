@@ -106,30 +106,30 @@ namespace APPCOMY
             // 
             // txtNombres
             // 
-            this.txtNombres.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombres.ForeColor = System.Drawing.Color.Gray;
+            this.txtNombres.Font = new System.Drawing.Font("Verdana", 12F);
+            this.txtNombres.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtNombres.Location = new System.Drawing.Point(164, 232);
             this.txtNombres.Name = "txtNombres";
-            this.txtNombres.Size = new System.Drawing.Size(208, 26);
+            this.txtNombres.Size = new System.Drawing.Size(208, 27);
             this.txtNombres.TabIndex = 7;
             // 
             // txtApellidos
             // 
-            this.txtApellidos.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApellidos.ForeColor = System.Drawing.Color.Gray;
+            this.txtApellidos.Font = new System.Drawing.Font("Verdana", 12F);
+            this.txtApellidos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtApellidos.Location = new System.Drawing.Point(164, 288);
             this.txtApellidos.Name = "txtApellidos";
-            this.txtApellidos.Size = new System.Drawing.Size(208, 26);
+            this.txtApellidos.Size = new System.Drawing.Size(208, 27);
             this.txtApellidos.TabIndex = 8;
             this.txtApellidos.Text = " ";
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefono.ForeColor = System.Drawing.Color.Gray;
+            this.txtTelefono.Font = new System.Drawing.Font("Verdana", 12F);
+            this.txtTelefono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtTelefono.Location = new System.Drawing.Point(164, 398);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(208, 26);
+            this.txtTelefono.Size = new System.Drawing.Size(208, 27);
             this.txtTelefono.TabIndex = 12;
             // 
             // label1
@@ -206,27 +206,29 @@ namespace APPCOMY
             // 
             // txtCarrera
             // 
-            this.txtCarrera.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCarrera.Location = new System.Drawing.Point(572, 345);
+            this.txtCarrera.Font = new System.Drawing.Font("Verdana", 12F);
+            this.txtCarrera.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtCarrera.Location = new System.Drawing.Point(560, 345);
             this.txtCarrera.Name = "txtCarrera";
-            this.txtCarrera.Size = new System.Drawing.Size(146, 26);
+            this.txtCarrera.Size = new System.Drawing.Size(190, 27);
             this.txtCarrera.TabIndex = 19;
             // 
             // txtPromedio
             // 
-            this.txtPromedio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPromedio.Location = new System.Drawing.Point(572, 398);
+            this.txtPromedio.Font = new System.Drawing.Font("Verdana", 12F);
+            this.txtPromedio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPromedio.Location = new System.Drawing.Point(560, 398);
             this.txtPromedio.Name = "txtPromedio";
-            this.txtPromedio.Size = new System.Drawing.Size(146, 26);
+            this.txtPromedio.Size = new System.Drawing.Size(190, 27);
             this.txtPromedio.TabIndex = 21;
             // 
             // txtAño
             // 
-            this.txtAño.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAño.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtAño.Location = new System.Drawing.Point(572, 231);
+            this.txtAño.Font = new System.Drawing.Font("Verdana", 12F);
+            this.txtAño.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtAño.Location = new System.Drawing.Point(560, 231);
             this.txtAño.Name = "txtAño";
-            this.txtAño.Size = new System.Drawing.Size(146, 26);
+            this.txtAño.Size = new System.Drawing.Size(190, 27);
             this.txtAño.TabIndex = 24;
             // 
             // label9
@@ -258,7 +260,7 @@ namespace APPCOMY
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(461, 177);
+            this.label11.Location = new System.Drawing.Point(60, 462);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(62, 22);
             this.label11.TabIndex = 27;
@@ -343,8 +345,8 @@ namespace APPCOMY
             // 
             // cmbFacultad
             // 
-            this.cmbFacultad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbFacultad.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.cmbFacultad.Font = new System.Drawing.Font("Verdana", 12F);
+            this.cmbFacultad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.cmbFacultad.FormattingEnabled = true;
             this.cmbFacultad.Items.AddRange(new object[] {
             "Ciencias Económicas",
@@ -353,15 +355,15 @@ namespace APPCOMY
             "Educación e Idiomas",
             "Humanidades y Ciencias Jurídicas",
             "Instituto Politécnico de la Salud"});
-            this.cmbFacultad.Location = new System.Drawing.Point(572, 286);
+            this.cmbFacultad.Location = new System.Drawing.Point(560, 286);
             this.cmbFacultad.Name = "cmbFacultad";
-            this.cmbFacultad.Size = new System.Drawing.Size(146, 28);
+            this.cmbFacultad.Size = new System.Drawing.Size(190, 26);
             this.cmbFacultad.TabIndex = 36;
             // 
             // cmbDepto
             // 
-            this.cmbDepto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbDepto.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.cmbDepto.Font = new System.Drawing.Font("Verdana", 12F);
+            this.cmbDepto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.cmbDepto.FormattingEnabled = true;
             this.cmbDepto.Items.AddRange(new object[] {
             "Boaco",
@@ -381,9 +383,9 @@ namespace APPCOMY
             "Nueva Segovia ",
             "Rio San Juan",
             "Rivas"});
-            this.cmbDepto.Location = new System.Drawing.Point(572, 174);
+            this.cmbDepto.Location = new System.Drawing.Point(164, 456);
             this.cmbDepto.Name = "cmbDepto";
-            this.cmbDepto.Size = new System.Drawing.Size(146, 28);
+            this.cmbDepto.Size = new System.Drawing.Size(208, 26);
             this.cmbDepto.TabIndex = 37;
             // 
             // label15
@@ -404,7 +406,7 @@ namespace APPCOMY
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(60, 451);
+            this.label16.Location = new System.Drawing.Point(459, 176);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(95, 24);
             this.label16.TabIndex = 39;
@@ -424,26 +426,29 @@ namespace APPCOMY
             // 
             // txtN_carnet
             // 
-            this.txtN_carnet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtN_carnet.Font = new System.Drawing.Font("Verdana", 12F);
+            this.txtN_carnet.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtN_carnet.Location = new System.Drawing.Point(164, 176);
             this.txtN_carnet.Name = "txtN_carnet";
-            this.txtN_carnet.Size = new System.Drawing.Size(208, 26);
+            this.txtN_carnet.Size = new System.Drawing.Size(208, 27);
             this.txtN_carnet.TabIndex = 41;
             // 
             // txtDomicilio
             // 
-            this.txtDomicilio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDomicilio.Location = new System.Drawing.Point(164, 451);
+            this.txtDomicilio.Font = new System.Drawing.Font("Verdana", 12F);
+            this.txtDomicilio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDomicilio.Location = new System.Drawing.Point(560, 174);
             this.txtDomicilio.Name = "txtDomicilio";
-            this.txtDomicilio.Size = new System.Drawing.Size(208, 26);
+            this.txtDomicilio.Size = new System.Drawing.Size(190, 27);
             this.txtDomicilio.TabIndex = 42;
             // 
             // txtCorreo
             // 
-            this.txtCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCorreo.Font = new System.Drawing.Font("Verdana", 12F);
+            this.txtCorreo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtCorreo.Location = new System.Drawing.Point(164, 343);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(208, 26);
+            this.txtCorreo.Size = new System.Drawing.Size(208, 27);
             this.txtCorreo.TabIndex = 43;
             // 
             // pictureBox3
@@ -463,7 +468,7 @@ namespace APPCOMY
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(798, 597);
+            this.ClientSize = new System.Drawing.Size(810, 597);
             this.Controls.Add(this.txtCorreo);
             this.Controls.Add(this.txtDomicilio);
             this.Controls.Add(this.txtN_carnet);

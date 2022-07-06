@@ -22,13 +22,13 @@ namespace APPCOMY
 
         }
 
-        private void txtRegistrate_Click(object sender, EventArgs e)
+        private void btnRegistrate_Click(object sender, EventArgs e)
         {
             FrmRegistro_Usuario administrador = new FrmRegistro_Usuario();
             administrador.ShowDialog();
         }
 
-        private void txtIniciar_Click(object sender, EventArgs e)
+        private void btnIniciar_Click(object sender, EventArgs e)
         {
             FrmLogin administrador = new FrmLogin();
             administrador.ShowDialog();

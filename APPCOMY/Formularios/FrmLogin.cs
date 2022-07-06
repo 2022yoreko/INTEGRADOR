@@ -24,6 +24,10 @@ namespace APPCOMY
 
         private void btnAcceder_Click(object sender, EventArgs e)
         {
+            string Usuario, Contraseña;
+            Usuario = txtUsuario.Text;
+            Contraseña = txtContraseña.Text;
+
             
             if (!string.IsNullOrWhiteSpace(txtUsuario.Text))
             {
@@ -76,6 +80,8 @@ namespace APPCOMY
                     frmNav.MdiParent = this.MdiParent;
                     frmNav.Show();
                     this.Close();
+                    FrmMenu administrador = new FrmMenu();
+                    administrador.ShowDialog();
 
                 }
                 else
@@ -87,8 +93,7 @@ namespace APPCOMY
             }//fin if de busqueda
 
 
-            //FrmMenu administrador = new FrmMenu();
-            //administrador.ShowDialog();
+           
 
 
         }
@@ -96,7 +101,7 @@ namespace APPCOMY
 
         private void Recordar_Contraseña_CheckedChanged(object sender, EventArgs e)
         {
-            if (Recordar_Contraseña.Checked)
+            if (cbxMostrar_contraseña.Checked)
             {
                 txtContraseña.UseSystemPasswordChar = false;
             }
@@ -151,6 +156,17 @@ namespace APPCOMY
             var newForm1 = new FrmMenu();
             newForm1.Show();
             this.Hide();
+        }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRegistrate_Click(object sender, EventArgs e)
+        {
+            FrmRegistro_Usuario administrador = new FrmRegistro_Usuario();
+            administrador.ShowDialog();
         }
     }
 }
