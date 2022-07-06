@@ -33,44 +33,10 @@ namespace APPCOMY
             string Confirmar_Contraseña = txtConfirmar.Text;
             string Correo_electronico = txtCorreo_Electronico.Text;
             string Numero_telefono = txtTelefono.Text;
-            bool Guardar;
 
-            if (txtNombres.Text.Equals(Nombres))
-            {
-                Guardar = true;
-            }
-            else
+            bool validate = validateData(Nombres, Apellidos, Contraseña, Confirmar_Contraseña, Correo_electronico, Numero_telefono);
 
-              if (txtApellidos.Text.Equals(Apellidos))
-            {
-                Guardar = true;
-            }
-            else
-
-            if (txtContraseña.Text.Equals(Contraseña) && txtConfirmar.Text.Equals(txtConfirmar))
-            {
-                Guardar = true;
-            }
-            else
-
-            if (txtContraseña.Text.Equals(Contraseña) && !txtConfirmar.Text.Equals(txtConfirmar))
-            {
-                MessageBox.Show("Las contraseñas no coinciden");
-            }
-            else
-
-            if (txtCorreo_Electronico.Text.Equals(Correo_electronico))
-                
-            {
-                Guardar = true;
-            }
-            else 
-
-             if (txtTelefono.Text.Equals(Numero_telefono)) 
-            {
-                Guardar = true;
-            }
-            
+            if (!validate) return;
 
             FileStream fs;
             StreamWriter escribe;
@@ -82,9 +48,8 @@ namespace APPCOMY
             escribe = new StreamWriter(fs);
             linea = txtNombres.Text + ";";
             linea += txtApellidos.Text + ";";
-            linea += txtContraseña.Text + ";";
-            linea += txtConfirmar.Text + ";";
             linea += txtCorreo_Electronico.Text + ";";
+            linea += txtContraseña.Text + ";";
             linea += txtTelefono.Text + ";";
             escribe.WriteLine(linea.ToUpper());
             escribe.Close();
@@ -92,7 +57,24 @@ namespace APPCOMY
 
             FrmMenu administrador = new FrmMenu();
             administrador.ShowDialog();
+            this.Close();
+        }
 
+        public bool validateData(String nom,String ape,String con, String con2,String email, String tel)
+        {
+            bool band = true;
+            
+            if ( con != con2 )
+            {
+                band = false;
+                MessageBox.Show("Las contraseñas no coinciden");
+            }
+            else if (nom == null || ape == null || con == null || con2 == null || email == null || tel == null )
+            {
+                band = false;
+                MessageBox.Show("Datos incompletos");
+            }
+            return band;
         }
 
         private void btnRegresar_Click(object sender, EventArgs e)
