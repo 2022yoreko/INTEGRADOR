@@ -204,9 +204,9 @@ namespace APPCOMY
             // imgPerfil
             // 
             this.imgPerfil.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.imgPerfil.Location = new System.Drawing.Point(613, 219);
+            this.imgPerfil.Location = new System.Drawing.Point(613, 238);
             this.imgPerfil.Name = "imgPerfil";
-            this.imgPerfil.Size = new System.Drawing.Size(111, 146);
+            this.imgPerfil.Size = new System.Drawing.Size(111, 123);
             this.imgPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgPerfil.TabIndex = 71;
             this.imgPerfil.TabStop = false;
@@ -221,7 +221,7 @@ namespace APPCOMY
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.btnAgregar.Location = new System.Drawing.Point(648, 422);
+            this.btnAgregar.Location = new System.Drawing.Point(648, 404);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(54, 50);
             this.btnAgregar.TabIndex = 74;
@@ -561,7 +561,7 @@ namespace APPCOMY
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.btnEditar.Location = new System.Drawing.Point(648, 478);
+            this.btnEditar.Location = new System.Drawing.Point(648, 464);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(54, 54);
             this.btnEditar.TabIndex = 76;
@@ -574,7 +574,7 @@ namespace APPCOMY
             this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.btnEliminar.Location = new System.Drawing.Point(648, 538);
+            this.btnEliminar.Location = new System.Drawing.Point(648, 524);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(54, 54);
             this.btnEliminar.TabIndex = 77;

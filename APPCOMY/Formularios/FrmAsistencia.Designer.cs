@@ -43,7 +43,6 @@ namespace APPCOMY
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panelAsistencia = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -233,7 +232,6 @@ namespace APPCOMY
             // 
             // panelAsistencia
             // 
-            this.panelAsistencia.Controls.Add(this.textBox1);
             this.panelAsistencia.Controls.Add(this.textBox5);
             this.panelAsistencia.Controls.Add(this.textBox4);
             this.panelAsistencia.Controls.Add(this.textBox3);
@@ -273,13 +271,6 @@ namespace APPCOMY
             this.panelAsistencia.Size = new System.Drawing.Size(751, 277);
             this.panelAsistencia.TabIndex = 56;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(19, 121);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(60, 20);
-            this.textBox1.TabIndex = 57;
-            // 
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(636, 221);
@@ -313,7 +304,7 @@ namespace APPCOMY
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Verdana", 11F);
             this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(646, 35);
+            this.label17.Location = new System.Drawing.Point(657, 35);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(44, 18);
             this.label17.TabIndex = 38;
@@ -545,7 +536,7 @@ namespace APPCOMY
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Verdana", 11F);
             this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(16, 35);
+            this.label19.Location = new System.Drawing.Point(23, 35);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(52, 18);
             this.label19.TabIndex = 36;
@@ -700,6 +691,5 @@ namespace APPCOMY
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
     }
 }
