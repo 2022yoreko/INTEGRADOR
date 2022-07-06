@@ -255,7 +255,10 @@ namespace APPCOMY
 
         private void FrmPerfil_Load(object sender, EventArgs e)
         {
-            panelPerfil.BackColor = Color.FromArgb(50, 0, 0, 0);
+            panelPerfil.BackColor = Color.FromArgb(100, 0, 0, 0);
         }
+
+        
+        
     }
 }

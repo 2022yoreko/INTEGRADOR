@@ -40,7 +40,7 @@ namespace APPCOMY
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.imgPerfil = new System.Windows.Forms.PictureBox();
-            this.btnExaminar = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.img1 = new System.Windows.Forms.PictureBox();
             this.Perfil = new System.Windows.Forms.Label();
             this.img2 = new System.Windows.Forms.PictureBox();
@@ -69,7 +69,7 @@ namespace APPCOMY
             this.panelPerfil = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnEditar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgPerfil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img1)).BeginInit();
@@ -211,22 +211,22 @@ namespace APPCOMY
             this.imgPerfil.TabIndex = 71;
             this.imgPerfil.TabStop = false;
             // 
-            // btnExaminar
+            // btnAgregar
             // 
-            this.btnExaminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.btnExaminar.BackgroundImage = global::APPCOMY.Properties.Resources.agregar_usuario__1_1;
-            this.btnExaminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnExaminar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.btnExaminar.FlatAppearance.BorderSize = 0;
-            this.btnExaminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExaminar.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExaminar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.btnExaminar.Location = new System.Drawing.Point(648, 422);
-            this.btnExaminar.Name = "btnExaminar";
-            this.btnExaminar.Size = new System.Drawing.Size(54, 50);
-            this.btnExaminar.TabIndex = 74;
-            this.btnExaminar.UseVisualStyleBackColor = false;
-            this.btnExaminar.Click += new System.EventHandler(this.btnExaminar_Click);
+            this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
+            this.btnAgregar.BackgroundImage = global::APPCOMY.Properties.Resources.agregar_usuario__1_1;
+            this.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAgregar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.btnAgregar.FlatAppearance.BorderSize = 0;
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregar.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
+            this.btnAgregar.Location = new System.Drawing.Point(648, 422);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(54, 50);
+            this.btnAgregar.TabIndex = 74;
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnExaminar_Click);
             // 
             // img1
             // 
@@ -567,18 +567,18 @@ namespace APPCOMY
             this.btnEditar.TabIndex = 76;
             this.btnEditar.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnEliminar
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.button1.BackgroundImage = global::APPCOMY.Properties.Resources.basura;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.button1.Location = new System.Drawing.Point(648, 538);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(54, 54);
-            this.button1.TabIndex = 77;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
+            this.btnEliminar.BackgroundImage = global::APPCOMY.Properties.Resources.basura;
+            this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
+            this.btnEliminar.Location = new System.Drawing.Point(648, 538);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(54, 54);
+            this.btnEliminar.TabIndex = 77;
+            this.btnEliminar.UseVisualStyleBackColor = false;
             // 
             // FrmPerfil
             // 
@@ -586,9 +586,9 @@ namespace APPCOMY
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(756, 636);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnEditar);
-            this.Controls.Add(this.btnExaminar);
+            this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.imgPerfil);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
@@ -642,7 +642,7 @@ namespace APPCOMY
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox imgPerfil;
-        private System.Windows.Forms.Button btnExaminar;
+        private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.PictureBox img1;
         private System.Windows.Forms.Label Perfil;
         private System.Windows.Forms.PictureBox img2;
@@ -671,6 +671,6 @@ namespace APPCOMY
         private System.Windows.Forms.Panel panelPerfil;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button btnEditar;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnEliminar;
     }
 }
