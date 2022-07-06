@@ -33,50 +33,44 @@ namespace APPCOMY
             string Confirmar_Contraseña = txtConfirmar.Text;
             string Correo_electronico = txtCorreo_Electronico.Text;
             string Numero_telefono = txtTelefono.Text;
-            bool Guardar = false;
+            bool Guardar;
 
             if (txtNombres.Text.Equals(Nombres))
             {
-
+                Guardar = true;
             }
             else
 
               if (txtApellidos.Text.Equals(Apellidos))
             {
-
+                Guardar = true;
             }
             else
 
-              if (txtContraseña.Text.Equals(txtConfirmar))
+            if (txtContraseña.Text.Equals(Contraseña) && txtConfirmar.Text.Equals(txtConfirmar))
             {
-
+                Guardar = true;
             }
             else
 
-            if (!txtContraseña.Text.Equals(Confirmar_Contraseña))
+            if (txtContraseña.Text.Equals(Contraseña) && !txtConfirmar.Text.Equals(txtConfirmar))
             {
-                MessageBox.Show("las contraseñas no coinciden");
-            
+                MessageBox.Show("Las contraseñas no coinciden");
             }
             else
 
             if (txtCorreo_Electronico.Text.Equals(Correo_electronico))
                 
             {
-                
+                Guardar = true;
             }
             else 
 
              if (txtTelefono.Text.Equals(Numero_telefono)) 
             {
-            
-            
+                Guardar = true;
             }
-            else 
-            {
-              
             
-            }
 
             FileStream fs;
             StreamWriter escribe;

@@ -176,6 +176,14 @@
   <ItemGroup>
     <Content Include="Archivos\Usuarios.txt" />
     <Content Include="Archivos\Estudiantes.txt" />
+    <None Include="Resources\agregar-usuario %281%291.png" />
+    <None Include="Resources\agregar-usuario %281%29-PhotoRoom.png" />
+    <None Include="Resources\agregar-usuario %281%29.png" />
+    <None Include="Resources\basura.png" />
+    <None Include="Resources\contenedor-de-basura.png" />
+    <None Include="Resources\eliminar.png" />
+    <None Include="Resources\escritura.png" />
+    <None Include="Resources\agregar-usuario.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

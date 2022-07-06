@@ -68,6 +68,8 @@ namespace APPCOMY
             this.btnAdjuntar12 = new System.Windows.Forms.Button();
             this.panelPerfil = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgPerfil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img1)).BeginInit();
@@ -179,11 +181,11 @@ namespace APPCOMY
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Lucida Fax", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(186, 93);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(321, 22);
+            this.label1.Size = new System.Drawing.Size(276, 18);
             this.label1.TabIndex = 47;
             this.label1.Text = "FORMANDO PARTE DEL CAMBIO";
             // 
@@ -191,38 +193,38 @@ namespace APPCOMY
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(582, 233);
+            this.label5.Location = new System.Drawing.Point(572, 186);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(154, 18);
+            this.label5.Size = new System.Drawing.Size(181, 18);
             this.label5.TabIndex = 49;
             this.label5.Text = "Informacion Personal";
             // 
             // imgPerfil
             // 
             this.imgPerfil.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.imgPerfil.Location = new System.Drawing.Point(612, 271);
+            this.imgPerfil.Location = new System.Drawing.Point(613, 219);
             this.imgPerfil.Name = "imgPerfil";
-            this.imgPerfil.Size = new System.Drawing.Size(96, 95);
+            this.imgPerfil.Size = new System.Drawing.Size(111, 146);
             this.imgPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgPerfil.TabIndex = 71;
             this.imgPerfil.TabStop = false;
             // 
             // btnExaminar
             // 
-            this.btnExaminar.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btnExaminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnExaminar.BackgroundImage")));
-            this.btnExaminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnExaminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
+            this.btnExaminar.BackgroundImage = global::APPCOMY.Properties.Resources.agregar_usuario__1_1;
+            this.btnExaminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnExaminar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.btnExaminar.FlatAppearance.BorderSize = 0;
             this.btnExaminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExaminar.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExaminar.ForeColor = System.Drawing.Color.Black;
-            this.btnExaminar.Location = new System.Drawing.Point(612, 384);
+            this.btnExaminar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
+            this.btnExaminar.Location = new System.Drawing.Point(648, 422);
             this.btnExaminar.Name = "btnExaminar";
-            this.btnExaminar.Size = new System.Drawing.Size(96, 28);
+            this.btnExaminar.Size = new System.Drawing.Size(54, 50);
             this.btnExaminar.TabIndex = 74;
-            this.btnExaminar.Text = "Examinar";
             this.btnExaminar.UseVisualStyleBackColor = false;
             this.btnExaminar.Click += new System.EventHandler(this.btnExaminar_Click);
             // 
@@ -379,7 +381,7 @@ namespace APPCOMY
             this.btnAdjuntar1.Name = "btnAdjuntar1";
             this.btnAdjuntar1.Size = new System.Drawing.Size(84, 28);
             this.btnAdjuntar1.TabIndex = 71;
-            this.btnAdjuntar1.Text = "Adjuntar";
+            this.btnAdjuntar1.Text = "Agregar";
             this.btnAdjuntar1.UseVisualStyleBackColor = false;
             this.btnAdjuntar1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -551,12 +553,41 @@ namespace APPCOMY
             this.pictureBox3.TabIndex = 75;
             this.pictureBox3.TabStop = false;
             // 
+            // btnEditar
+            // 
+            this.btnEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
+            this.btnEditar.BackgroundImage = global::APPCOMY.Properties.Resources.escritura;
+            this.btnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
+            this.btnEditar.Location = new System.Drawing.Point(648, 478);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(54, 54);
+            this.btnEditar.TabIndex = 76;
+            this.btnEditar.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
+            this.button1.BackgroundImage = global::APPCOMY.Properties.Resources.basura;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
+            this.button1.Location = new System.Drawing.Point(648, 538);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(54, 54);
+            this.button1.TabIndex = 77;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // FrmPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(756, 636);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnExaminar);
             this.Controls.Add(this.imgPerfil);
             this.Controls.Add(this.label5);
@@ -639,5 +670,7 @@ namespace APPCOMY
         private System.Windows.Forms.Button btnAdjuntar12;
         private System.Windows.Forms.Panel panelPerfil;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button button1;
     }
 }

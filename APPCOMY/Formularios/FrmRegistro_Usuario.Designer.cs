@@ -76,11 +76,11 @@ namespace APPCOMY
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 15.25F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Lucida Fax", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(154, 141);
+            this.label1.Location = new System.Drawing.Point(181, 139);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(347, 24);
+            this.label1.Size = new System.Drawing.Size(330, 22);
             this.label1.TabIndex = 5;
             this.label1.Text = "FORMANDO PARTE DEL CAMBIO";
             // 

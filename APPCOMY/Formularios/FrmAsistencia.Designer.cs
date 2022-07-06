@@ -43,6 +43,11 @@ namespace APPCOMY
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panelAsistencia = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.checkBox22 = new System.Windows.Forms.CheckBox();
             this.label18 = new System.Windows.Forms.Label();
@@ -73,11 +78,6 @@ namespace APPCOMY
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panelAsistencia.SuspendLayout();
@@ -178,7 +178,7 @@ namespace APPCOMY
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(251, 111);
+            this.label1.Location = new System.Drawing.Point(290, 113);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(242, 24);
             this.label1.TabIndex = 50;
@@ -272,6 +272,41 @@ namespace APPCOMY
             this.panelAsistencia.Name = "panelAsistencia";
             this.panelAsistencia.Size = new System.Drawing.Size(751, 277);
             this.panelAsistencia.TabIndex = 56;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(19, 121);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(60, 20);
+            this.textBox1.TabIndex = 57;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(636, 221);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(85, 20);
+            this.textBox5.TabIndex = 62;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(636, 141);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(85, 20);
+            this.textBox4.TabIndex = 61;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(634, 71);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(87, 20);
+            this.textBox3.TabIndex = 60;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(19, 63);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(60, 20);
+            this.textBox2.TabIndex = 59;
             // 
             // label17
             // 
@@ -581,41 +616,6 @@ namespace APPCOMY
             this.label25.Size = new System.Drawing.Size(51, 18);
             this.label25.TabIndex = 29;
             this.label25.Text = "Lunes";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(19, 121);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(60, 20);
-            this.textBox1.TabIndex = 57;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(19, 63);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(60, 20);
-            this.textBox2.TabIndex = 59;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(634, 71);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(87, 20);
-            this.textBox3.TabIndex = 60;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(636, 141);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(85, 20);
-            this.textBox4.TabIndex = 61;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(636, 221);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(85, 20);
-            this.textBox5.TabIndex = 62;
             // 
             // FrmAsistencia
             // 

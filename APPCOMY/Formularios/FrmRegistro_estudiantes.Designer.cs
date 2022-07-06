@@ -59,7 +59,7 @@ namespace APPCOMY
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.txtN_carne = new System.Windows.Forms.TextBox();
+            this.txtN_carnet = new System.Windows.Forms.TextBox();
             this.txtDomicilio = new System.Windows.Forms.TextBox();
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -174,7 +174,7 @@ namespace APPCOMY
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(177, 105);
+            this.label6.Location = new System.Drawing.Point(208, 108);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(346, 26);
             this.label6.TabIndex = 16;
@@ -394,9 +394,9 @@ namespace APPCOMY
             this.label15.ForeColor = System.Drawing.Color.White;
             this.label15.Location = new System.Drawing.Point(60, 178);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(95, 24);
+            this.label15.Size = new System.Drawing.Size(101, 24);
             this.label15.TabIndex = 38;
-            this.label15.Text = "N° Carné";
+            this.label15.Text = "N° Carnet";
             // 
             // label16
             // 
@@ -422,13 +422,13 @@ namespace APPCOMY
             this.label17.TabIndex = 40;
             this.label17.Text = "Correo";
             // 
-            // txtN_carne
+            // txtN_carnet
             // 
-            this.txtN_carne.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtN_carne.Location = new System.Drawing.Point(164, 176);
-            this.txtN_carne.Name = "txtN_carne";
-            this.txtN_carne.Size = new System.Drawing.Size(208, 26);
-            this.txtN_carne.TabIndex = 41;
+            this.txtN_carnet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtN_carnet.Location = new System.Drawing.Point(164, 176);
+            this.txtN_carnet.Name = "txtN_carnet";
+            this.txtN_carnet.Size = new System.Drawing.Size(208, 26);
+            this.txtN_carnet.TabIndex = 41;
             // 
             // txtDomicilio
             // 
@@ -466,7 +466,7 @@ namespace APPCOMY
             this.ClientSize = new System.Drawing.Size(798, 597);
             this.Controls.Add(this.txtCorreo);
             this.Controls.Add(this.txtDomicilio);
-            this.Controls.Add(this.txtN_carne);
+            this.Controls.Add(this.txtN_carnet);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
@@ -539,7 +539,7 @@ namespace APPCOMY
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox txtN_carne;
+        private System.Windows.Forms.TextBox txtN_carnet;
         private System.Windows.Forms.TextBox txtDomicilio;
         private System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.PictureBox pictureBox3;
