@@ -51,22 +51,20 @@ namespace APPCOMY
                 Leer = new StreamReader(rutArch);
 
                 bool encontrado = false;
-                string Usuario;
-                string Contraseña;
+                string data;
 
-                Usuario = Leer.ReadLine();
-                Contraseña = Leer.ReadLine();
+                data = Leer.ReadLine();
 
-                while (!encontrado && Usuario != null)
+                while (!encontrado && data != null)
                 {
-                    if (txtUsuario.Text.Equals(Usuario) && txtContraseña.Text.Equals(Contraseña))
+                    string[] array = data.Split(';');
+                    if (array[2].Equals(txtUsuario.Text.ToUpper()) && array[3].Equals(txtContraseña.Text))
                     {
                         encontrado = true;
                     }
                     else
                     {
-                        Usuario = Leer.ReadLine();
-                        Contraseña = Leer.ReadLine();
+                        data = Leer.ReadLine();
                     }
 
                 }//Fin del While
@@ -84,14 +82,13 @@ namespace APPCOMY
                 if(!encontrado)
                 {
                     MessageBox.Show("Usuario no valido");
-                   
                 }
 
             }//fin if de busqueda
 
 
-            FrmMenu administrador = new FrmMenu();
-            administrador.ShowDialog();
+            //FrmMenu administrador = new FrmMenu();
+            //administrador.ShowDialog();
 
 
         }
