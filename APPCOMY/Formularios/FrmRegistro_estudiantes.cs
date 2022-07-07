@@ -44,12 +44,12 @@ namespace APPCOMY
             string Nombres = txtNombres.Text;
             string Apellidos = txtApellidos.Text;
             string Correo = txtCorreo.Text;
-            string Facultad = cmbFacultad.SelectedItem.ToString();
             string Carrera = txtCarrera.Text;
             string Año = txtAño.Text;
             string Promedio = txtPromedio.Text;
             string Telefono = txtTelefono.Text;
-            string Depto = cmbDepto.SelectedItem.ToString();
+            string Facultad = ComboboxFacultad.SelectedItem.ToString();
+            string Depto = ComboboxDepto.SelectedItem.ToString();
 
             bool Guardar = true;
 
@@ -77,7 +77,7 @@ namespace APPCOMY
             }
             else
 
-               if (cmbFacultad.SelectedItem.Equals(Facultad))
+               if (ComboboxFacultad.SelectedItem.Equals(Facultad))
 
             {
                 Guardar = true;
@@ -108,7 +108,7 @@ namespace APPCOMY
             }
             else
 
-               if (cmbDepto.SelectedItem.Equals(Depto))
+               if (ComboboxDepto.SelectedItem.Equals(Depto))
             {
                 Guardar = true;
             }
@@ -127,12 +127,12 @@ namespace APPCOMY
             linea += txtNombres.Text + ";";
             linea += txtApellidos.Text + ";";
             linea += txtCorreo.Text + ";";
-            linea += cmbFacultad.SelectedItem.ToString();
+            linea += ComboboxFacultad.SelectedItem.ToString();
             linea += txtCarrera.Text + ";";
             linea += txtAño.Text + ";";
             linea += txtPromedio.Text +";";
             linea += txtTelefono.Text + ";";
-            linea += cmbDepto.SelectedItem.ToString();
+            linea += ComboboxDepto.SelectedItem.ToString();
             escribe.WriteLine(linea.ToUpper());
             escribe.Close();
             
@@ -148,6 +148,53 @@ namespace APPCOMY
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog getImage = new OpenFileDialog();
+            getImage.InitialDirectory = "C:\\";
+            getImage.Filter = "Archivos de Imagen (*.jpg)(*.jpeg)| *.jpg;*.jpeg|PNG (*.png)|*.png";
+
+            if (getImage.ShowDialog() == DialogResult.OK)
+            {
+                imgPerfil.ImageLocation = getImage.FileName;
+
+            }
+            else
+            {
+                MessageBox.Show("No selecciono ninguna imagen", "Sin selecion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            bool Eliminar;
+
+            txtN_carnet.Text = "";
+            txtNombres.Text = "";
+            txtApellidos.Text = "";
+            txtCorreo.Text = "";
+            txtTelefono.Text = "";
+            ComboboxDepto.SelectedItem = "";
+            txtDomicilio.Text = "";
+            txtAño.Text = "";
+            ComboboxFacultad.SelectedItem = "";
+            txtCarrera.Text = "";
+            txtPromedio.Text = "";
+            
+            /*if (Eliminar) 
+            {
+              Eliminar = true;
+            MessageBox.Show("Esta seguro que quiere eliminar este registro");
+            
+            }
+            else
+            {
+            Eliminar = false;
+            MessageBox.Show("Cancelado");
+            }
+             */
         }
     }
 }

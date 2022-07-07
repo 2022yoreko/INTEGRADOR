@@ -62,12 +62,6 @@
     <Compile Include="Formularios\FrmAsistencia.Designer.cs">
       <DependentUpon>FrmAsistencia.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FrmPerfil.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\FrmPerfil.Designer.cs">
-      <DependentUpon>FrmPerfil.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,9 +119,6 @@
     <EmbeddedResource Include="Formularios\FrmAyuda.resx">
       <DependentUpon>FrmAyuda.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmPerfil.resx">
-      <DependentUpon>FrmPerfil.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmAsistencia.resx">
       <DependentUpon>FrmAsistencia.cs</DependentUpon>
     </EmbeddedResource>
@@ -176,6 +167,7 @@
   <ItemGroup>
     <Content Include="Archivos\Usuarios.txt" />
     <Content Include="Archivos\Estudiantes.txt" />
+    <None Include="Resources\azul.JPEG" />
     <None Include="Resources\agregar-usuario %281%291.png" />
     <None Include="Resources\agregar-usuario %281%29-PhotoRoom.png" />
     <None Include="Resources\agregar-usuario %281%29.png" />

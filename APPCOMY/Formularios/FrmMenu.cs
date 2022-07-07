@@ -20,10 +20,6 @@ namespace APPCOMY
             InitializeComponent();
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-           
-        }
 
         private void btnRegistro_Estudiantes_Click(object sender, EventArgs e)
         {
@@ -33,8 +29,7 @@ namespace APPCOMY
 
         private void btnPerfil_Alumnos_Click(object sender, EventArgs e)
         {
-            FrmPerfil administrador = new FrmPerfil();
-            administrador.ShowDialog();
+            
         }
 
         private void btnRegistro_Click(object sender, EventArgs e)
@@ -45,7 +40,8 @@ namespace APPCOMY
 
         private void btnInformacion_Personal_Click(object sender, EventArgs e)
         {
-            FrmPerfil administrador = new FrmPerfil();
+
+            FrmRegistro_Estudiantes administrador = new FrmRegistro_Estudiantes();
             administrador.ShowDialog();
         }
 
@@ -58,8 +54,7 @@ namespace APPCOMY
 
         private void btnPerfil_Click(object sender, EventArgs e)
         {
-            FrmPerfil administrador = new FrmPerfil();
-            administrador.ShowDialog();
+            
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
