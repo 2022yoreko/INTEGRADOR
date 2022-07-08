@@ -65,6 +65,7 @@ namespace APPCOMY
             this.imgPerfil = new System.Windows.Forms.PictureBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.comboBoxAño = new System.Windows.Forms.ComboBox();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgPerfil)).BeginInit();
@@ -107,7 +108,7 @@ namespace APPCOMY
             this.btnGuardar_datos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar_datos.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar_datos.ForeColor = System.Drawing.Color.White;
-            this.btnGuardar_datos.Location = new System.Drawing.Point(407, 489);
+            this.btnGuardar_datos.Location = new System.Drawing.Point(407, 498);
             this.btnGuardar_datos.Name = "btnGuardar_datos";
             this.btnGuardar_datos.Size = new System.Drawing.Size(168, 49);
             this.btnGuardar_datos.TabIndex = 6;
@@ -485,7 +486,7 @@ namespace APPCOMY
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.btnAgregar.Location = new System.Drawing.Point(835, 373);
+            this.btnAgregar.Location = new System.Drawing.Point(835, 390);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(54, 50);
             this.btnAgregar.TabIndex = 80;
@@ -507,12 +508,27 @@ namespace APPCOMY
             this.comboBoxAño.Size = new System.Drawing.Size(190, 26);
             this.comboBoxAño.TabIndex = 81;
             // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
+            this.btnLimpiar.BackgroundImage = global::APPCOMY.Properties.Resources.icono_de_limpiar;
+            this.btnLimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnLimpiar.FlatAppearance.BorderSize = 0;
+            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiar.Location = new System.Drawing.Point(835, 452);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(54, 64);
+            this.btnLimpiar.TabIndex = 82;
+            this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
             // FrmRegistro_Estudiantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(979, 572);
+            this.ClientSize = new System.Drawing.Size(979, 581);
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.comboBoxAño);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.imgPerfil);
@@ -549,6 +565,7 @@ namespace APPCOMY
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(979, 581);
             this.Name = "FrmRegistro_Estudiantes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de estudiantes";
@@ -597,5 +614,6 @@ namespace APPCOMY
         private System.Windows.Forms.PictureBox imgPerfil;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.ComboBox comboBoxAño;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }

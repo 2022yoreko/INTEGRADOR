@@ -16,5 +16,18 @@ namespace APPCOMY.Formularios
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            var newForm4 = new FrmMenu();
+            newForm4.Show();
+            this.Hide();
+
+        }
     }
 }

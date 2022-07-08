@@ -177,6 +177,7 @@
   <ItemGroup>
     <Content Include="Archivos\Usuarios.txt" />
     <Content Include="Archivos\Estudiantes.txt" />
+    <None Include="Resources\icono de limpiar.png" />
     <None Include="Resources\azul.JPEG" />
     <None Include="Resources\agregar-usuario %281%291.png" />
     <None Include="Resources\agregar-usuario %281%29-PhotoRoom.png" />

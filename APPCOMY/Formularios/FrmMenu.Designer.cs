@@ -62,6 +62,7 @@ namespace APPCOMY
             this.btnRegistro.BackColor = System.Drawing.Color.Lavender;
             this.btnRegistro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRegistro.BackgroundImage")));
             this.btnRegistro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRegistro.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegistro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistro.ForeColor = System.Drawing.Color.Lavender;
@@ -77,6 +78,7 @@ namespace APPCOMY
             this.btnInformacion_Personal.BackColor = System.Drawing.Color.Lavender;
             this.btnInformacion_Personal.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnInformacion_Personal.BackgroundImage")));
             this.btnInformacion_Personal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnInformacion_Personal.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnInformacion_Personal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInformacion_Personal.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInformacion_Personal.ForeColor = System.Drawing.Color.Lavender;
@@ -236,9 +238,9 @@ namespace APPCOMY
             this.label14.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(111, 190);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(117, 18);
+            this.label14.Size = new System.Drawing.Size(50, 18);
             this.label14.TabIndex = 57;
-            this.label14.Text = "Info Personal";
+            this.label14.Text = "Perfil";
             // 
             // label13
             // 

@@ -24,27 +24,35 @@ namespace APPCOMY
         private void btnRegistro_Estudiantes_Click(object sender, EventArgs e)
         {
             FrmRegistro_Estudiantes administrador = new FrmRegistro_Estudiantes();
-            administrador.ShowDialog();
+            administrador.MdiParent = this.MdiParent;
+            administrador.Show();
+            this.Close();
         }
 
         
         private void btnRegistro_Click(object sender, EventArgs e)
         {
             FrmRegistro_Estudiantes administrador = new FrmRegistro_Estudiantes();
-            administrador.ShowDialog();
+            administrador.MdiParent = this.MdiParent;
+            administrador.Show();
+            this.Close();
         }
 
         private void btnInformacion_Personal_Click(object sender, EventArgs e)
         {
 
             FrmPerfil administrador = new FrmPerfil();
-            administrador.ShowDialog();
+            administrador.MdiParent = this.MdiParent;
+            administrador.Show();
+            this.Close();
         }
 
         private void btnTabla_Asistencia_Click(object sender, EventArgs e)
         {
             FrmAsistencia administrador = new FrmAsistencia();
-            administrador.ShowDialog();
+            administrador.MdiParent = this.MdiParent;
+            administrador.Show();
+            this.Close();
         }
 
 

@@ -112,6 +112,7 @@ namespace APPCOMY.Formularios
             this.linkLabel1.TabIndex = 7;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "¿Cómo puedo registrar un estudiante?";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // linkLabel2
             // 
@@ -241,9 +242,9 @@ namespace APPCOMY.Formularios
             this.panel1.Controls.Add(this.linkLabel4);
             this.panel1.Controls.Add(this.linkLabel5);
             this.panel1.ForeColor = System.Drawing.Color.Transparent;
-            this.panel1.Location = new System.Drawing.Point(102, 156);
+            this.panel1.Location = new System.Drawing.Point(120, 165);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(548, 336);
+            this.panel1.Size = new System.Drawing.Size(484, 336);
             this.panel1.TabIndex = 48;
             // 
             // FrmAyuda

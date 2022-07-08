@@ -25,7 +25,7 @@ namespace APPCOMY
             this.Close();
         }
 
-        private void presentacionToolStripMenuItem_Click(object sender, EventArgs e)
+        private void FrmMdi_Load(object sender, EventArgs e)
         {
             FrmPresentacion P = new FrmPresentacion();
             P.MdiParent = this;

@@ -61,25 +61,37 @@ namespace APPCOMY
             string rutarchivo = rutbase.Replace(@"\bin\Debug", @"\Archivos\Estudiantes.txt");
             fs = new FileStream(rutarchivo, FileMode.Append);
             escribe = new StreamWriter(fs);
-            
-           
 
-                linea = txtN_carnet.Text + ";";
-                linea += txtNombres.Text + ";";
-                linea += txtApellidos.Text + ";";
-                linea += txtCorreo.Text + ";";
-                linea += ComboboxFacultad.SelectedItem.ToString() + ";";
-                linea += txtCarrera.Text + ";";
-                linea += comboBoxAño.SelectedItem.ToString() + ";";
-                linea += txtPromedio.Text + ";";
-                linea += txtTelefono.Text + ";";
-                linea += ComboboxDepto.SelectedItem.ToString() + ";";
-                escribe.WriteLine(linea.ToUpper());
-                escribe.Close();
-           
+
+            if (!string.IsNullOrWhiteSpace(txtN_carnet.Text)) /*falta mas datos para que se validen todos los campos
+                                                               * y que de lo contrario de un mesanje de error*/
+            {
+                try
+                {
+
+                    linea = txtN_carnet.Text + ";";
+                    linea += txtNombres.Text + ";";
+                    linea += txtApellidos.Text + ";";
+                    linea += txtCorreo.Text + ";";
+                    linea += ComboboxFacultad.SelectedItem.ToString() + ";";
+                    linea += txtCarrera.Text + ";";
+                    linea += comboBoxAño.SelectedItem.ToString() + ";";
+                    linea += txtPromedio.Text + ";";
+                    linea += txtTelefono.Text + ";";
+                    linea += ComboboxDepto.SelectedItem.ToString() + ";";
+                    escribe.WriteLine(linea.ToUpper());
+                    escribe.Close();
+
+                }
+                catch
+                {
+                   MessageBox.Show("Datos incompletos, llene todos los campos");
+                }
+            }
+                
                 if (Guardar == true) 
                 {
-                 MessageBox.Show("Registro guardado correctamente");
+                 MessageBox.Show("Datos registrados correctamente");
                 }
 
 
@@ -127,6 +139,18 @@ namespace APPCOMY
             MessageBox.Show("Cancelado");
             }
              */
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtN_carnet.Clear();
+            txtNombres.Clear();
+            txtApellidos.Clear();
+            txtCorreo.Clear();
+            txtCarrera.Clear();
+            txtPromedio.Clear();
+            txtTelefono.Clear();
+            txtDomicilio.Clear();
         }
     }
 }

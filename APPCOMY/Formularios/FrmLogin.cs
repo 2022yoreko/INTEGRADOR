@@ -153,7 +153,7 @@ namespace APPCOMY
 
         private void btnRetroceder_Click(object sender, EventArgs e)
         {
-            var newForm1 = new FrmMenu();
+            var newForm1 = new FrmPresentacion();
             newForm1.Show();
             this.Hide();
         }

@@ -173,6 +173,16 @@ namespace APPCOMY.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icono_de_limpiar {
+            get {
+                object obj = ResourceManager.GetObject("icono de limpiar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Imagen_de_APPCOMY {
             get {
                 object obj = ResourceManager.GetObject("Imagen de APPCOMY", resourceCulture);

@@ -25,13 +25,17 @@ namespace APPCOMY
         private void btnRegistrate_Click(object sender, EventArgs e)
         {
             FrmRegistro_Usuario administrador = new FrmRegistro_Usuario();
-            administrador.ShowDialog();
+            administrador.MdiParent = this.MdiParent;
+            administrador.Show();
+            this.Close(); //Cerrar la ventana actual que hizo la llamada
         }
 
         private void btnIniciar_Click(object sender, EventArgs e)
         {
             FrmLogin administrador = new FrmLogin();
-            administrador.ShowDialog();
+            administrador.MdiParent = this.MdiParent; //Indicar que el contenedor padre es el mismo del que hizo la llamada
+            administrador.Show();
+            this.Close(); //Cerrar la ventana que  hizo la llamada
         }
     }
 }
