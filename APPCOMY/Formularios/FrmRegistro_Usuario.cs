@@ -36,11 +36,12 @@ namespace APPCOMY
             FileStream fs;
             StreamWriter escribe;
             string linea;
+
             string rutbase = Directory.GetCurrentDirectory();
             string rutarchivo = rutbase.Replace(@"\bin\Debug", @"\Archivos\Usuarios.txt");
             fs = new FileStream(rutarchivo, FileMode.Append);
-
             escribe = new StreamWriter(fs);
+
             linea = txtNombres.Text + ";";
             linea += txtApellidos.Text + ";";
             linea += txtCorreo_Electronico.Text + ";";

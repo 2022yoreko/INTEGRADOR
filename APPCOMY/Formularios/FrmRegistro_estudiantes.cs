@@ -45,11 +45,12 @@ namespace APPCOMY
                 string Apellidos = txtApellidos.Text;
                 string Correo = txtCorreo.Text;
                 string Carrera = txtCarrera.Text;
-                string Año = txtAño.Text;
+                string Año = comboBoxAño.SelectedItem.ToString();
                 string Promedio = txtPromedio.Text;
                 string Telefono = txtTelefono.Text;
                 string Facultad = ComboboxFacultad.SelectedItem.ToString();
                 string Depto = ComboboxDepto.SelectedItem.ToString();
+                bool Guardar = true;
           
 
             FileStream fs;  
@@ -57,30 +58,30 @@ namespace APPCOMY
             string linea;
 
             string rutbase = Directory.GetCurrentDirectory();
-            string rutarchivo = rutbase.Replace(@"\bin\Debug", @"\Archivo\Estudiantes.txt");
+            string rutarchivo = rutbase.Replace(@"\bin\Debug", @"\Archivos\Estudiantes.txt");
             fs = new FileStream(rutarchivo, FileMode.Append);
             escribe = new StreamWriter(fs);
-            try
-            {
-              
+            
+           
+
                 linea = txtN_carnet.Text + ";";
                 linea += txtNombres.Text + ";";
                 linea += txtApellidos.Text + ";";
                 linea += txtCorreo.Text + ";";
-                linea += ComboboxFacultad.SelectedItem.ToString();
+                linea += ComboboxFacultad.SelectedItem.ToString() + ";";
                 linea += txtCarrera.Text + ";";
-                linea += txtAño.Text + ";";
+                linea += comboBoxAño.SelectedItem.ToString() + ";";
                 linea += txtPromedio.Text + ";";
                 linea += txtTelefono.Text + ";";
-                linea += ComboboxDepto.SelectedItem.ToString();
+                linea += ComboboxDepto.SelectedItem.ToString() + ";";
                 escribe.WriteLine(linea.ToUpper());
                 escribe.Close();
-            }
-            catch 
-            {
-                MessageBox.Show("Datos incompletos, porfavor vuelva a registrarse");
-            }
-            Close();
+           
+                if (Guardar == true) 
+                {
+                 MessageBox.Show("Registro guardado correctamente");
+                }
+
 
         }
 

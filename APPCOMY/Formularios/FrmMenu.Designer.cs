@@ -343,7 +343,7 @@ namespace APPCOMY
             this.MaximumSize = new System.Drawing.Size(690, 618);
             this.Name = "FrmMenu";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.FrmMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

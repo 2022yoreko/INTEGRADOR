@@ -44,7 +44,6 @@ namespace APPCOMY
             this.label8 = new System.Windows.Forms.Label();
             this.txtCarrera = new System.Windows.Forms.TextBox();
             this.txtPromedio = new System.Windows.Forms.TextBox();
-            this.txtAño = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -64,10 +63,8 @@ namespace APPCOMY
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.imgPerfil = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
-            this.btnEliminar = new System.Windows.Forms.Button();
+            this.comboBoxAño = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgPerfil)).BeginInit();
@@ -100,7 +97,7 @@ namespace APPCOMY
             // btnGuardar_datos
             // 
             this.btnGuardar_datos.AutoSize = true;
-            this.btnGuardar_datos.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.btnGuardar_datos.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnGuardar_datos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnGuardar_datos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar_datos.FlatAppearance.BorderColor = System.Drawing.Color.Aquamarine;
@@ -235,15 +232,6 @@ namespace APPCOMY
             this.txtPromedio.Name = "txtPromedio";
             this.txtPromedio.Size = new System.Drawing.Size(190, 27);
             this.txtPromedio.TabIndex = 21;
-            // 
-            // txtAño
-            // 
-            this.txtAño.Font = new System.Drawing.Font("Verdana", 12F);
-            this.txtAño.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtAño.Location = new System.Drawing.Point(532, 247);
-            this.txtAño.Name = "txtAño";
-            this.txtAño.Size = new System.Drawing.Size(190, 27);
-            this.txtAño.TabIndex = 24;
             // 
             // label9
             // 
@@ -487,15 +475,6 @@ namespace APPCOMY
             this.imgPerfil.TabIndex = 72;
             this.imgPerfil.TabStop = false;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(815, 380);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 31);
-            this.button1.TabIndex = 79;
-            this.button1.Text = "info personal";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // btnAgregar
             // 
             this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
@@ -506,40 +485,27 @@ namespace APPCOMY
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.btnAgregar.Location = new System.Drawing.Point(763, 449);
+            this.btnAgregar.Location = new System.Drawing.Point(835, 373);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(54, 50);
             this.btnAgregar.TabIndex = 80;
             this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // btnEditar
+            // comboBoxAño
             // 
-            this.btnEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.btnEditar.BackgroundImage = global::APPCOMY.Properties.Resources.escritura;
-            this.btnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.btnEditar.Location = new System.Drawing.Point(835, 445);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(54, 54);
-            this.btnEditar.TabIndex = 81;
-            this.btnEditar.UseVisualStyleBackColor = false;
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.btnEliminar.BackgroundImage = global::APPCOMY.Properties.Resources.basura;
-            this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.btnEliminar.Location = new System.Drawing.Point(903, 445);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(54, 54);
-            this.btnEliminar.TabIndex = 82;
-            this.btnEliminar.UseVisualStyleBackColor = false;
-            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            this.comboBoxAño.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxAño.FormattingEnabled = true;
+            this.comboBoxAño.Items.AddRange(new object[] {
+            "1°",
+            "2°",
+            "3°",
+            "4°",
+            "5°"});
+            this.comboBoxAño.Location = new System.Drawing.Point(532, 252);
+            this.comboBoxAño.Name = "comboBoxAño";
+            this.comboBoxAño.Size = new System.Drawing.Size(190, 26);
+            this.comboBoxAño.TabIndex = 81;
             // 
             // FrmRegistro_Estudiantes
             // 
@@ -547,10 +513,8 @@ namespace APPCOMY
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(979, 572);
-            this.Controls.Add(this.btnEliminar);
-            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.comboBoxAño);
             this.Controls.Add(this.btnAgregar);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.imgPerfil);
             this.Controls.Add(this.txtCorreo);
             this.Controls.Add(this.txtDomicilio);
@@ -567,7 +531,6 @@ namespace APPCOMY
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.txtAño);
             this.Controls.Add(this.txtPromedio);
             this.Controls.Add(this.txtCarrera);
             this.Controls.Add(this.label8);
@@ -613,7 +576,6 @@ namespace APPCOMY
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtCarrera;
         private System.Windows.Forms.TextBox txtPromedio;
-        private System.Windows.Forms.TextBox txtAño;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
@@ -633,9 +595,7 @@ namespace APPCOMY
         private System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox imgPerfil;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.Button btnEditar;
-        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.ComboBox comboBoxAño;
     }
 }
