@@ -56,7 +56,7 @@ namespace APPCOMY.Formularios
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Verdana", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(273, 101);
+            this.label1.Location = new System.Drawing.Point(324, 106);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(84, 28);
             this.label1.TabIndex = 0;
@@ -186,7 +186,7 @@ namespace APPCOMY.Formularios
             this.btnRegresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.btnRegresar.Location = new System.Drawing.Point(604, 21);
+            this.btnRegresar.Location = new System.Drawing.Point(679, 21);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(46, 39);
             this.btnRegresar.TabIndex = 32;
@@ -200,7 +200,7 @@ namespace APPCOMY.Formularios
             this.btnMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.btnMenu.Location = new System.Drawing.Point(30, 22);
+            this.btnMenu.Location = new System.Drawing.Point(30, 29);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Size = new System.Drawing.Size(44, 38);
             this.btnMenu.TabIndex = 39;
@@ -212,7 +212,7 @@ namespace APPCOMY.Formularios
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(345, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(363, 12);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(262, 55);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -225,7 +225,7 @@ namespace APPCOMY.Formularios
             this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
             this.label14.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(498, 31);
+            this.label14.Location = new System.Drawing.Point(519, 31);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(85, 17);
             this.label14.TabIndex = 47;
@@ -240,10 +240,10 @@ namespace APPCOMY.Formularios
             this.panel1.Controls.Add(this.linkLabel6);
             this.panel1.Controls.Add(this.linkLabel4);
             this.panel1.Controls.Add(this.linkLabel5);
-            this.panel1.ForeColor = System.Drawing.Color.LightGray;
-            this.panel1.Location = new System.Drawing.Point(68, 147);
+            this.panel1.ForeColor = System.Drawing.Color.Transparent;
+            this.panel1.Location = new System.Drawing.Point(102, 156);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(491, 336);
+            this.panel1.Size = new System.Drawing.Size(548, 336);
             this.panel1.TabIndex = 48;
             // 
             // FrmAyuda
@@ -251,7 +251,7 @@ namespace APPCOMY.Formularios
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(671, 507);
+            this.ClientSize = new System.Drawing.Size(746, 546);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.btnRegresar);
@@ -262,7 +262,6 @@ namespace APPCOMY.Formularios
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximumSize = new System.Drawing.Size(671, 507);
             this.Name = "FrmAyuda";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ayuda";

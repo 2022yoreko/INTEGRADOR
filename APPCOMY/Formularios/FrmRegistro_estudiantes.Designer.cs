@@ -99,8 +99,8 @@ namespace APPCOMY
             // 
             // btnGuardar_datos
             // 
-            this.btnGuardar_datos.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.btnGuardar_datos.BackgroundImage = global::APPCOMY.Properties.Resources.azul;
+            this.btnGuardar_datos.AutoSize = true;
+            this.btnGuardar_datos.BackColor = System.Drawing.Color.DarkTurquoise;
             this.btnGuardar_datos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnGuardar_datos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar_datos.FlatAppearance.BorderColor = System.Drawing.Color.Aquamarine;

@@ -101,9 +101,13 @@ namespace APPCOMY
             // 
             // btnEntrar
             // 
-            this.btnEntrar.BackColor = System.Drawing.Color.DarkGray;
+            this.btnEntrar.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnEntrar.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
+            this.btnEntrar.FlatAppearance.BorderSize = 2;
+            this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEntrar.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEntrar.Location = new System.Drawing.Point(271, 399);
+            this.btnEntrar.ForeColor = System.Drawing.Color.White;
+            this.btnEntrar.Location = new System.Drawing.Point(272, 399);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(127, 46);
             this.btnEntrar.TabIndex = 7;
@@ -206,7 +210,7 @@ namespace APPCOMY
             this.btnRegistrate.FlatAppearance.BorderSize = 0;
             this.btnRegistrate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrate.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold);
-            this.btnRegistrate.ForeColor = System.Drawing.Color.White;
+            this.btnRegistrate.ForeColor = System.Drawing.Color.Aqua;
             this.btnRegistrate.Location = new System.Drawing.Point(254, 463);
             this.btnRegistrate.Name = "btnRegistrate";
             this.btnRegistrate.Size = new System.Drawing.Size(171, 65);

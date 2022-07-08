@@ -20,11 +20,6 @@ namespace APPCOMY
             InitializeComponent();
         }
 
-        private void txtNumero_Telefono_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAcceder_Click(object sender, EventArgs e)
         {
             string Nombres = txtNombres.Text;
@@ -55,10 +50,10 @@ namespace APPCOMY
             escribe.Close();
 
 
-            /* si hay problemas no olvides eliminar este if */
+           
             if (validate == true) 
             {
-                MessageBox.Show("Bienvenido" + (Nombres));
+                MessageBox.Show("Bienvenido: " + Nombres);
             }
 
 
@@ -89,11 +84,6 @@ namespace APPCOMY
             var newForm = new Form();
             newForm.Show();
             this.Hide();
-        }
-
-        private void Form3_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void txtNombres_Enter(object sender, EventArgs e)

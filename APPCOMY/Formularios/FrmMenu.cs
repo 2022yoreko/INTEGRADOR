@@ -27,11 +27,7 @@ namespace APPCOMY
             administrador.ShowDialog();
         }
 
-        private void btnPerfil_Alumnos_Click(object sender, EventArgs e)
-        {
-            
-        }
-
+        
         private void btnRegistro_Click(object sender, EventArgs e)
         {
             FrmRegistro_Estudiantes administrador = new FrmRegistro_Estudiantes();
@@ -41,7 +37,7 @@ namespace APPCOMY
         private void btnInformacion_Personal_Click(object sender, EventArgs e)
         {
 
-            FrmRegistro_Estudiantes administrador = new FrmRegistro_Estudiantes();
+            FrmPerfil administrador = new FrmPerfil();
             administrador.ShowDialog();
         }
 
@@ -51,11 +47,6 @@ namespace APPCOMY
             administrador.ShowDialog();
         }
 
-
-        private void btnPerfil_Click(object sender, EventArgs e)
-        {
-            
-        }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
