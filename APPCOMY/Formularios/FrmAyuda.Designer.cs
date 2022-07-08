@@ -45,6 +45,7 @@ namespace APPCOMY.Formularios
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label14 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -242,17 +243,26 @@ namespace APPCOMY.Formularios
             this.panel1.Controls.Add(this.linkLabel4);
             this.panel1.Controls.Add(this.linkLabel5);
             this.panel1.ForeColor = System.Drawing.Color.Transparent;
-            this.panel1.Location = new System.Drawing.Point(120, 165);
+            this.panel1.Location = new System.Drawing.Point(30, 146);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(484, 336);
+            this.panel1.Size = new System.Drawing.Size(453, 336);
             this.panel1.TabIndex = 48;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(533, 146);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(408, 336);
+            this.richTextBox1.TabIndex = 49;
+            this.richTextBox1.Text = "";
             // 
             // FrmAyuda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(746, 546);
+            this.ClientSize = new System.Drawing.Size(1017, 550);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.btnRegresar);
@@ -293,5 +303,6 @@ namespace APPCOMY.Formularios
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }

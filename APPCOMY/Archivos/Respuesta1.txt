@@ -1,0 +1,7 @@
+﻿Para hacer el registro de un estudiente debe realizar las siguientes indicaciones:
+1. Diríjete al panel de opciones.
+2. Da click en el ícono de Registro.
+3. Llena todos los campos del fornmulario que se te presenta.
+4. Da click en guardar datos.
+5. A continuación aparecerá un mensaje con el siguiente texto "Datos registrados correctamente".
+6. Si no se llenan todos los campos del formulario se mostrará un mensaje con el siguiente texto "Datos incompletos, llenar todos los campos".
