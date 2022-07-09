@@ -1,0 +1,6 @@
+﻿Para borrar el registro de un estudiante debe realizar los siguientes pasos:
+1. Dirijete al panel de opciones.
+2. Da click en el ícono Perfil.
+3. Realice la busqueda de la persona que desea eliminar.
+4. Da click en el botón eliminar.
+5. Aparecerá un mensaje con la siguiente información "Perfil eliminado".

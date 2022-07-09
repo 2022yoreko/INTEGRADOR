@@ -159,7 +159,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Imagen de APPCOMY.png" />
   </ItemGroup>
@@ -175,7 +177,9 @@
     <None Include="Resources\usuario.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Archivos\Respuesta3.txt" />
     <Content Include="Archivos\Respuesta1.txt" />
+    <Content Include="Archivos\Respuesta2.txt" />
     <Content Include="Archivos\Usuarios.txt" />
     <Content Include="Archivos\Estudiantes.txt" />
     <None Include="Resources\icono de limpiar.png" />

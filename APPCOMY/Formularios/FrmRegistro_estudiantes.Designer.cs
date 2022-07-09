@@ -29,6 +29,7 @@ namespace APPCOMY
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistro_Estudiantes));
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -66,9 +67,11 @@ namespace APPCOMY
             this.btnAgregar = new System.Windows.Forms.Button();
             this.comboBoxAño = new System.Windows.Forms.ComboBox();
             this.btnLimpiar = new System.Windows.Forms.Button();
+            this.epError = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgPerfil)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epError)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -124,6 +127,7 @@ namespace APPCOMY
             this.txtNombres.Name = "txtNombres";
             this.txtNombres.Size = new System.Drawing.Size(208, 27);
             this.txtNombres.TabIndex = 7;
+            this.txtNombres.Validated += new System.EventHandler(this.txtNombres_Validated);
             // 
             // txtApellidos
             // 
@@ -134,6 +138,7 @@ namespace APPCOMY
             this.txtApellidos.Size = new System.Drawing.Size(208, 27);
             this.txtApellidos.TabIndex = 8;
             this.txtApellidos.Text = " ";
+            this.txtApellidos.Validated += new System.EventHandler(this.txtApellidos_Validated);
             // 
             // txtTelefono
             // 
@@ -143,6 +148,7 @@ namespace APPCOMY
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(208, 27);
             this.txtTelefono.TabIndex = 12;
+            this.txtTelefono.Validated += new System.EventHandler(this.txtTelefono_Validated);
             // 
             // label1
             // 
@@ -224,6 +230,7 @@ namespace APPCOMY
             this.txtCarrera.Name = "txtCarrera";
             this.txtCarrera.Size = new System.Drawing.Size(190, 27);
             this.txtCarrera.TabIndex = 19;
+            this.txtCarrera.Validated += new System.EventHandler(this.txtCarrera_Validated);
             // 
             // txtPromedio
             // 
@@ -233,6 +240,7 @@ namespace APPCOMY
             this.txtPromedio.Name = "txtPromedio";
             this.txtPromedio.Size = new System.Drawing.Size(190, 27);
             this.txtPromedio.TabIndex = 21;
+            this.txtPromedio.Validated += new System.EventHandler(this.txtPromedio_Validated);
             // 
             // label9
             // 
@@ -362,6 +370,7 @@ namespace APPCOMY
             this.ComboboxFacultad.Name = "ComboboxFacultad";
             this.ComboboxFacultad.Size = new System.Drawing.Size(190, 26);
             this.ComboboxFacultad.TabIndex = 36;
+          
             // 
             // ComboboxDepto
             // 
@@ -390,6 +399,7 @@ namespace APPCOMY
             this.ComboboxDepto.Name = "ComboboxDepto";
             this.ComboboxDepto.Size = new System.Drawing.Size(208, 26);
             this.ComboboxDepto.TabIndex = 37;
+
             // 
             // label15
             // 
@@ -435,6 +445,7 @@ namespace APPCOMY
             this.txtN_carnet.Name = "txtN_carnet";
             this.txtN_carnet.Size = new System.Drawing.Size(208, 27);
             this.txtN_carnet.TabIndex = 41;
+            this.txtN_carnet.Validated += new System.EventHandler(this.txtN_carnet_Validated);
             // 
             // txtDomicilio
             // 
@@ -444,6 +455,7 @@ namespace APPCOMY
             this.txtDomicilio.Name = "txtDomicilio";
             this.txtDomicilio.Size = new System.Drawing.Size(190, 27);
             this.txtDomicilio.TabIndex = 42;
+            this.txtDomicilio.Validated += new System.EventHandler(this.txtDomicilio_Validated);
             // 
             // txtCorreo
             // 
@@ -453,6 +465,7 @@ namespace APPCOMY
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(208, 27);
             this.txtCorreo.TabIndex = 43;
+            this.txtCorreo.Validated += new System.EventHandler(this.txtCorreo_Validated);
             // 
             // pictureBox3
             // 
@@ -522,6 +535,10 @@ namespace APPCOMY
             this.btnLimpiar.UseVisualStyleBackColor = false;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
+            // epError
+            // 
+            this.epError.ContainerControl = this;
+            // 
             // FrmRegistro_Estudiantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -573,6 +590,7 @@ namespace APPCOMY
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgPerfil)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epError)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -615,5 +633,6 @@ namespace APPCOMY
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.ComboBox comboBoxAño;
         private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.ErrorProvider epError;
     }
 }

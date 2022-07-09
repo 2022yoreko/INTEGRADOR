@@ -90,7 +90,7 @@ namespace APPCOMY
             this.txtNombres.CausesValidation = false;
             this.txtNombres.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombres.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtNombres.Location = new System.Drawing.Point(84, 220);
+            this.txtNombres.Location = new System.Drawing.Point(85, 212);
             this.txtNombres.Name = "txtNombres";
             this.txtNombres.Size = new System.Drawing.Size(222, 29);
             this.txtNombres.TabIndex = 6;
@@ -104,7 +104,7 @@ namespace APPCOMY
             this.txtApellidos.CausesValidation = false;
             this.txtApellidos.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellidos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtApellidos.Location = new System.Drawing.Point(84, 269);
+            this.txtApellidos.Location = new System.Drawing.Point(85, 265);
             this.txtApellidos.Name = "txtApellidos";
             this.txtApellidos.Size = new System.Drawing.Size(222, 29);
             this.txtApellidos.TabIndex = 7;
@@ -118,7 +118,7 @@ namespace APPCOMY
             this.txtContraseña.CausesValidation = false;
             this.txtContraseña.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseña.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtContraseña.Location = new System.Drawing.Point(84, 322);
+            this.txtContraseña.Location = new System.Drawing.Point(85, 319);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(220, 29);
             this.txtContraseña.TabIndex = 8;
@@ -132,7 +132,7 @@ namespace APPCOMY
             this.txtCorreo_Electronico.CausesValidation = false;
             this.txtCorreo_Electronico.Font = new System.Drawing.Font("Arial", 14F);
             this.txtCorreo_Electronico.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtCorreo_Electronico.Location = new System.Drawing.Point(358, 269);
+            this.txtCorreo_Electronico.Location = new System.Drawing.Point(359, 265);
             this.txtCorreo_Electronico.Name = "txtCorreo_Electronico";
             this.txtCorreo_Electronico.Size = new System.Drawing.Size(231, 29);
             this.txtCorreo_Electronico.TabIndex = 9;
@@ -142,10 +142,14 @@ namespace APPCOMY
             // 
             // btnGuardar
             // 
-            this.btnGuardar.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.btnGuardar.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnGuardar.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
+            this.btnGuardar.FlatAppearance.BorderSize = 2;
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.ForeColor = System.Drawing.Color.Black;
-            this.btnGuardar.Location = new System.Drawing.Point(262, 407);
+            this.btnGuardar.ForeColor = System.Drawing.Color.White;
+            this.btnGuardar.Location = new System.Drawing.Point(265, 388);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(138, 56);
             this.btnGuardar.TabIndex = 12;
@@ -208,7 +212,7 @@ namespace APPCOMY
             this.txtTelefono.CausesValidation = false;
             this.txtTelefono.Font = new System.Drawing.Font("Arial", 14F);
             this.txtTelefono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtTelefono.Location = new System.Drawing.Point(358, 324);
+            this.txtTelefono.Location = new System.Drawing.Point(359, 319);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(231, 29);
             this.txtTelefono.TabIndex = 35;
@@ -220,7 +224,7 @@ namespace APPCOMY
             this.txtConfirmar.CausesValidation = false;
             this.txtConfirmar.Font = new System.Drawing.Font("Arial", 14F);
             this.txtConfirmar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtConfirmar.Location = new System.Drawing.Point(358, 220);
+            this.txtConfirmar.Location = new System.Drawing.Point(359, 212);
             this.txtConfirmar.Name = "txtConfirmar";
             this.txtConfirmar.Size = new System.Drawing.Size(231, 29);
             this.txtConfirmar.TabIndex = 36;

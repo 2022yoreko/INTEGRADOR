@@ -65,7 +65,9 @@ namespace APPCOMY
         private void btnAyuda_Click(object sender, EventArgs e)
         {
             FrmAyuda administrador = new FrmAyuda();
-            administrador.ShowDialog();
+            administrador.MdiParent = this.MdiParent;
+            administrador.Show();
+            this.Close();
         }
 
         private void btnRetroceder_Click(object sender, EventArgs e)

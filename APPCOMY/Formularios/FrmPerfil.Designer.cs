@@ -50,9 +50,9 @@ namespace APPCOMY.Formularios
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(62, 164);
+            this.dataGridView1.Location = new System.Drawing.Point(107, 162);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(665, 323);
+            this.dataGridView1.Size = new System.Drawing.Size(593, 323);
             this.dataGridView1.TabIndex = 0;
             // 
             // btnEditar
@@ -89,7 +89,7 @@ namespace APPCOMY.Formularios
             this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.btnBuscar.Location = new System.Drawing.Point(750, 186);
+            this.btnBuscar.Location = new System.Drawing.Point(757, 185);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(61, 50);
             this.btnBuscar.TabIndex = 84;
@@ -186,7 +186,7 @@ namespace APPCOMY.Formularios
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 13.25F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(301, 126);
+            this.label1.Location = new System.Drawing.Point(309, 124);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(193, 22);
             this.label1.TabIndex = 93;

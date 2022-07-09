@@ -81,7 +81,7 @@ namespace APPCOMY
                     frmNav.Show();
                     this.Close();
                     FrmMenu administrador = new FrmMenu();
-                    administrador.ShowDialog();
+                    administrador.Show();
 
                 }
                 else

@@ -152,5 +152,147 @@ namespace APPCOMY
             txtTelefono.Clear();
             txtDomicilio.Clear();
         }
+
+        private void txtN_carnet_Validated(object sender, EventArgs e)
+        {
+            if (txtN_carnet.Text.Trim() == "") 
+            {
+                epError.SetError(txtN_carnet, "Campo requerido");
+                txtN_carnet.Focus();
+            }
+            else 
+            {
+                epError.Clear();
+            }
+        }
+
+        private void txtNombres_Validated(object sender, EventArgs e)
+        {
+            if (txtNombres.Text.Trim() == "")
+            {
+                epError.SetError(txtNombres, "Campo requerido");
+                txtNombres.Focus();
+            }
+            else
+            {
+                epError.Clear();
+            }
+        }
+
+        private void txtApellidos_Validated(object sender, EventArgs e)
+        {
+            if (txtApellidos.Text.Trim() == "")
+            {
+                epError.SetError(txtApellidos, "Campo requerido");
+                txtApellidos.Focus();
+            }
+            else
+            {
+                epError.Clear();
+            }
+        }
+
+        private void txtCorreo_Validated(object sender, EventArgs e)
+        {
+            if (txtCorreo.Text.Trim() == "")
+            {
+                epError.SetError(txtCorreo, "Campo requerido");
+                txtCorreo.Focus();
+            }
+            else
+            {
+                epError.Clear();
+            }
+        }
+
+        private void txtTelefono_Validated(object sender, EventArgs e)
+        {
+            if (txtTelefono.Text.Trim() == "")
+            {
+                epError.SetError(txtTelefono, "Campo requerido");
+                txtTelefono.Focus();
+            }
+            else
+            {
+                epError.Clear();
+            }
+        }
+
+      /*  private void ComboboxDepto_Validated(object sender, EventArgs e)
+        {
+            if (ComboboxDepto.ToString().Trim() == "")
+            {
+               
+            }
+            else
+            {
+                epError.Clear();
+            }
+        }*/
+
+        private void txtDomicilio_Validated(object sender, EventArgs e)
+        {
+            if (txtDomicilio.Text.Trim() == "")
+            {
+                epError.SetError(txtDomicilio, "Campo requerido");
+                txtDomicilio.Focus();
+            }
+            else
+            {
+                epError.Clear();
+            }
+        }
+
+        /*private void comboBoxAño_Validated(object sender, EventArgs e)
+        {
+            if (txtN_carnet.Text.Trim() == "")
+            {
+                epError.SetError(txtN_carnet, "Escriba su numero de carnet");
+                txtN_carnet.Focus();
+            }
+            else
+            {
+                epError.Clear();
+            }
+        }*/
+
+       /* private void ComboboxFacultad_Validated(object sender, EventArgs e)
+        {
+            if (txtN_carnet.Text.Trim() == "")
+            {
+                epError.SetError(txtN_carnet, "Escriba su numero de carnet");
+                txtN_carnet.Focus();
+            }
+            else
+            {
+                epError.Clear();
+            }
+        }*/
+
+        private void txtCarrera_Validated(object sender, EventArgs e)
+        {
+            if (txtCarrera.Text.Trim() == "")
+            {
+                epError.SetError(txtCarrera, "Campo requerido");
+                txtCarrera.Focus();
+            }
+            else
+            {
+                epError.Clear();
+            }
+        }
+
+        private void txtPromedio_Validated(object sender, EventArgs e)
+        {
+            if (txtPromedio.Text.Trim() == "")
+            {
+                epError.SetError(txtPromedio, "Campo requerido");
+                txtPromedio.Focus();
+            }
+            else
+            {
+                epError.Clear();
+            }
+        }
     }
 }
