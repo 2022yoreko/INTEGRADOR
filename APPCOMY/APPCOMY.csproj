@@ -182,6 +182,7 @@
     <Content Include="Archivos\Respuesta2.txt" />
     <Content Include="Archivos\Usuarios.txt" />
     <Content Include="Archivos\Estudiantes.txt" />
+    <None Include="Resources\foto.png" />
     <None Include="Resources\icono de limpiar.png" />
     <None Include="Resources\azul.JPEG" />
     <None Include="Resources\agregar-usuario %281%291.png" />

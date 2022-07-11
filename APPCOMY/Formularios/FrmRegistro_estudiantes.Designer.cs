@@ -64,10 +64,15 @@ namespace APPCOMY
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.imgPerfil = new System.Windows.Forms.PictureBox();
-            this.btnAgregar = new System.Windows.Forms.Button();
+            this.btnAgregar_foto = new System.Windows.Forms.Button();
             this.comboBoxAño = new System.Windows.Forms.ComboBox();
-            this.btnLimpiar = new System.Windows.Forms.Button();
             this.epError = new System.Windows.Forms.ErrorProvider(this.components);
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtN_Becado = new System.Windows.Forms.TextBox();
+            this.btnNuevo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgPerfil)).BeginInit();
@@ -111,7 +116,7 @@ namespace APPCOMY
             this.btnGuardar_datos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar_datos.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar_datos.ForeColor = System.Drawing.Color.White;
-            this.btnGuardar_datos.Location = new System.Drawing.Point(407, 498);
+            this.btnGuardar_datos.Location = new System.Drawing.Point(374, 515);
             this.btnGuardar_datos.Name = "btnGuardar_datos";
             this.btnGuardar_datos.Size = new System.Drawing.Size(168, 49);
             this.btnGuardar_datos.TabIndex = 6;
@@ -123,9 +128,9 @@ namespace APPCOMY
             // 
             this.txtNombres.Font = new System.Drawing.Font("Verdana", 12F);
             this.txtNombres.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtNombres.Location = new System.Drawing.Point(167, 247);
+            this.txtNombres.Location = new System.Drawing.Point(170, 222);
             this.txtNombres.Name = "txtNombres";
-            this.txtNombres.Size = new System.Drawing.Size(208, 27);
+            this.txtNombres.Size = new System.Drawing.Size(225, 27);
             this.txtNombres.TabIndex = 7;
             this.txtNombres.Validated += new System.EventHandler(this.txtNombres_Validated);
             // 
@@ -133,9 +138,9 @@ namespace APPCOMY
             // 
             this.txtApellidos.Font = new System.Drawing.Font("Verdana", 12F);
             this.txtApellidos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtApellidos.Location = new System.Drawing.Point(167, 303);
+            this.txtApellidos.Location = new System.Drawing.Point(544, 227);
             this.txtApellidos.Name = "txtApellidos";
-            this.txtApellidos.Size = new System.Drawing.Size(208, 27);
+            this.txtApellidos.Size = new System.Drawing.Size(203, 27);
             this.txtApellidos.TabIndex = 8;
             this.txtApellidos.Text = " ";
             this.txtApellidos.Validated += new System.EventHandler(this.txtApellidos_Validated);
@@ -144,9 +149,9 @@ namespace APPCOMY
             // 
             this.txtTelefono.Font = new System.Drawing.Font("Verdana", 12F);
             this.txtTelefono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtTelefono.Location = new System.Drawing.Point(167, 413);
+            this.txtTelefono.Location = new System.Drawing.Point(544, 283);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(208, 27);
+            this.txtTelefono.Size = new System.Drawing.Size(203, 27);
             this.txtTelefono.TabIndex = 12;
             this.txtTelefono.Validated += new System.EventHandler(this.txtTelefono_Validated);
             // 
@@ -156,7 +161,7 @@ namespace APPCOMY
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(63, 251);
+            this.label1.Location = new System.Drawing.Point(66, 226);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 24);
             this.label1.TabIndex = 13;
@@ -168,7 +173,7 @@ namespace APPCOMY
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(63, 307);
+            this.label4.Location = new System.Drawing.Point(440, 226);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(93, 24);
             this.label4.TabIndex = 14;
@@ -180,7 +185,7 @@ namespace APPCOMY
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(62, 413);
+            this.label5.Location = new System.Drawing.Point(439, 283);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(89, 24);
             this.label5.TabIndex = 15;
@@ -204,7 +209,7 @@ namespace APPCOMY
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(433, 304);
+            this.label7.Location = new System.Drawing.Point(66, 406);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(82, 22);
             this.label7.TabIndex = 17;
@@ -216,7 +221,7 @@ namespace APPCOMY
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(433, 359);
+            this.label8.Location = new System.Drawing.Point(445, 403);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(73, 22);
             this.label8.TabIndex = 18;
@@ -226,9 +231,9 @@ namespace APPCOMY
             // 
             this.txtCarrera.Font = new System.Drawing.Font("Verdana", 12F);
             this.txtCarrera.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtCarrera.Location = new System.Drawing.Point(532, 361);
+            this.txtCarrera.Location = new System.Drawing.Point(544, 403);
             this.txtCarrera.Name = "txtCarrera";
-            this.txtCarrera.Size = new System.Drawing.Size(190, 27);
+            this.txtCarrera.Size = new System.Drawing.Size(203, 27);
             this.txtCarrera.TabIndex = 19;
             this.txtCarrera.Validated += new System.EventHandler(this.txtCarrera_Validated);
             // 
@@ -236,9 +241,9 @@ namespace APPCOMY
             // 
             this.txtPromedio.Font = new System.Drawing.Font("Verdana", 12F);
             this.txtPromedio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPromedio.Location = new System.Drawing.Point(532, 414);
+            this.txtPromedio.Location = new System.Drawing.Point(544, 456);
             this.txtPromedio.Name = "txtPromedio";
-            this.txtPromedio.Size = new System.Drawing.Size(190, 27);
+            this.txtPromedio.Size = new System.Drawing.Size(203, 27);
             this.txtPromedio.TabIndex = 21;
             this.txtPromedio.Validated += new System.EventHandler(this.txtPromedio_Validated);
             // 
@@ -248,7 +253,7 @@ namespace APPCOMY
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(433, 414);
+            this.label9.Location = new System.Drawing.Point(445, 456);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(93, 22);
             this.label9.TabIndex = 25;
@@ -260,7 +265,7 @@ namespace APPCOMY
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(392, 270);
+            this.label10.Location = new System.Drawing.Point(404, 250);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(0, 22);
             this.label10.TabIndex = 26;
@@ -271,7 +276,7 @@ namespace APPCOMY
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(63, 477);
+            this.label11.Location = new System.Drawing.Point(66, 346);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(62, 22);
             this.label11.TabIndex = 27;
@@ -283,7 +288,7 @@ namespace APPCOMY
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(433, 247);
+            this.label12.Location = new System.Drawing.Point(66, 460);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(44, 22);
             this.label12.TabIndex = 28;
@@ -366,11 +371,10 @@ namespace APPCOMY
             "Educación e Idiomas",
             "Humanidades y Ciencias Jurídicas",
             "Instituto Politécnico de la Salud"});
-            this.ComboboxFacultad.Location = new System.Drawing.Point(532, 302);
+            this.ComboboxFacultad.Location = new System.Drawing.Point(170, 402);
             this.ComboboxFacultad.Name = "ComboboxFacultad";
-            this.ComboboxFacultad.Size = new System.Drawing.Size(190, 26);
+            this.ComboboxFacultad.Size = new System.Drawing.Size(225, 26);
             this.ComboboxFacultad.TabIndex = 36;
-          
             // 
             // ComboboxDepto
             // 
@@ -395,11 +399,10 @@ namespace APPCOMY
             "Nueva Segovia ",
             "Rio San Juan",
             "Rivas"});
-            this.ComboboxDepto.Location = new System.Drawing.Point(167, 471);
+            this.ComboboxDepto.Location = new System.Drawing.Point(170, 337);
             this.ComboboxDepto.Name = "ComboboxDepto";
-            this.ComboboxDepto.Size = new System.Drawing.Size(208, 26);
+            this.ComboboxDepto.Size = new System.Drawing.Size(225, 26);
             this.ComboboxDepto.TabIndex = 37;
-
             // 
             // label15
             // 
@@ -407,7 +410,7 @@ namespace APPCOMY
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(63, 193);
+            this.label15.Location = new System.Drawing.Point(66, 172);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(101, 24);
             this.label15.TabIndex = 38;
@@ -419,7 +422,7 @@ namespace APPCOMY
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(431, 192);
+            this.label16.Location = new System.Drawing.Point(443, 340);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(95, 24);
             this.label16.TabIndex = 39;
@@ -431,7 +434,7 @@ namespace APPCOMY
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(63, 360);
+            this.label17.Location = new System.Drawing.Point(66, 281);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(75, 24);
             this.label17.TabIndex = 40;
@@ -441,9 +444,9 @@ namespace APPCOMY
             // 
             this.txtN_carnet.Font = new System.Drawing.Font("Verdana", 12F);
             this.txtN_carnet.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtN_carnet.Location = new System.Drawing.Point(167, 191);
+            this.txtN_carnet.Location = new System.Drawing.Point(170, 170);
             this.txtN_carnet.Name = "txtN_carnet";
-            this.txtN_carnet.Size = new System.Drawing.Size(208, 27);
+            this.txtN_carnet.Size = new System.Drawing.Size(225, 27);
             this.txtN_carnet.TabIndex = 41;
             this.txtN_carnet.Validated += new System.EventHandler(this.txtN_carnet_Validated);
             // 
@@ -451,9 +454,9 @@ namespace APPCOMY
             // 
             this.txtDomicilio.Font = new System.Drawing.Font("Verdana", 12F);
             this.txtDomicilio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtDomicilio.Location = new System.Drawing.Point(532, 190);
+            this.txtDomicilio.Location = new System.Drawing.Point(544, 342);
             this.txtDomicilio.Name = "txtDomicilio";
-            this.txtDomicilio.Size = new System.Drawing.Size(190, 27);
+            this.txtDomicilio.Size = new System.Drawing.Size(203, 27);
             this.txtDomicilio.TabIndex = 42;
             this.txtDomicilio.Validated += new System.EventHandler(this.txtDomicilio_Validated);
             // 
@@ -461,9 +464,9 @@ namespace APPCOMY
             // 
             this.txtCorreo.Font = new System.Drawing.Font("Verdana", 12F);
             this.txtCorreo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtCorreo.Location = new System.Drawing.Point(167, 358);
+            this.txtCorreo.Location = new System.Drawing.Point(170, 279);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(208, 27);
+            this.txtCorreo.Size = new System.Drawing.Size(225, 27);
             this.txtCorreo.TabIndex = 43;
             this.txtCorreo.Validated += new System.EventHandler(this.txtCorreo_Validated);
             // 
@@ -482,29 +485,29 @@ namespace APPCOMY
             // imgPerfil
             // 
             this.imgPerfil.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.imgPerfil.Location = new System.Drawing.Point(796, 190);
+            this.imgPerfil.Location = new System.Drawing.Point(791, 190);
             this.imgPerfil.Name = "imgPerfil";
             this.imgPerfil.Size = new System.Drawing.Size(138, 162);
             this.imgPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgPerfil.TabIndex = 72;
             this.imgPerfil.TabStop = false;
             // 
-            // btnAgregar
+            // btnAgregar_foto
             // 
-            this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.btnAgregar.BackgroundImage = global::APPCOMY.Properties.Resources.agregar_usuario__1_1;
-            this.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAgregar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.btnAgregar.FlatAppearance.BorderSize = 0;
-            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregar.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.btnAgregar.Location = new System.Drawing.Point(835, 390);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(54, 50);
-            this.btnAgregar.TabIndex = 80;
-            this.btnAgregar.UseVisualStyleBackColor = false;
-            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            this.btnAgregar_foto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
+            this.btnAgregar_foto.BackgroundImage = global::APPCOMY.Properties.Resources.foto;
+            this.btnAgregar_foto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAgregar_foto.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.btnAgregar_foto.FlatAppearance.BorderSize = 0;
+            this.btnAgregar_foto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregar_foto.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar_foto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
+            this.btnAgregar_foto.Location = new System.Drawing.Point(835, 358);
+            this.btnAgregar_foto.Name = "btnAgregar_foto";
+            this.btnAgregar_foto.Size = new System.Drawing.Size(54, 61);
+            this.btnAgregar_foto.TabIndex = 80;
+            this.btnAgregar_foto.UseVisualStyleBackColor = false;
+            this.btnAgregar_foto.Click += new System.EventHandler(this.btnAgregar_foto_Click);
             // 
             // comboBoxAño
             // 
@@ -516,38 +519,87 @@ namespace APPCOMY
             "3°",
             "4°",
             "5°"});
-            this.comboBoxAño.Location = new System.Drawing.Point(532, 252);
+            this.comboBoxAño.Location = new System.Drawing.Point(170, 456);
             this.comboBoxAño.Name = "comboBoxAño";
-            this.comboBoxAño.Size = new System.Drawing.Size(190, 26);
+            this.comboBoxAño.Size = new System.Drawing.Size(225, 26);
             this.comboBoxAño.TabIndex = 81;
-            // 
-            // btnLimpiar
-            // 
-            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.btnLimpiar.BackgroundImage = global::APPCOMY.Properties.Resources.icono_de_limpiar;
-            this.btnLimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnLimpiar.FlatAppearance.BorderSize = 0;
-            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLimpiar.Location = new System.Drawing.Point(835, 452);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(54, 64);
-            this.btnLimpiar.TabIndex = 82;
-            this.btnLimpiar.UseVisualStyleBackColor = false;
-            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // epError
             // 
             this.epError.ContainerControl = this;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(440, 170);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(102, 22);
+            this.label13.TabIndex = 83;
+            this.label13.Text = "N° Becado";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(-15, -15);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 84;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(-15, -15);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 85;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(-15, -15);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.TabIndex = 86;
+            // 
+            // txtN_Becado
+            // 
+            this.txtN_Becado.Font = new System.Drawing.Font("Verdana", 12F);
+            this.txtN_Becado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtN_Becado.Location = new System.Drawing.Point(544, 165);
+            this.txtN_Becado.Name = "txtN_Becado";
+            this.txtN_Becado.Size = new System.Drawing.Size(203, 27);
+            this.txtN_Becado.TabIndex = 87;
+            this.txtN_Becado.Validated += new System.EventHandler(this.txtN_Becado_Validated);
+            // 
+            // btnNuevo
+            // 
+            this.btnNuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
+            this.btnNuevo.BackgroundImage = global::APPCOMY.Properties.Resources.agregar_usuario__1_1;
+            this.btnNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnNuevo.FlatAppearance.BorderSize = 0;
+            this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
+            this.btnNuevo.Location = new System.Drawing.Point(835, 430);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(54, 54);
+            this.btnNuevo.TabIndex = 89;
+            this.btnNuevo.UseVisualStyleBackColor = false;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // FrmRegistro_Estudiantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(979, 581);
-            this.Controls.Add(this.btnLimpiar);
+            this.ClientSize = new System.Drawing.Size(979, 590);
+            this.Controls.Add(this.btnNuevo);
+            this.Controls.Add(this.txtN_Becado);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.comboBoxAño);
-            this.Controls.Add(this.btnAgregar);
+            this.Controls.Add(this.btnAgregar_foto);
             this.Controls.Add(this.imgPerfil);
             this.Controls.Add(this.txtCorreo);
             this.Controls.Add(this.txtDomicilio);
@@ -582,7 +634,7 @@ namespace APPCOMY
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximumSize = new System.Drawing.Size(979, 581);
+            this.MaximumSize = new System.Drawing.Size(979, 590);
             this.Name = "FrmRegistro_Estudiantes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de estudiantes";
@@ -630,9 +682,14 @@ namespace APPCOMY
         private System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox imgPerfil;
-        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.Button btnAgregar_foto;
         private System.Windows.Forms.ComboBox comboBoxAño;
-        private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.ErrorProvider epError;
+        private System.Windows.Forms.TextBox txtN_Becado;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button btnNuevo;
     }
 }

@@ -143,9 +143,9 @@ namespace APPCOMY
 
         private void txtContraseña_Leave(object sender, EventArgs e)
         {
-            if (txtContraseña.Text == "")
+            if (txtContraseña.Text == "Contraseña")
             {
-                txtContraseña.Text = "Contraseña";
+                txtContraseña.Text = "";
                 txtContraseña.ForeColor = Color.DimGray;
 
             }

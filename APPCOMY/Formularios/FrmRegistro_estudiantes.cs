@@ -41,6 +41,7 @@ namespace APPCOMY
         private void button1_Click(object sender, EventArgs e)
         {
                 string N_carnet = txtN_carnet.Text;
+                string N_Becado = txtN_Becado.Text;
                 string Nombres = txtNombres.Text;
                 string Apellidos = txtApellidos.Text;
                 string Correo = txtCorreo.Text;
@@ -63,13 +64,13 @@ namespace APPCOMY
             escribe = new StreamWriter(fs);
 
 
-            if (!string.IsNullOrWhiteSpace(txtN_carnet.Text)) /*falta mas datos para que se validen todos los campos
-                                                               * y que de lo contrario de un mesanje de error*/
-            {
+           
+            
                 try
                 {
 
                     linea = txtN_carnet.Text + ";";
+                    linea = txtN_Becado.Text + ";";
                     linea += txtNombres.Text + ";";
                     linea += txtApellidos.Text + ";";
                     linea += txtCorreo.Text + ";";
@@ -87,13 +88,15 @@ namespace APPCOMY
                 {
                    MessageBox.Show("Datos incompletos, llene todos los campos");
                 }
-            }
+            
                 
                 if (Guardar == true) 
                 {
                  MessageBox.Show("Datos registrados correctamente");
                 }
 
+
+               
 
         }
 
@@ -107,7 +110,7 @@ namespace APPCOMY
 
         }
 
-        private void btnAgregar_Click(object sender, EventArgs e)
+        private void btnAgregar_foto_Click(object sender, EventArgs e)
         {
             OpenFileDialog getImage = new OpenFileDialog();
             getImage.InitialDirectory = "C:\\";
@@ -218,18 +221,6 @@ namespace APPCOMY
             }
         }
 
-      /*  private void ComboboxDepto_Validated(object sender, EventArgs e)
-        {
-            if (ComboboxDepto.ToString().Trim() == "")
-            {
-               
-            }
-            else
-            {
-                epError.Clear();
-            }
-        }*/
-
         private void txtDomicilio_Validated(object sender, EventArgs e)
         {
             if (txtDomicilio.Text.Trim() == "")
@@ -243,32 +234,7 @@ namespace APPCOMY
             }
         }
 
-        /*private void comboBoxAño_Validated(object sender, EventArgs e)
-        {
-            if (txtN_carnet.Text.Trim() == "")
-            {
-                epError.SetError(txtN_carnet, "Escriba su numero de carnet");
-                txtN_carnet.Focus();
-            }
-            else
-            {
-                epError.Clear();
-            }
-        }*/
-
-       /* private void ComboboxFacultad_Validated(object sender, EventArgs e)
-        {
-            if (txtN_carnet.Text.Trim() == "")
-            {
-                epError.SetError(txtN_carnet, "Escriba su numero de carnet");
-                txtN_carnet.Focus();
-            }
-            else
-            {
-                epError.Clear();
-            }
-        }*/
-
+       
         private void txtCarrera_Validated(object sender, EventArgs e)
         {
             if (txtCarrera.Text.Trim() == "")
@@ -293,6 +259,47 @@ namespace APPCOMY
             {
                 epError.Clear();
             }
+        }
+
+        private void txtN_Becado_Validated(object sender, EventArgs e)
+        {
+            if (txtN_Becado.Text.Trim() == "")
+            {
+                epError.SetError(txtN_Becado, "Campo requerido");
+                txtN_Becado.Focus();
+            }
+            else
+            {
+                epError.Clear();
+            }
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            txtN_carnet.Clear();
+            txtN_Becado.Clear();
+            txtNombres.Clear();
+            txtApellidos.Clear();
+            txtCorreo.Clear();
+            txtCarrera.Clear();
+            txtPromedio.Clear();
+            txtTelefono.Clear();
+            txtDomicilio.Clear();
+
+            /* dataGridView1.Rows.Add(txtN_carnet.Text, txtN_Becado.Text, txtNombres.Text, txtApellidos.Text, txtCorreo.Text, txtTelefono.Text, ComboboxDepto.SelectedItem.ToString, txtDomicilio.Text, comboBoxAño.SelectedItem.ToString, txtCarrera.Text, txtPromedio.Text);
+
+             txtN_carnet.Text = "";
+             txtN_Becado.Text = "";
+             txtNombres.Text = "";
+             txtApellidos.Text = "";
+             txtCorreo.Text = "";
+             txtTelefono.Text = "";
+            // ComboboxDepto.SelectedItem.ToString = "";
+             txtDomicilio.Text = "";
+            // comboBoxAño.SelectedItem.ToString = "";
+             txtCarrera.Text = "";
+             txtPromedio.Text = "";*/
+
         }
     }
 }

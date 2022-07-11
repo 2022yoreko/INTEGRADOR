@@ -29,15 +29,6 @@ namespace APPCOMY
             this.Close();
         }
 
-        
-        private void btnRegistro_Click(object sender, EventArgs e)
-        {
-            FrmRegistro_Estudiantes administrador = new FrmRegistro_Estudiantes();
-            administrador.MdiParent = this.MdiParent;
-            administrador.Show();
-            this.Close();
-        }
-
         private void btnInformacion_Personal_Click(object sender, EventArgs e)
         {
 
@@ -80,6 +71,14 @@ namespace APPCOMY
         private void FrmMenu_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void btnRegistro_Click(object sender, EventArgs e)
+        {
+            FrmRegistro_Estudiantes administrador = new FrmRegistro_Estudiantes();
+            administrador.MdiParent = this.MdiParent;
+            administrador.Show();
+            this.Close();
         }
     }
 }
