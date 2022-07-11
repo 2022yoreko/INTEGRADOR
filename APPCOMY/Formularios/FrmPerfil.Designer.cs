@@ -30,19 +30,6 @@ namespace APPCOMY.Formularios
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPerfil));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.N_Carnet = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.N_Becado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombres = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Apellidos = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Correo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Depto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Domicilio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Año = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Facultad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Carrera = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Promedio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
@@ -55,94 +42,23 @@ namespace APPCOMY.Formularios
             this.btnMenu = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtBusqueda = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.CN_carnet = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CN_Becado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cnombres = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Capellidos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ccorreo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ctelefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cdepto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cdomicilio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cfacultad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ccarrera = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Caño = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cpromedio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.AllowUserToResizeColumns = false;
-            this.dataGridView1.AllowUserToResizeRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.N_Carnet,
-            this.N_Becado,
-            this.Nombres,
-            this.Apellidos,
-            this.Correo,
-            this.Telefono,
-            this.Depto,
-            this.Domicilio,
-            this.Año,
-            this.Facultad,
-            this.Carrera,
-            this.Promedio});
-            this.dataGridView1.Location = new System.Drawing.Point(21, 149);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1242, 338);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // N_Carnet
-            // 
-            this.N_Carnet.HeaderText = "N_Carnet";
-            this.N_Carnet.Name = "N_Carnet";
-            // 
-            // N_Becado
-            // 
-            this.N_Becado.HeaderText = "N_Becado";
-            this.N_Becado.Name = "N_Becado";
-            // 
-            // Nombres
-            // 
-            this.Nombres.HeaderText = "Nombres";
-            this.Nombres.Name = "Nombres";
-            // 
-            // Apellidos
-            // 
-            this.Apellidos.HeaderText = "Apellidos";
-            this.Apellidos.Name = "Apellidos";
-            // 
-            // Correo
-            // 
-            this.Correo.HeaderText = "Correo";
-            this.Correo.Name = "Correo";
-            // 
-            // Telefono
-            // 
-            this.Telefono.HeaderText = "Telefono";
-            this.Telefono.Name = "Telefono";
-            // 
-            // Depto
-            // 
-            this.Depto.HeaderText = "Depto";
-            this.Depto.Name = "Depto";
-            // 
-            // Domicilio
-            // 
-            this.Domicilio.HeaderText = "Domicilio";
-            this.Domicilio.Name = "Domicilio";
-            // 
-            // Año
-            // 
-            this.Año.HeaderText = "Año";
-            this.Año.Name = "Año";
-            // 
-            // Facultad
-            // 
-            this.Facultad.HeaderText = "Facultad";
-            this.Facultad.Name = "Facultad";
-            // 
-            // Carrera
-            // 
-            this.Carrera.HeaderText = "Carrera";
-            this.Carrera.Name = "Carrera";
-            // 
-            // Promedio
-            // 
-            this.Promedio.HeaderText = "Promedio";
-            this.Promedio.Name = "Promedio";
             // 
             // btnEditar
             // 
@@ -296,12 +212,94 @@ namespace APPCOMY.Formularios
             this.txtBusqueda.Enter += new System.EventHandler(this.txtBusqueda_Enter);
             this.txtBusqueda.Leave += new System.EventHandler(this.txtBusqueda_Leave);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.CN_carnet,
+            this.CN_Becado,
+            this.Cnombres,
+            this.Capellidos,
+            this.Ccorreo,
+            this.Ctelefono,
+            this.Cdepto,
+            this.Cdomicilio,
+            this.Cfacultad,
+            this.Ccarrera,
+            this.Caño,
+            this.Cpromedio});
+            this.dataGridView1.Location = new System.Drawing.Point(37, 178);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(1221, 150);
+            this.dataGridView1.TabIndex = 95;
+            // 
+            // CN_carnet
+            // 
+            this.CN_carnet.HeaderText = "N_carnet";
+            this.CN_carnet.Name = "CN_carnet";
+            // 
+            // CN_Becado
+            // 
+            this.CN_Becado.HeaderText = "N_Becado";
+            this.CN_Becado.Name = "CN_Becado";
+            // 
+            // Cnombres
+            // 
+            this.Cnombres.HeaderText = "Nombres";
+            this.Cnombres.Name = "Cnombres";
+            // 
+            // Capellidos
+            // 
+            this.Capellidos.HeaderText = "Apellidos";
+            this.Capellidos.Name = "Capellidos";
+            // 
+            // Ccorreo
+            // 
+            this.Ccorreo.HeaderText = "Correo";
+            this.Ccorreo.Name = "Ccorreo";
+            // 
+            // Ctelefono
+            // 
+            this.Ctelefono.HeaderText = "Telefono";
+            this.Ctelefono.Name = "Ctelefono";
+            // 
+            // Cdepto
+            // 
+            this.Cdepto.HeaderText = "Depto";
+            this.Cdepto.Name = "Cdepto";
+            // 
+            // Cdomicilio
+            // 
+            this.Cdomicilio.HeaderText = "Domicilio";
+            this.Cdomicilio.Name = "Cdomicilio";
+            // 
+            // Cfacultad
+            // 
+            this.Cfacultad.HeaderText = "Facultad";
+            this.Cfacultad.Name = "Cfacultad";
+            // 
+            // Ccarrera
+            // 
+            this.Ccarrera.HeaderText = "Carrera";
+            this.Ccarrera.Name = "Ccarrera";
+            // 
+            // Caño
+            // 
+            this.Caño.HeaderText = "Año";
+            this.Caño.Name = "Caño";
+            // 
+            // Cpromedio
+            // 
+            this.Cpromedio.HeaderText = "Promedio";
+            this.Cpromedio.Name = "Cpromedio";
+            // 
             // FrmPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
             this.ClientSize = new System.Drawing.Size(1294, 549);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.label3);
@@ -313,24 +311,21 @@ namespace APPCOMY.Formularios
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnEditar);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtBusqueda);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmPerfil";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmPerfil";
+            this.Text = "Perfil";
             this.Load += new System.EventHandler(this.FrmPerfil_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnBuscar;
@@ -342,18 +337,19 @@ namespace APPCOMY.Formularios
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn N_Carnet;
-        private System.Windows.Forms.DataGridViewTextBoxColumn N_Becado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombres;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Apellidos;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Correo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Telefono;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Depto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Domicilio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Año;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Facultad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Carrera;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Promedio;
         private System.Windows.Forms.TextBox txtBusqueda;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CN_carnet;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CN_Becado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cnombres;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Capellidos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ccorreo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ctelefono;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cdepto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cdomicilio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cfacultad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ccarrera;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Caño;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cpromedio;
     }
 }

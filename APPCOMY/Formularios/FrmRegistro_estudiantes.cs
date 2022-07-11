@@ -1,4 +1,5 @@
-﻿using System;
+﻿using APPCOMY.Formularios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,7 @@ namespace APPCOMY
 {
     public partial class FrmRegistro_Estudiantes : Form
     {
+         FrmPerfil enviar = new FrmPerfil();
         public FrmRegistro_Estudiantes()
         {
             InitializeComponent();
@@ -40,21 +42,21 @@ namespace APPCOMY
 
         private void button1_Click(object sender, EventArgs e)
         {
-                string N_carnet = txtN_carnet.Text;
-                string N_Becado = txtN_Becado.Text;
-                string Nombres = txtNombres.Text;
-                string Apellidos = txtApellidos.Text;
-                string Correo = txtCorreo.Text;
-                string Carrera = txtCarrera.Text;
-                string Año = comboBoxAño.SelectedItem.ToString();
-                string Promedio = txtPromedio.Text;
-                string Telefono = txtTelefono.Text;
-                string Facultad = ComboboxFacultad.SelectedItem.ToString();
-                string Depto = ComboboxDepto.SelectedItem.ToString();
-                bool Guardar = true;
-          
+            string N_carnet = txtN_carnet.Text;
+            string N_Becado = txtN_Becado.Text;
+            string Nombres = txtNombres.Text;
+            string Apellidos = txtApellidos.Text;
+            string Correo = txtCorreo.Text;
+            string Carrera = txtCarrera.Text;
+            string Año = comboBoxAño.SelectedItem.ToString();
+            string Promedio = txtPromedio.Text;
+            string Telefono = txtTelefono.Text;
+            string Facultad = ComboboxFacultad.SelectedItem.ToString();
+            string Depto = ComboboxDepto.SelectedItem.ToString();
+            bool Guardar = true;
 
-            FileStream fs;  
+
+            FileStream fs;
             StreamWriter escribe;
             string linea;
 
@@ -64,39 +66,50 @@ namespace APPCOMY
             escribe = new StreamWriter(fs);
 
 
-           
-            
-                try
-                {
-
-                    linea = txtN_carnet.Text + ";";
-                    linea = txtN_Becado.Text + ";";
-                    linea += txtNombres.Text + ";";
-                    linea += txtApellidos.Text + ";";
-                    linea += txtCorreo.Text + ";";
-                    linea += ComboboxFacultad.SelectedItem.ToString() + ";";
-                    linea += txtCarrera.Text + ";";
-                    linea += comboBoxAño.SelectedItem.ToString() + ";";
-                    linea += txtPromedio.Text + ";";
-                    linea += txtTelefono.Text + ";";
-                    linea += ComboboxDepto.SelectedItem.ToString() + ";";
-                    escribe.WriteLine(linea.ToUpper());
-                    escribe.Close();
-
-                }
-                catch
-                {
-                   MessageBox.Show("Datos incompletos, llene todos los campos");
-                }
-            
-                
-                if (Guardar == true) 
-                {
-                 MessageBox.Show("Datos registrados correctamente");
-                }
 
 
-               
+            try
+            {
+
+                linea = txtN_carnet.Text + ";";
+                linea = txtN_Becado.Text + ";";
+                linea += txtNombres.Text + ";";
+                linea += txtApellidos.Text + ";";
+                linea += txtCorreo.Text + ";";
+                linea += ComboboxFacultad.SelectedItem.ToString() + ";";
+                linea += txtCarrera.Text + ";";
+                linea += comboBoxAño.SelectedItem.ToString() + ";";
+                linea += txtPromedio.Text + ";";
+                linea += txtTelefono.Text + ";";
+                linea += ComboboxDepto.SelectedItem.ToString() + ";";
+                escribe.WriteLine(linea.ToUpper());
+                escribe.Close();
+
+            }
+            catch
+            {
+                MessageBox.Show("Datos incompletos, llene todos los campos");
+            }
+
+
+            if (Guardar == true)
+            {
+                MessageBox.Show("Datos registrados correctamente");
+            }
+
+            enviar.pN_carnet = txtN_carnet.Text;
+            enviar.pN_becado = txtN_Becado.Text;
+            enviar.pnombres = txtNombres.Text;
+            enviar.papellidos = txtApellidos.Text;
+            enviar.pcorreo = txtCorreo.Text;
+            enviar.pdepto = ComboboxDepto.SelectedItem.ToString();
+            enviar.ptelefono = txtTelefono.Text;
+            enviar.pdomicilio = txtDomicilio.Text;
+            enviar.pfacultad = ComboboxFacultad.SelectedItem.ToString();
+            enviar.pcarrera = txtCarrera.Text;
+            enviar.paño = comboBoxAño.SelectedItem.ToString();
+
+            enviar.Show();
 
         }
 

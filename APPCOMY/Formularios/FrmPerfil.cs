@@ -77,6 +77,7 @@ namespace APPCOMY.Formularios
             }
 
         }
+
         public string pfacultad
         {
             set
@@ -156,7 +157,27 @@ namespace APPCOMY.Formularios
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-          /* int renglon dataGridView1.Rows.Add;*/
+            int renglon = dataGridView1.Rows.Add();
+
+            dataGridView1.Rows[renglon].Cells["CN_carnet"].Value = N_carnet;
+            dataGridView1.Rows[renglon].Cells["CN_becado"].Value = N_becado;
+            dataGridView1.Rows[renglon].Cells["Cnombres"].Value = nombres;
+            dataGridView1.Rows[renglon].Cells["Capellidos"].Value = apellidos;
+            dataGridView1.Rows[renglon].Cells["Ccorreo"].Value = correo;
+            dataGridView1.Rows[renglon].Cells["Ctelefono"].Value = telefono;
+            dataGridView1.Rows[renglon].Cells["Cdepto"].Value = depto;
+            dataGridView1.Rows[renglon].Cells["Cdomicilio"].Value = domicilio;
+            dataGridView1.Rows[renglon].Cells["Cfacultad"].Value = facultad;
+            dataGridView1.Rows[renglon].Cells["Ccarrera"].Value = carrera;
+            dataGridView1.Rows[renglon].Cells["Caño"].Value = año;
+            dataGridView1.Rows[renglon].Cells["Cpromedio"].Value = promedio;
+
+
+
+
+
+
+
         }
     }
 }

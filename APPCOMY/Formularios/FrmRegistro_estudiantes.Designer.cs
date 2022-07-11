@@ -579,7 +579,7 @@ namespace APPCOMY
             this.btnNuevo.FlatAppearance.BorderSize = 0;
             this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNuevo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.btnNuevo.Location = new System.Drawing.Point(835, 430);
+            this.btnNuevo.Location = new System.Drawing.Point(835, 429);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(54, 54);
             this.btnNuevo.TabIndex = 89;
