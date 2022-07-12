@@ -41,5 +41,10 @@ namespace APPCOMY.Formularios
         {
             linkLabel1.LinkVisited = true;
         }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

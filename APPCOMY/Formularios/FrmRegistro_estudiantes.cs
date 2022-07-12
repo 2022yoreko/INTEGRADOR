@@ -27,8 +27,8 @@ namespace APPCOMY
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
-            var newForm4 = new FrmMenu();
-            newForm4.Show();
+            var newFrmMenu = new FrmMenu();
+            newFrmMenu.Show();
             this.Hide();
 
         }
@@ -48,8 +48,7 @@ namespace APPCOMY
             string Apellidos = txtApellidos.Text;
             string Correo = txtCorreo.Text;
             string Carrera = txtCarrera.Text;
-            string Año = comboBoxAño.SelectedItem.ToString();
-            string Promedio = txtPromedio.Text;
+            string Año = ComboBoxAño.SelectedItem.ToString();
             string Telefono = txtTelefono.Text;
             string Facultad = ComboboxFacultad.SelectedItem.ToString();
             string Depto = ComboboxDepto.SelectedItem.ToString();
@@ -78,8 +77,7 @@ namespace APPCOMY
                 linea += txtCorreo.Text + ";";
                 linea += ComboboxFacultad.SelectedItem.ToString() + ";";
                 linea += txtCarrera.Text + ";";
-                linea += comboBoxAño.SelectedItem.ToString() + ";";
-                linea += txtPromedio.Text + ";";
+                linea += ComboBoxAño.SelectedItem.ToString() + ";";
                 linea += txtTelefono.Text + ";";
                 linea += ComboboxDepto.SelectedItem.ToString() + ";";
                 escribe.WriteLine(linea.ToUpper());
@@ -107,7 +105,7 @@ namespace APPCOMY
             enviar.pdomicilio = txtDomicilio.Text;
             enviar.pfacultad = ComboboxFacultad.SelectedItem.ToString();
             enviar.pcarrera = txtCarrera.Text;
-            enviar.paño = comboBoxAño.SelectedItem.ToString();
+            enviar.paño = ComboBoxAño.SelectedItem.ToString();
 
             enviar.Show();
 
@@ -164,7 +162,6 @@ namespace APPCOMY
             txtApellidos.Clear();
             txtCorreo.Clear();
             txtCarrera.Clear();
-            txtPromedio.Clear();
             txtTelefono.Clear();
             txtDomicilio.Clear();
         }
@@ -261,19 +258,6 @@ namespace APPCOMY
             }
         }
 
-        private void txtPromedio_Validated(object sender, EventArgs e)
-        {
-            if (txtPromedio.Text.Trim() == "")
-            {
-                epError.SetError(txtPromedio, "Campo requerido");
-                txtPromedio.Focus();
-            }
-            else
-            {
-                epError.Clear();
-            }
-        }
-
         private void txtN_Becado_Validated(object sender, EventArgs e)
         {
             if (txtN_Becado.Text.Trim() == "")
@@ -289,29 +273,15 @@ namespace APPCOMY
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
+           
             txtN_carnet.Clear();
             txtN_Becado.Clear();
             txtNombres.Clear();
             txtApellidos.Clear();
             txtCorreo.Clear();
             txtCarrera.Clear();
-            txtPromedio.Clear();
             txtTelefono.Clear();
             txtDomicilio.Clear();
-
-            /* dataGridView1.Rows.Add(txtN_carnet.Text, txtN_Becado.Text, txtNombres.Text, txtApellidos.Text, txtCorreo.Text, txtTelefono.Text, ComboboxDepto.SelectedItem.ToString, txtDomicilio.Text, comboBoxAño.SelectedItem.ToString, txtCarrera.Text, txtPromedio.Text);
-
-             txtN_carnet.Text = "";
-             txtN_Becado.Text = "";
-             txtNombres.Text = "";
-             txtApellidos.Text = "";
-             txtCorreo.Text = "";
-             txtTelefono.Text = "";
-            // ComboboxDepto.SelectedItem.ToString = "";
-             txtDomicilio.Text = "";
-            // comboBoxAño.SelectedItem.ToString = "";
-             txtCarrera.Text = "";
-             txtPromedio.Text = "";*/
 
         }
     }

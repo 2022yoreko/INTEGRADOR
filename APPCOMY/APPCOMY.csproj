@@ -180,8 +180,11 @@
     <Content Include="Archivos\Respuesta3.txt" />
     <Content Include="Archivos\Respuesta1.txt" />
     <Content Include="Archivos\Respuesta2.txt" />
+    <Content Include="Archivos\Respuesta4.txt" />
     <Content Include="Archivos\Usuarios.txt" />
     <Content Include="Archivos\Estudiantes.txt" />
+    <None Include="Resources\actualizar %281%29.png" />
+    <None Include="Resources\actualizar.png" />
     <None Include="Resources\foto.png" />
     <None Include="Resources\icono de limpiar.png" />
     <None Include="Resources\azul.JPEG" />

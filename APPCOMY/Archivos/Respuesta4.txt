@@ -1,0 +1,10 @@
+﻿¿Qué es Appcomy?
+Appcomy es una aplicación de escritorío que lleva un control automatizado
+de la asistencia del comedor central UNAN-MANAGUA.
+
+Cuenta con un formulario para ingresar los datos de los estudiantes y
+posteriormente guardarlos dentro de la aplicación.
+
+Esta puede ser administrada por personal autorizado, los cuales podrán modificar 
+la información que se guarde dentro de la app debido a que esta vinculada con la nube.
+

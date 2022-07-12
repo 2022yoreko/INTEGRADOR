@@ -78,6 +78,11 @@ namespace APPCOMY.Formularios
 
         }
 
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.Remove(dataGridView1.CurrentRow);
+        }
+
         public string pfacultad
         {
             set
@@ -133,28 +138,6 @@ namespace APPCOMY.Formularios
 
         }
 
-        private void txtBusqueda_Enter(object sender, EventArgs e)
-        {
-            if (txtBusqueda.Text == "Appcomy")
-            {
-                txtBusqueda.Text = "";
-                txtBusqueda.ForeColor = Color.DimGray;
-
-            }
-
-        }
-
-        private void txtBusqueda_Leave(object sender, EventArgs e)
-        {
-            if (txtBusqueda.Text == "")
-            {
-                txtBusqueda.Text = "Appcomy";
-                txtBusqueda.ForeColor = Color.DimGray;
-
-            }
-
-        }
-
         private void btnEditar_Click(object sender, EventArgs e)
         {
             int renglon = dataGridView1.Rows.Add();
@@ -170,13 +153,6 @@ namespace APPCOMY.Formularios
             dataGridView1.Rows[renglon].Cells["Cfacultad"].Value = facultad;
             dataGridView1.Rows[renglon].Cells["Ccarrera"].Value = carrera;
             dataGridView1.Rows[renglon].Cells["Caño"].Value = año;
-            dataGridView1.Rows[renglon].Cells["Cpromedio"].Value = promedio;
-
-
-
-
-
-
 
         }
     }

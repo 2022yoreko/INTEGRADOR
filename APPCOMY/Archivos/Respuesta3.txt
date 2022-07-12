@@ -1,1 +1,4 @@
-﻿¿Cómo restaurar un registro?
+﻿Para Registrar estudiantes en esta aplicación se debé tomar en cuenta los siguientes requisitos:
+1. Debe de haber presentado sus documentos al departamento de becas.
+2. Su solicitud de beca ha sido aprobada.
+3. Para ingresar al comedor debe mantener su promedio.
