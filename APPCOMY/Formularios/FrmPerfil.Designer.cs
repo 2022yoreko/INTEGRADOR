@@ -36,13 +36,6 @@ namespace APPCOMY.Formularios
             this.label1 = new System.Windows.Forms.Label();
             this.txtBusqueda = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnMenu = new System.Windows.Forms.Button();
-            this.btnRegresar = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.btnBuscar = new System.Windows.Forms.Button();
-            this.btnEliminar = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
             this.CN_carnet = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CN_Becado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cnombres = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,6 +47,13 @@ namespace APPCOMY.Formularios
             this.Cfacultad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ccarrera = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Caño = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnMenu = new System.Windows.Forms.Button();
+            this.btnRegresar = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -111,7 +111,7 @@ namespace APPCOMY.Formularios
             // 
             this.txtBusqueda.Font = new System.Drawing.Font("Verdana", 12F);
             this.txtBusqueda.ForeColor = System.Drawing.Color.DimGray;
-            this.txtBusqueda.Location = new System.Drawing.Point(791, 37);
+            this.txtBusqueda.Location = new System.Drawing.Point(776, 33);
             this.txtBusqueda.Name = "txtBusqueda";
             this.txtBusqueda.Size = new System.Drawing.Size(193, 27);
             this.txtBusqueda.TabIndex = 94;
@@ -136,6 +136,61 @@ namespace APPCOMY.Formularios
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1123, 297);
             this.dataGridView1.TabIndex = 95;
+            // 
+            // CN_carnet
+            // 
+            this.CN_carnet.HeaderText = "N_carnet";
+            this.CN_carnet.Name = "CN_carnet";
+            // 
+            // CN_Becado
+            // 
+            this.CN_Becado.HeaderText = "N_Becado";
+            this.CN_Becado.Name = "CN_Becado";
+            // 
+            // Cnombres
+            // 
+            this.Cnombres.HeaderText = "Nombres";
+            this.Cnombres.Name = "Cnombres";
+            // 
+            // Capellidos
+            // 
+            this.Capellidos.HeaderText = "Apellidos";
+            this.Capellidos.Name = "Capellidos";
+            // 
+            // Ccorreo
+            // 
+            this.Ccorreo.HeaderText = "Correo";
+            this.Ccorreo.Name = "Ccorreo";
+            // 
+            // Ctelefono
+            // 
+            this.Ctelefono.HeaderText = "Telefono";
+            this.Ctelefono.Name = "Ctelefono";
+            // 
+            // Cdepto
+            // 
+            this.Cdepto.HeaderText = "Depto";
+            this.Cdepto.Name = "Cdepto";
+            // 
+            // Cdomicilio
+            // 
+            this.Cdomicilio.HeaderText = "Domicilio";
+            this.Cdomicilio.Name = "Cdomicilio";
+            // 
+            // Cfacultad
+            // 
+            this.Cfacultad.HeaderText = "Facultad";
+            this.Cfacultad.Name = "Cfacultad";
+            // 
+            // Ccarrera
+            // 
+            this.Ccarrera.HeaderText = "Carrera";
+            this.Ccarrera.Name = "Ccarrera";
+            // 
+            // Caño
+            // 
+            this.Caño.HeaderText = "Año";
+            this.Caño.Name = "Caño";
             // 
             // btnMenu
             // 
@@ -195,11 +250,12 @@ namespace APPCOMY.Formularios
             this.btnBuscar.FlatAppearance.BorderSize = 0;
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.btnBuscar.Location = new System.Drawing.Point(761, 37);
+            this.btnBuscar.Location = new System.Drawing.Point(746, 33);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(36, 26);
+            this.btnBuscar.Size = new System.Drawing.Size(34, 26);
             this.btnBuscar.TabIndex = 84;
             this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnEliminar
             // 
@@ -229,61 +285,6 @@ namespace APPCOMY.Formularios
             this.btnEditar.TabIndex = 82;
             this.btnEditar.UseVisualStyleBackColor = false;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
-            // 
-            // CN_carnet
-            // 
-            this.CN_carnet.HeaderText = "N_carnet";
-            this.CN_carnet.Name = "CN_carnet";
-            // 
-            // CN_Becado
-            // 
-            this.CN_Becado.HeaderText = "N_Becado";
-            this.CN_Becado.Name = "CN_Becado";
-            // 
-            // Cnombres
-            // 
-            this.Cnombres.HeaderText = "Nombres";
-            this.Cnombres.Name = "Cnombres";
-            // 
-            // Capellidos
-            // 
-            this.Capellidos.HeaderText = "Apellidos";
-            this.Capellidos.Name = "Capellidos";
-            // 
-            // Ccorreo
-            // 
-            this.Ccorreo.HeaderText = "Correo";
-            this.Ccorreo.Name = "Ccorreo";
-            // 
-            // Ctelefono
-            // 
-            this.Ctelefono.HeaderText = "Telefono";
-            this.Ctelefono.Name = "Ctelefono";
-            // 
-            // Cdepto
-            // 
-            this.Cdepto.HeaderText = "Depto";
-            this.Cdepto.Name = "Cdepto";
-            // 
-            // Cdomicilio
-            // 
-            this.Cdomicilio.HeaderText = "Domicilio";
-            this.Cdomicilio.Name = "Cdomicilio";
-            // 
-            // Cfacultad
-            // 
-            this.Cfacultad.HeaderText = "Facultad";
-            this.Cfacultad.Name = "Cfacultad";
-            // 
-            // Ccarrera
-            // 
-            this.Ccarrera.HeaderText = "Carrera";
-            this.Ccarrera.Name = "Ccarrera";
-            // 
-            // Caño
-            // 
-            this.Caño.HeaderText = "Año";
-            this.Caño.Name = "Caño";
             // 
             // FrmPerfil
             // 

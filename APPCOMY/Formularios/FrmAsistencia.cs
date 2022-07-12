@@ -46,5 +46,10 @@ namespace APPCOMY
             newForm4.Show();
             this.Hide();
         }
+
+        private void imgAsistencia_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

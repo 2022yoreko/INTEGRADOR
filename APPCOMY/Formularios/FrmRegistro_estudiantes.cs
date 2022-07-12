@@ -284,5 +284,7 @@ namespace APPCOMY
             txtDomicilio.Clear();
 
         }
+
+        
     }
 }

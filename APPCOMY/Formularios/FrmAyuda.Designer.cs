@@ -213,14 +213,14 @@ namespace APPCOMY.Formularios
             this.panel1.Controls.Add(this.linkLabel6);
             this.panel1.Controls.Add(this.linkLabel4);
             this.panel1.ForeColor = System.Drawing.Color.Transparent;
-            this.panel1.Location = new System.Drawing.Point(30, 146);
+            this.panel1.Location = new System.Drawing.Point(30, 162);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(453, 336);
+            this.panel1.Size = new System.Drawing.Size(484, 336);
             this.panel1.TabIndex = 48;
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(533, 146);
+            this.richTextBox1.Location = new System.Drawing.Point(534, 162);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(408, 336);
             this.richTextBox1.TabIndex = 49;

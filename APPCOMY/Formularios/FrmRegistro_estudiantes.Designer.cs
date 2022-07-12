@@ -464,7 +464,7 @@ namespace APPCOMY
             this.btnAgregar_foto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar_foto.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar_foto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.btnAgregar_foto.Location = new System.Drawing.Point(835, 328);
+            this.btnAgregar_foto.Location = new System.Drawing.Point(838, 328);
             this.btnAgregar_foto.Name = "btnAgregar_foto";
             this.btnAgregar_foto.Size = new System.Drawing.Size(54, 61);
             this.btnAgregar_foto.TabIndex = 80;
@@ -541,7 +541,7 @@ namespace APPCOMY
             this.btnNuevo.FlatAppearance.BorderSize = 0;
             this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNuevo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.btnNuevo.Location = new System.Drawing.Point(835, 406);
+            this.btnNuevo.Location = new System.Drawing.Point(838, 406);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(54, 54);
             this.btnNuevo.TabIndex = 89;
