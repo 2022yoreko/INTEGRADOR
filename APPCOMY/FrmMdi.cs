@@ -19,17 +19,14 @@ namespace APPCOMY
 
         private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmMenu frmNav = new FrmMenu();
-            frmNav.MdiParent = this.MdiParent;
-            frmNav.Show();
-            this.Close();
+            
         }
 
         private void FrmMdi_Load(object sender, EventArgs e)
         {
-            FrmPresentacion P = new FrmPresentacion();
-            P.MdiParent = this;
-            P.Show();
+            FrmPresentacion Presentacion = new FrmPresentacion();
+            Presentacion.MdiParent = this;
+            Presentacion.Show();
         }
     }
 }

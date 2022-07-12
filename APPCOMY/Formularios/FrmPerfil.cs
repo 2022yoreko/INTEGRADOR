@@ -86,7 +86,7 @@ namespace APPCOMY.Formularios
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            dataGridView1.Rows.Remove(dataGridView1.CurrentRow);
+          
         }
 
         public string pfacultad

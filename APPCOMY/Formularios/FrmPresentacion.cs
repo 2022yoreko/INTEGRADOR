@@ -32,9 +32,9 @@ namespace APPCOMY
 
         private void btnIniciar_Click(object sender, EventArgs e)
         {
-            FrmLogin administrador = new FrmLogin();
-            administrador.MdiParent = this.MdiParent; //Indicar que el contenedor padre es el mismo del que hizo la llamada
-            administrador.Show();
+            FrmLogin formLogin = new FrmLogin();
+            formLogin.MdiParent = this.MdiParent; //Indicar que el contenedor padre es el mismo del que hizo la llamada
+            formLogin.Show();
             this.Close(); //Cerrar la ventana que  hizo la llamada
         }
     }

@@ -80,8 +80,10 @@ namespace APPCOMY
                     frmNav.MdiParent = this.MdiParent;
                     frmNav.Show();
                     this.Close();
-                    FrmMenu administrador = new FrmMenu();
-                    administrador.Show();
+                    
+                   // FrmMenu administrador = new FrmMenu();
+                   // administrador.Show();
+                   // this.Close();
 
                 }
                 else
@@ -91,10 +93,6 @@ namespace APPCOMY
                 }
 
             }//fin if de busqueda
-
-
-           
-
 
         }
 
@@ -153,9 +151,11 @@ namespace APPCOMY
 
         private void btnRetroceder_Click(object sender, EventArgs e)
         {
-            var newForm1 = new FrmPresentacion();
-            newForm1.Show();
-            this.Hide();
+            FrmPresentacion present = new FrmPresentacion();
+            present.MdiParent = this.MdiParent;
+            present.Show();
+            this.Close();         
+            
         }
 
         private void FrmLogin_Load(object sender, EventArgs e)

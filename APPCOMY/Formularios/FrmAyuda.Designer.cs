@@ -220,7 +220,7 @@ namespace APPCOMY.Formularios
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(534, 162);
+            this.richTextBox1.Location = new System.Drawing.Point(547, 162);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(408, 336);
             this.richTextBox1.TabIndex = 49;
