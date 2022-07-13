@@ -132,7 +132,7 @@ namespace APPCOMY.Formularios
             this.Cfacultad,
             this.Ccarrera,
             this.Caño});
-            this.dataGridView1.Location = new System.Drawing.Point(57, 178);
+            this.dataGridView1.Location = new System.Drawing.Point(51, 149);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1123, 297);
             this.dataGridView1.TabIndex = 95;

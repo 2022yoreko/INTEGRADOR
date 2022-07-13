@@ -155,7 +155,6 @@ namespace APPCOMY
             present.MdiParent = this.MdiParent;
             present.Show();
             this.Close();         
-            
         }
 
         private void FrmLogin_Load(object sender, EventArgs e)

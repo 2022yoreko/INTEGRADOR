@@ -27,17 +27,19 @@ namespace APPCOMY
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
-            var newFrmMenu = new FrmMenu();
-            newFrmMenu.Show();
-            this.Hide();
+            FrmMenu Menu = new FrmMenu();
+            Menu.MdiParent = this.MdiParent;
+            Menu.Show();
+            this.Close();
 
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            var newForm4 = new FrmMenu();
-            newForm4.Show();
-            this.Hide();
+            FrmMenu Menu = new FrmMenu();
+            Menu.MdiParent = this.MdiParent;
+            Menu.Show();
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -141,18 +143,7 @@ namespace APPCOMY
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             
-            /*if (Eliminar) 
-            {
-              Eliminar = true;
-            MessageBox.Show("Esta seguro que quiere eliminar este registro");
             
-            }
-            else
-            {
-            Eliminar = false;
-            MessageBox.Show("Cancelado");
-            }
-             */
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
@@ -164,6 +155,7 @@ namespace APPCOMY
             txtCarrera.Clear();
             txtTelefono.Clear();
             txtDomicilio.Clear();
+            txtPromedio.Clear();
         }
 
         private void txtN_carnet_Validated(object sender, EventArgs e)
@@ -282,9 +274,23 @@ namespace APPCOMY
             txtCarrera.Clear();
             txtTelefono.Clear();
             txtDomicilio.Clear();
+            txtPromedio.Clear();
 
         }
 
-        
+        private void txtPromedio_Validated(object sender, EventArgs e)
+        {
+            if (txtPromedio.Text.Trim() == "")
+            {
+                epError.SetError(txtPromedio, "Campo requerido");
+                txtPromedio.Focus();
+            }
+            else
+            {
+                epError.Clear();
+            }
+        }
+
     }
+    
 }

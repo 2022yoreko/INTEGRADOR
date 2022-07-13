@@ -24,9 +24,9 @@ namespace APPCOMY
 
         private void btnRegistrate_Click(object sender, EventArgs e)
         {
-            FrmRegistro_Usuario administrador = new FrmRegistro_Usuario();
-            administrador.MdiParent = this.MdiParent;
-            administrador.Show();
+            FrmRegistro_Usuario registro_Usuario = new FrmRegistro_Usuario();
+            registro_Usuario.MdiParent = this.MdiParent;
+            registro_Usuario.Show();
             this.Close(); //Cerrar la ventana actual que hizo la llamada
         }
 

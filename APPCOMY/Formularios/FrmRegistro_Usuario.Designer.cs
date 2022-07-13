@@ -143,7 +143,7 @@ namespace APPCOMY
             // btnGuardar
             // 
             this.btnGuardar.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnGuardar.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnGuardar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
             this.btnGuardar.FlatAppearance.BorderSize = 2;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

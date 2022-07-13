@@ -213,7 +213,7 @@ namespace APPCOMY.Formularios
             this.panel1.Controls.Add(this.linkLabel6);
             this.panel1.Controls.Add(this.linkLabel4);
             this.panel1.ForeColor = System.Drawing.Color.Transparent;
-            this.panel1.Location = new System.Drawing.Point(30, 162);
+            this.panel1.Location = new System.Drawing.Point(47, 162);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(484, 336);
             this.panel1.TabIndex = 48;

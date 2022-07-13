@@ -74,6 +74,13 @@ namespace APPCOMY
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.imgAsistencia = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtHora1 = new System.Windows.Forms.TextBox();
+            this.txtHora3 = new System.Windows.Forms.TextBox();
+            this.txtHora2 = new System.Windows.Forms.TextBox();
+            this.txtFecha = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
@@ -150,7 +157,7 @@ namespace APPCOMY
             this.btnRegresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.btnRegresar.Location = new System.Drawing.Point(991, 15);
+            this.btnRegresar.Location = new System.Drawing.Point(1128, 25);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(46, 39);
             this.btnRegresar.TabIndex = 49;
@@ -187,7 +194,7 @@ namespace APPCOMY
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Verdana", 12F);
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(42, 246);
+            this.label5.Location = new System.Drawing.Point(42, 244);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(84, 18);
             this.label5.TabIndex = 53;
@@ -199,7 +206,7 @@ namespace APPCOMY
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Verdana", 12F);
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(42, 325);
+            this.label6.Location = new System.Drawing.Point(44, 314);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(49, 18);
             this.label6.TabIndex = 54;
@@ -526,7 +533,7 @@ namespace APPCOMY
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel1.BackColor = System.Drawing.Color.SteelBlue;
             this.panel1.Controls.Add(this.checkBox22);
             this.panel1.Controls.Add(this.checkBox23);
             this.panel1.Controls.Add(this.checkBox24);
@@ -548,7 +555,7 @@ namespace APPCOMY
             this.panel1.Controls.Add(this.checkBox40);
             this.panel1.Controls.Add(this.checkBox41);
             this.panel1.Controls.Add(this.checkBox42);
-            this.panel1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel1.Location = new System.Drawing.Point(187, 160);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(728, 218);
@@ -568,7 +575,7 @@ namespace APPCOMY
             // 
             // txtNombre
             // 
-            this.txtNombre.BackColor = System.Drawing.Color.RoyalBlue;
+            this.txtNombre.BackColor = System.Drawing.Color.SteelBlue;
             this.txtNombre.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.Location = new System.Drawing.Point(293, 41);
             this.txtNombre.Name = "txtNombre";
@@ -577,7 +584,7 @@ namespace APPCOMY
             // 
             // imgAsistencia
             // 
-            this.imgAsistencia.BackColor = System.Drawing.Color.RoyalBlue;
+            this.imgAsistencia.BackColor = System.Drawing.Color.SteelBlue;
             this.imgAsistencia.Location = new System.Drawing.Point(59, 29);
             this.imgAsistencia.Name = "imgAsistencia";
             this.imgAsistencia.Size = new System.Drawing.Size(107, 109);
@@ -589,6 +596,13 @@ namespace APPCOMY
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.txtFecha);
+            this.panel2.Controls.Add(this.txtHora2);
+            this.panel2.Controls.Add(this.txtHora3);
+            this.panel2.Controls.Add(this.txtHora1);
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.imgAsistencia);
             this.panel2.Controls.Add(this.txtNombre);
             this.panel2.Controls.Add(this.label7);
@@ -603,17 +617,89 @@ namespace APPCOMY
             this.panel2.Controls.Add(this.label21);
             this.panel2.Controls.Add(this.label20);
             this.panel2.Controls.Add(this.panel1);
-            this.panel2.Location = new System.Drawing.Point(65, 124);
+            this.panel2.Location = new System.Drawing.Point(40, 124);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(953, 418);
+            this.panel2.Size = new System.Drawing.Size(1110, 425);
             this.panel2.TabIndex = 63;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(701, 41);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(55, 18);
+            this.label8.TabIndex = 63;
+            this.label8.Text = "Fecha";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(977, 98);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(46, 18);
+            this.label9.TabIndex = 64;
+            this.label9.Text = "Hora";
+            // 
+            // txtHora1
+            // 
+            this.txtHora1.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtHora1.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHora1.ForeColor = System.Drawing.Color.MediumSlateBlue;
+            this.txtHora1.Location = new System.Drawing.Point(951, 171);
+            this.txtHora1.Name = "txtHora1";
+            this.txtHora1.Size = new System.Drawing.Size(100, 26);
+            this.txtHora1.TabIndex = 65;
+            // 
+            // txtHora3
+            // 
+            this.txtHora3.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtHora3.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHora3.Location = new System.Drawing.Point(951, 303);
+            this.txtHora3.Name = "txtHora3";
+            this.txtHora3.Size = new System.Drawing.Size(100, 26);
+            this.txtHora3.TabIndex = 66;
+            // 
+            // txtHora2
+            // 
+            this.txtHora2.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtHora2.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHora2.Location = new System.Drawing.Point(951, 233);
+            this.txtHora2.Name = "txtHora2";
+            this.txtHora2.Size = new System.Drawing.Size(100, 26);
+            this.txtHora2.TabIndex = 67;
+            // 
+            // txtFecha
+            // 
+            this.txtFecha.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtFecha.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFecha.Location = new System.Drawing.Point(772, 38);
+            this.txtFecha.Name = "txtFecha";
+            this.txtFecha.Size = new System.Drawing.Size(131, 26);
+            this.txtFecha.TabIndex = 59;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(951, 29);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(116, 44);
+            this.button1.TabIndex = 68;
+            this.button1.Text = "Guardar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmAsistencia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1065, 581);
+            this.ClientSize = new System.Drawing.Size(1195, 581);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.label14);
@@ -686,5 +772,12 @@ namespace APPCOMY
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.PictureBox imgAsistencia;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TextBox txtFecha;
+        private System.Windows.Forms.TextBox txtHora2;
+        private System.Windows.Forms.TextBox txtHora3;
+        private System.Windows.Forms.TextBox txtHora1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button1;
     }
 }

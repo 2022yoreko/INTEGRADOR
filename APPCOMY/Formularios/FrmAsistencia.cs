@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -49,6 +50,45 @@ namespace APPCOMY
 
         private void imgAsistencia_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string Nombre = txtNombre.Text;
+            string Fecha = txtFecha.Text;
+            string Hora1 = txtHora1.Text;
+            string Hora2 = txtHora2.Text;
+            string Hora3 = txtHora3.Text;
+
+            bool Guardar = true;
+
+            FileStream fs;
+            StreamWriter escribe;
+            string linea;
+
+            string rutbase = Directory.GetCurrentDirectory();
+            string rutarchivo = rutbase.Replace(@"\bin\Debug", @"\Archivos\Asistencia.txt");
+            fs = new FileStream(rutarchivo, FileMode.Append);
+            escribe = new StreamWriter(fs);
+
+            try
+            {
+                linea = txtNombre.Text + ";";
+                linea = txtFecha.Text + ";";
+                linea += txtHora1.Text + ";";
+                linea += txtHora2.Text + ";";
+                linea += txtHora3.Text + ";";
+            }
+            catch 
+            {
+                MessageBox.Show("Debe marcar todos los datos");
+            }
+
+            if (Guardar == true) 
+            {
+                MessageBox.Show("Asistencia Guardada");
+            }
 
         }
     }

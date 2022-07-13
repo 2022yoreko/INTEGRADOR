@@ -177,12 +177,14 @@
     <None Include="Resources\usuario.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Archivos\Asistencia.txt" />
     <Content Include="Archivos\Respuesta3.txt" />
     <Content Include="Archivos\Respuesta1.txt" />
     <Content Include="Archivos\Respuesta2.txt" />
     <Content Include="Archivos\Respuesta4.txt" />
     <Content Include="Archivos\Usuarios.txt" />
     <Content Include="Archivos\Estudiantes.txt" />
+    <None Include="Resources\imagen.png" />
     <None Include="Resources\actualizar %281%29.png" />
     <None Include="Resources\actualizar.png" />
     <None Include="Resources\foto.png" />
