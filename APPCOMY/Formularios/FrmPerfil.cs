@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,9 @@ namespace APPCOMY.Formularios
 {
     public partial class FrmPerfil : Form
     {
+        private List<String> listTemp = new List<String>();
+        private DataGrid dt;
+
         private string N_carnet, N_becado, nombres, apellidos, correo, telefono, depto, domicilio, facultad, carrera, año, promedio;
         public string pN_carnet 
         {
@@ -72,7 +76,49 @@ namespace APPCOMY.Formularios
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-           
+            search(txtBusqueda.Text, cbOption.SelectedIndex);
+            
+        }
+
+        private void search(string txtSearch, int index)
+        {
+            listTemp.Clear();
+            string ruta = Directory.GetCurrentDirectory();
+            string rutArch = ruta.Replace(@"\bin\Debug", @"\Archivos\Estudiantes.txt");
+            StreamReader Leer;
+            Leer = new StreamReader(rutArch);
+
+            string data;
+            string cod = null;
+            data = Leer.ReadLine();
+
+            while ( data != null)
+            {
+                string[] array = data.Split(';');
+                if (array[index].Contains(txtSearch.ToUpper()) )
+                {
+                    if (cod != array[0])
+                    {
+                        listTemp.Add(data);
+                    }
+                    cod = array[0];
+                }
+                data = Leer.ReadLine();
+
+            }//Fin del While
+            Leer.Close(); //Cerrar el archivo
+            loadData();
+        }
+        private void loadData()
+        {
+            // Clear data
+            dataGridView1.Rows.Clear();
+            for(int i = 0; i < listTemp.Count; i++)
+            {
+
+                string[] row = listTemp[i].Split(';');
+                dataGridView1.Rows.Add(row[0], row[7], row[1], row[2], row[3], row[8], row[9], "", row[4], row[5], row[6]);
+            }
         }
 
         public string pdomicilio
