@@ -68,9 +68,6 @@ namespace APPCOMY
             fs = new FileStream(rutarchivo, FileMode.Append);
             escribe = new StreamWriter(fs);
 
-
-
-
             try
             {
 
@@ -143,12 +140,6 @@ namespace APPCOMY
             {
                 MessageBox.Show("No selecciono ninguna imagen", "Sin selecion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-        }
-
-        private void btnEliminar_Click(object sender, EventArgs e)
-        {
-            
-            
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
@@ -299,3 +290,4 @@ namespace APPCOMY
     }
     
 }
+
