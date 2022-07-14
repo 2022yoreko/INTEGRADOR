@@ -53,11 +53,9 @@ namespace APPCOMY
             string Hora1 = txtHora1.Text;
             string Hora2 = txtHora2.Text;
             string Hora3 = txtHora3.Text;
-
-            bool validate = validateData(Lu, Ma, Mi, Ju, Vi, Sa, Do);
-
-            if (!validate) return;
-
+          
+            bool Guardar = true;
+          
             FileStream fs;
             StreamWriter escribe;
             string linea;
@@ -103,16 +101,14 @@ namespace APPCOMY
                 MessageBox.Show("Debe marcar todos los datos");
             }
 
-            if (validate == true) 
+            if (Guardar == true) 
             {
                 MessageBox.Show("Asistencia Guardada");
             }
 
         }
 
-        private bool validateData(string lu, string ma, string mi, string ju, string vi, string sa, string @do)
-        {
-            throw new NotImplementedException();
-        }
+       
+        
     }
 }

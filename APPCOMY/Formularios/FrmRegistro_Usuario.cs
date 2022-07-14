@@ -30,7 +30,7 @@ namespace APPCOMY
             string Numero_telefono = txtTelefono.Text;
 
             bool validate = validateData(Nombres, Apellidos, Contraseña, Confirmar_Contraseña, Correo_electronico, Numero_telefono);
-
+            bool Guardar = true;
             if (!validate) return;
 
             FileStream fs;
@@ -41,26 +41,32 @@ namespace APPCOMY
             string rutarchivo = rutbase.Replace(@"\bin\Debug", @"\Archivos\Usuarios.txt");
             fs = new FileStream(rutarchivo, FileMode.Append);
             escribe = new StreamWriter(fs);
-
-            linea = txtNombres.Text + ";";
-            linea += txtApellidos.Text + ";";
-            linea += txtCorreo_Electronico.Text + ";";
-            linea += txtContraseña.Text + ";";
-            linea += txtTelefono.Text + ";";
-            escribe.WriteLine(linea.ToUpper());
-            escribe.Close();
-
-
            
-            if (validate == true) 
+            try
             {
-                MessageBox.Show("Bienvenido: " + Nombres);
+                linea = txtNombres.Text + ";";
+                linea += txtApellidos.Text + ";";
+                linea += txtCorreo_Electronico.Text + ";";
+                linea += txtContraseña.Text + ";";
+                linea += txtTelefono.Text + ";";
+                escribe.WriteLine(linea.ToUpper());
+                escribe.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Datos incompletos");
             }
 
+            if (Guardar == true)
+            {
+                MessageBox.Show("Bienvenido: " + Nombres);
 
-            FrmMenu administrador = new FrmMenu();
-            administrador.Show();
-            this.Close();
+                FrmMenu frmNav = new FrmMenu();
+                frmNav.MdiParent = this.MdiParent;
+                frmNav.Show();
+                this.Close();
+            }
+
         }
 
         public bool validateData(String nom,String ape,String con, String con2,String email, String tel)
@@ -82,9 +88,10 @@ namespace APPCOMY
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
-            var newForm = new Form();
-            newForm.Show();
-            this.Hide();
+            FrmPresentacion presentacion = new FrmPresentacion();
+            presentacion.MdiParent = this.MdiParent;
+            presentacion.Show();
+            this.Close();
         }
 
         private void txtNombres_Enter(object sender, EventArgs e)

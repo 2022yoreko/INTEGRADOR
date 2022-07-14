@@ -27,7 +27,7 @@ namespace APPCOMY
             FrmRegistro_Usuario registro_Usuario = new FrmRegistro_Usuario();
             registro_Usuario.MdiParent = this.MdiParent;
             registro_Usuario.Show();
-            this.Close(); //Cerrar la ventana actual que hizo la llamada
+            this.Close(); //Cerrar la ventana actual que hizo la llamada*/
         }
 
         private void btnIniciar_Click(object sender, EventArgs e)

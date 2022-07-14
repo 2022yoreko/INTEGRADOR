@@ -164,9 +164,9 @@ namespace APPCOMY
 
         private void btnRegistrate_Click(object sender, EventArgs e)
         {
-            FrmPresentacion present = new FrmPresentacion();
-            present.MdiParent = this.MdiParent;
-            present.Show();
+            FrmRegistro_Usuario registro_Usuario = new FrmRegistro_Usuario();
+            registro_Usuario.MdiParent = this.MdiParent;
+            registro_Usuario.Show();
             this.Close();
 
         }

@@ -52,6 +52,8 @@ namespace APPCOMY
             string Carrera = txtCarrera.Text;
             string Año = ComboBoxAño.SelectedItem.ToString();
             string Telefono = txtTelefono.Text;
+            string Domicilio = txtDomicilio.Text;
+            string Promedio = txtPromedio.Text;
             string Facultad = ComboboxFacultad.SelectedItem.ToString();
             string Depto = ComboboxDepto.SelectedItem.ToString();
             bool Guardar = true;
@@ -81,6 +83,8 @@ namespace APPCOMY
                 linea += txtCarrera.Text + ";";
                 linea += ComboBoxAño.SelectedItem.ToString() + ";";
                 linea += txtTelefono.Text + ";";
+                linea += txtPromedio.Text + ";";
+                linea += txtDomicilio.Text + ";";
                 linea += ComboboxDepto.SelectedItem.ToString() + ";";
                 escribe.WriteLine(linea.ToUpper());
                 escribe.Close();
@@ -107,6 +111,7 @@ namespace APPCOMY
             enviar.pdomicilio = txtDomicilio.Text;
             enviar.pfacultad = ComboboxFacultad.SelectedItem.ToString();
             enviar.pcarrera = txtCarrera.Text;
+            enviar.ppromedio = txtPromedio.Text;
             enviar.paño = ComboBoxAño.SelectedItem.ToString();
 
             enviar.Show();

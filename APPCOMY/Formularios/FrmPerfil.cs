@@ -73,6 +73,49 @@ namespace APPCOMY.Formularios
             }
 
         }
+        public string pdomicilio
+        {
+            set
+            {
+                domicilio = value;
+            }
+
+        }
+
+        public string pfacultad
+        {
+            set
+            {
+                facultad = value;
+            }
+
+        }
+        public string pcarrera
+        {
+            set
+            {
+                carrera = value;
+            }
+
+        }
+         public string paño
+        {
+            set
+            {
+                año = value;
+            }
+
+        }
+        public string ppromedio
+        {
+            set
+            {
+               promedio = value;
+            }
+
+        }
+
+
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
@@ -121,75 +164,27 @@ namespace APPCOMY.Formularios
             }
         }
 
-        public string pdomicilio
-        {
-            set
-            {
-               domicilio = value;
-            }
-
-        }
-
         private void btnEliminar_Click(object sender, EventArgs e)
         {
           
         }
 
-        public string pfacultad
-        {
-            set
-            {
-                facultad = value;
-            }
-
-        }
-        public string pcarrera
-        {
-            set
-            {
-               carrera = value;
-            }
-
-        }
-        public string paño
-        {
-            set
-            {
-                año = value;
-            }
-
-        }
-        public string ppromedio
-        {
-            set
-            {
-               promedio = value;
-            }
-
-        }
         public FrmPerfil()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
-            var newForm4 = new FrmMenu();
-            newForm4.Show();
-            this.Hide();
+            FrmMenu frmNav = new FrmMenu();
+            frmNav.MdiParent = this.MdiParent;
+            frmNav.Show();
+            this.Close();
 
         }
 
-        private void FrmPerfil_Load(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void btnEditar_Click(object sender, EventArgs e)
         {
             int renglon = dataGridView1.Rows.Add();
@@ -204,6 +199,7 @@ namespace APPCOMY.Formularios
             dataGridView1.Rows[renglon].Cells["Cdomicilio"].Value = domicilio;
             dataGridView1.Rows[renglon].Cells["Cfacultad"].Value = facultad;
             dataGridView1.Rows[renglon].Cells["Ccarrera"].Value = carrera;
+            dataGridView1.Rows[renglon].Cells["Cpromedio"].Value = promedio;
             dataGridView1.Rows[renglon].Cells["Caño"].Value = año;
 
         }
