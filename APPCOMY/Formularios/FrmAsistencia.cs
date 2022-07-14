@@ -20,38 +20,24 @@ namespace APPCOMY
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
+            FrmMenu Menu = new FrmMenu();
+            Menu.MdiParent = this.MdiParent;
+            Menu.Show();
             this.Close();
-            FrmMenu back = new FrmMenu();
-            back.Show();
+            this.Hide();
 
 
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            var newForm4 = new FrmMenu();
-            newForm4.Show();
-            this.Hide();
-        }
-
-       
-
-        private void Form8_Load(object sender, EventArgs e)
-        {
+            FrmMenu Menu = new FrmMenu();
+            Menu.MdiParent = this.MdiParent;
+            Menu.Show();
+            this.Close();
 
         }
 
-        private void FrmAsistencia_Load(object sender, EventArgs e)
-        {
-            var newForm4 = new FrmMenu();
-            newForm4.Show();
-            this.Hide();
-        }
-
-        private void imgAsistencia_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -60,31 +46,142 @@ namespace APPCOMY
             string Hora1 = txtHora1.Text;
             string Hora2 = txtHora2.Text;
             string Hora3 = txtHora3.Text;
+           
+            bool Lu, Ma, Mi, Ju, Vi, Sa, Do;
 
             bool Guardar = true;
+
 
             FileStream fs;
             StreamWriter escribe;
             string linea;
 
             string rutbase = Directory.GetCurrentDirectory();
-            string rutarchivo = rutbase.Replace(@"\bin\Debug", @"\Archivos\Asistencia.txt");
+            string rutarchivo = rutbase.Replace(@"\bin\Debug", @"\Archivos\Agenda.txt");
             fs = new FileStream(rutarchivo, FileMode.Append);
             escribe = new StreamWriter(fs);
 
-            try
+            Lu = Convert.ToBoolean(Console.ReadLine());
+            Ma = Convert.ToBoolean(Console.ReadLine());
+            Mi = Convert.ToBoolean(Console.ReadLine());
+            Ju = Convert.ToBoolean(Console.ReadLine());
+            Vi = Convert.ToBoolean(Console.ReadLine());
+            Sa = Convert.ToBoolean(Console.ReadLine());
+            Do = Convert.ToBoolean(Console.ReadLine());
+
+
+            if (Lu == true)
             {
-                linea = txtNombre.Text + ";";
-                linea = txtFecha.Text + ";";
-                linea += txtHora1.Text + ";";
-                linea += txtHora2.Text + ";";
-                linea += txtHora3.Text + ";";
+                Lu = checkBox1.Checked;
             }
-            catch 
+            else if (Lu == true)
             {
-                MessageBox.Show("Debe marcar todos los datos");
+                Lu = checkBox2.Checked;
+            }
+            else if (Lu == true)
+            {
+                Lu = checkBox3.Checked;
             }
 
+
+
+            if (Ma == true)
+            {
+                Ma = checkBox4.Checked;
+            }
+            else if (Ma == true)
+            {
+                Ma = checkBox5.Checked;
+            }
+            else if (Ma == true)
+            {
+                Ma = checkBox6.Checked;
+            }
+
+
+
+            if (Mi == true)
+            {
+                Mi = checkBox7.Checked;
+            }
+            else if (Mi == true)
+            {
+                Mi = checkBox8.Checked;
+            }
+            else if (Mi == true)
+            {
+                Mi = checkBox9.Checked;
+            }
+
+
+
+            if (Ju == true)
+            {
+                Ju = checkBox10.Checked;
+            }
+            else if (Ju == true)
+            {
+                Ju = checkBox11.Checked;
+            }
+            else if (Ju == true)
+            {
+                Ju = checkBox12.Checked;
+            }
+
+
+
+            if (Vi == true)
+            {
+                Vi = checkBox13.Checked;
+            }
+            else if (Vi == true)
+            {
+                Vi = checkBox14.Checked;
+            }
+            else if (Vi == true)
+            {
+                Vi = checkBox15.Checked;
+            }
+
+
+
+            if (Sa == true)
+            {
+                Sa = checkBox16.Checked;
+            }
+            else if (Sa == true)
+            {
+                Sa = checkBox17.Checked;
+            }
+            else if (Sa == true)
+            {
+                Sa = checkBox18.Checked;
+            }
+
+
+
+            if (Do == true)
+            {
+                Do = checkBox19.Checked;
+            }
+            else if (Do == true)
+            {
+                Do = checkBox20.Checked;
+            }
+            else if (Do == true)
+            {
+                Do = checkBox21.Checked;
+            }
+
+            
+            linea = txtNombre.Text + ";";
+            linea = txtFecha.Text + ";";
+            linea += txtHora1.Text + ";";
+            linea += txtHora2.Text + ";";
+            linea += txtHora3.Text + ";";
+
+            
+              /*  MessageBox.Show("Debe marcar todos los datos");*/
             if (Guardar == true) 
             {
                 MessageBox.Show("Asistencia Guardada");

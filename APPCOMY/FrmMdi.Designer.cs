@@ -37,7 +37,6 @@ namespace APPCOMY
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::APPCOMY.Properties.Resources.azul;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(784, 450);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
