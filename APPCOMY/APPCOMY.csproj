@@ -177,7 +177,7 @@
     <None Include="Resources\usuario.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Archivos\Asistencia.txt" />
+    <Content Include="Archivos\Agenda.txt" />
     <Content Include="Archivos\Respuesta3.txt" />
     <Content Include="Archivos\Respuesta1.txt" />
     <Content Include="Archivos\Respuesta2.txt" />
