@@ -54,6 +54,7 @@ namespace APPCOMY.Formularios
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
+            this.cbOption = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -65,7 +66,7 @@ namespace APPCOMY.Formularios
             this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
             this.label14.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(575, 37);
+            this.label14.Location = new System.Drawing.Point(542, 37);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(85, 17);
             this.label14.TabIndex = 87;
@@ -224,9 +225,9 @@ namespace APPCOMY.Formularios
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(420, 15);
+            this.pictureBox2.Location = new System.Drawing.Point(404, 15);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(262, 55);
+            this.pictureBox2.Size = new System.Drawing.Size(223, 55);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 86;
             this.pictureBox2.TabStop = false;
@@ -250,7 +251,7 @@ namespace APPCOMY.Formularios
             this.btnBuscar.FlatAppearance.BorderSize = 0;
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.btnBuscar.Location = new System.Drawing.Point(746, 33);
+            this.btnBuscar.Location = new System.Drawing.Point(975, 33);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(34, 26);
             this.btnBuscar.TabIndex = 84;
@@ -286,12 +287,28 @@ namespace APPCOMY.Formularios
             this.btnEditar.UseVisualStyleBackColor = false;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
+            // cbOption
+            // 
+            this.cbOption.FormattingEnabled = true;
+            this.cbOption.Items.AddRange(new object[] {
+            "N_carnet",
+            "Nombres",
+            "Apellidos",
+            "Correo",
+            "Facultad",
+            "Carrera"});
+            this.cbOption.Location = new System.Drawing.Point(649, 33);
+            this.cbOption.Name = "cbOption";
+            this.cbOption.Size = new System.Drawing.Size(121, 21);
+            this.cbOption.TabIndex = 96;
+            // 
             // FrmPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
             this.ClientSize = new System.Drawing.Size(1221, 549);
+            this.Controls.Add(this.cbOption);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnMenu);
@@ -343,5 +360,6 @@ namespace APPCOMY.Formularios
         private System.Windows.Forms.DataGridViewTextBoxColumn Cfacultad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ccarrera;
         private System.Windows.Forms.DataGridViewTextBoxColumn Caño;
+        private System.Windows.Forms.ComboBox cbOption;
     }
 }
