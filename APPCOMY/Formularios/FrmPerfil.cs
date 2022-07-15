@@ -82,6 +82,16 @@ namespace APPCOMY.Formularios
 
         }
 
+        private void txtBusqueda_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbOption_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
         public string pfacultad
         {
             set
@@ -156,11 +166,13 @@ namespace APPCOMY.Formularios
         {
             // Clear data
             dataGridView1.Rows.Clear();
-            for(int i = 0; i < listTemp.Count; i++)
+            for (int i = 0; i < listTemp.Count; i++)
             {
 
                 string[] row = listTemp[i].Split(';');
-                dataGridView1.Rows.Add(row[0], row[7], row[1], row[2], row[3], row[8], row[9], "", row[4], row[5], row[6]);
+                //  dataGridView1.Rows.Add(row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], row[10], row [11]);
+                dataGridView1.Rows.Add("", row[0], row[1], row[2], row[3], row[7], row[10], row[9], row[4], row[5], row[6], row[8]);
+                                             // "", row 0,1,2,3,7,10,9,4,5,6,8
             }
         }
 
@@ -184,7 +196,7 @@ namespace APPCOMY.Formularios
 
         }
 
-        
+
         private void btnEditar_Click(object sender, EventArgs e)
         {
             int renglon = dataGridView1.Rows.Add();
@@ -199,8 +211,8 @@ namespace APPCOMY.Formularios
             dataGridView1.Rows[renglon].Cells["Cdomicilio"].Value = domicilio;
             dataGridView1.Rows[renglon].Cells["Cfacultad"].Value = facultad;
             dataGridView1.Rows[renglon].Cells["Ccarrera"].Value = carrera;
-            dataGridView1.Rows[renglon].Cells["Cpromedio"].Value = promedio;
             dataGridView1.Rows[renglon].Cells["Caño"].Value = año;
+            dataGridView1.Rows[renglon].Cells["Cpromedio"].Value = promedio;
 
         }
     }

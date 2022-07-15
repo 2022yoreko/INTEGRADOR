@@ -103,7 +103,7 @@ namespace APPCOMY.Formularios
             this.linkLabel1.BackColor = System.Drawing.Color.Gainsboro;
             this.linkLabel1.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.linkLabel1.Font = new System.Drawing.Font("Verdana", 13F);
-            this.linkLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.linkLabel1.ForeColor = System.Drawing.Color.White;
             this.linkLabel1.LinkColor = System.Drawing.Color.Navy;
             this.linkLabel1.Location = new System.Drawing.Point(29, 40);
             this.linkLabel1.Name = "linkLabel1";
@@ -125,6 +125,7 @@ namespace APPCOMY.Formularios
             this.linkLabel2.TabIndex = 8;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "¿Cómo borrar el registro de un estudiante?";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // linkLabel4
             // 
@@ -139,6 +140,7 @@ namespace APPCOMY.Formularios
             this.linkLabel4.TabStop = true;
             this.linkLabel4.Text = "Requisitos";
             this.linkLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
             // 
             // linkLabel6
             // 
@@ -152,6 +154,7 @@ namespace APPCOMY.Formularios
             this.linkLabel6.TabIndex = 12;
             this.linkLabel6.TabStop = true;
             this.linkLabel6.Text = "Acerca de la app";
+            this.linkLabel6.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel6_LinkClicked);
             // 
             // btnRegresar
             // 
@@ -213,19 +216,20 @@ namespace APPCOMY.Formularios
             this.panel1.Controls.Add(this.linkLabel6);
             this.panel1.Controls.Add(this.linkLabel4);
             this.panel1.ForeColor = System.Drawing.Color.Transparent;
-            this.panel1.Location = new System.Drawing.Point(47, 162);
+            this.panel1.Location = new System.Drawing.Point(57, 162);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(484, 336);
+            this.panel1.Size = new System.Drawing.Size(458, 336);
             this.panel1.TabIndex = 48;
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(547, 162);
+            this.richTextBox1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.ForeColor = System.Drawing.Color.Navy;
+            this.richTextBox1.Location = new System.Drawing.Point(554, 162);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(408, 336);
+            this.richTextBox1.Size = new System.Drawing.Size(428, 336);
             this.richTextBox1.TabIndex = 49;
             this.richTextBox1.Text = "";
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // FrmAyuda
             // 

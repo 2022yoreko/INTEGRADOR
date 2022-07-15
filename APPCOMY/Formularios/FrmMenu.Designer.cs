@@ -33,7 +33,6 @@ namespace APPCOMY
             this.btnRegistro = new System.Windows.Forms.Button();
             this.btnInformacion_Personal = new System.Windows.Forms.Button();
             this.btnAsistencia = new System.Windows.Forms.Button();
-            this.btnAjustes = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnAyuda = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -44,7 +43,6 @@ namespace APPCOMY
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -81,7 +79,7 @@ namespace APPCOMY
             this.btnInformacion_Personal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInformacion_Personal.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInformacion_Personal.ForeColor = System.Drawing.Color.Lavender;
-            this.btnInformacion_Personal.Location = new System.Drawing.Point(27, 168);
+            this.btnInformacion_Personal.Location = new System.Drawing.Point(29, 194);
             this.btnInformacion_Personal.Name = "btnInformacion_Personal";
             this.btnInformacion_Personal.Size = new System.Drawing.Size(60, 62);
             this.btnInformacion_Personal.TabIndex = 3;
@@ -96,27 +94,13 @@ namespace APPCOMY
             this.btnAsistencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAsistencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAsistencia.ForeColor = System.Drawing.Color.Lavender;
-            this.btnAsistencia.Location = new System.Drawing.Point(27, 247);
+            this.btnAsistencia.Location = new System.Drawing.Point(25, 293);
             this.btnAsistencia.Name = "btnAsistencia";
             this.btnAsistencia.Size = new System.Drawing.Size(64, 65);
             this.btnAsistencia.TabIndex = 4;
             this.btnAsistencia.Text = " ";
             this.btnAsistencia.UseVisualStyleBackColor = false;
             this.btnAsistencia.Click += new System.EventHandler(this.btnTabla_Asistencia_Click);
-            // 
-            // btnAjustes
-            // 
-            this.btnAjustes.BackColor = System.Drawing.Color.Lavender;
-            this.btnAjustes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAjustes.BackgroundImage")));
-            this.btnAjustes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAjustes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAjustes.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAjustes.ForeColor = System.Drawing.Color.Lavender;
-            this.btnAjustes.Location = new System.Drawing.Point(33, 426);
-            this.btnAjustes.Name = "btnAjustes";
-            this.btnAjustes.Size = new System.Drawing.Size(50, 50);
-            this.btnAjustes.TabIndex = 5;
-            this.btnAjustes.UseVisualStyleBackColor = false;
             // 
             // btnSalir
             // 
@@ -126,7 +110,7 @@ namespace APPCOMY
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.Lavender;
-            this.btnSalir.Location = new System.Drawing.Point(33, 508);
+            this.btnSalir.Location = new System.Drawing.Point(33, 524);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(50, 50);
             this.btnSalir.TabIndex = 6;
@@ -141,7 +125,7 @@ namespace APPCOMY
             this.btnAyuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAyuda.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAyuda.ForeColor = System.Drawing.Color.Lavender;
-            this.btnAyuda.Location = new System.Drawing.Point(33, 341);
+            this.btnAyuda.Location = new System.Drawing.Point(33, 411);
             this.btnAyuda.Name = "btnAyuda";
             this.btnAyuda.Size = new System.Drawing.Size(50, 55);
             this.btnAyuda.TabIndex = 11;
@@ -202,11 +186,9 @@ namespace APPCOMY
             this.panelMenu.Controls.Add(this.label14);
             this.panelMenu.Controls.Add(this.label13);
             this.panelMenu.Controls.Add(this.label12);
-            this.panelMenu.Controls.Add(this.label10);
             this.panelMenu.Controls.Add(this.label9);
             this.panelMenu.Controls.Add(this.label8);
             this.panelMenu.Controls.Add(this.panel2);
-            this.panelMenu.Controls.Add(this.btnAjustes);
             this.panelMenu.Controls.Add(this.btnRegistro);
             this.panelMenu.Controls.Add(this.btnSalir);
             this.panelMenu.Controls.Add(this.btnAyuda);
@@ -222,7 +204,7 @@ namespace APPCOMY
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(111, 190);
+            this.label14.Location = new System.Drawing.Point(116, 216);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(50, 18);
             this.label14.TabIndex = 57;
@@ -232,7 +214,7 @@ namespace APPCOMY
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(111, 359);
+            this.label13.Location = new System.Drawing.Point(119, 429);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(58, 18);
             this.label13.TabIndex = 56;
@@ -242,29 +224,18 @@ namespace APPCOMY
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(111, 270);
+            this.label12.Location = new System.Drawing.Point(111, 316);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(92, 18);
             this.label12.TabIndex = 55;
             this.label12.Text = "Asistencia";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Lavender;
-            this.label10.Font = new System.Drawing.Font("Verdana", 12.25F);
-            this.label10.Location = new System.Drawing.Point(110, 442);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(73, 20);
-            this.label10.TabIndex = 53;
-            this.label10.Text = "Ajustes";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Lavender;
             this.label9.Font = new System.Drawing.Font("Verdana", 12.25F);
-            this.label9.Location = new System.Drawing.Point(110, 524);
+            this.label9.Location = new System.Drawing.Point(118, 540);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(48, 20);
             this.label9.TabIndex = 52;
@@ -274,7 +245,7 @@ namespace APPCOMY
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(111, 106);
+            this.label8.Location = new System.Drawing.Point(116, 106);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(76, 18);
             this.label8.TabIndex = 51;
@@ -286,7 +257,7 @@ namespace APPCOMY
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.panel2.Location = new System.Drawing.Point(0, 3);
+            this.panel2.Location = new System.Drawing.Point(-1, -1);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(278, 63);
             this.panel2.TabIndex = 42;
@@ -368,7 +339,6 @@ namespace APPCOMY
         private System.Windows.Forms.Button btnRegistro;
         private System.Windows.Forms.Button btnInformacion_Personal;
         private System.Windows.Forms.Button btnAsistencia;
-        private System.Windows.Forms.Button btnAjustes;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnAyuda;
         private System.Windows.Forms.Label label5;
@@ -377,7 +347,6 @@ namespace APPCOMY
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnRetroceder;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label14;

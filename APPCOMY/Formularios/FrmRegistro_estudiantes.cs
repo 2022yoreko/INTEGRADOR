@@ -49,13 +49,13 @@ namespace APPCOMY
             string Nombres = txtNombres.Text;
             string Apellidos = txtApellidos.Text;
             string Correo = txtCorreo.Text;
+            string Telefono = txtTelefono.Text;
+            string Depto = ComboboxDepto.SelectedItem.ToString();
+            string Domicilio = txtDomicilio.Text;
+            string Facultad = ComboboxFacultad.SelectedItem.ToString();
             string Carrera = txtCarrera.Text;
             string Año = ComboBoxAño.SelectedItem.ToString();
-            string Telefono = txtTelefono.Text;
-            string Domicilio = txtDomicilio.Text;
             string Promedio = txtPromedio.Text;
-            string Facultad = ComboboxFacultad.SelectedItem.ToString();
-            string Depto = ComboboxDepto.SelectedItem.ToString();
             bool Guardar = true;
 
 
@@ -76,13 +76,13 @@ namespace APPCOMY
                 linea += txtNombres.Text + ";";
                 linea += txtApellidos.Text + ";";
                 linea += txtCorreo.Text + ";";
+                linea += txtTelefono.Text + ";";
+                linea += ComboboxDepto.SelectedItem.ToString() + ";";
+                linea += txtDomicilio.Text + ";";
                 linea += ComboboxFacultad.SelectedItem.ToString() + ";";
                 linea += txtCarrera.Text + ";";
                 linea += ComboBoxAño.SelectedItem.ToString() + ";";
-                linea += txtTelefono.Text + ";";
                 linea += txtPromedio.Text + ";";
-                linea += txtDomicilio.Text + ";";
-                linea += ComboboxDepto.SelectedItem.ToString() + ";";
                 escribe.WriteLine(linea.ToUpper());
                 escribe.Close();
 
@@ -103,13 +103,13 @@ namespace APPCOMY
             enviar.pnombres = txtNombres.Text;
             enviar.papellidos = txtApellidos.Text;
             enviar.pcorreo = txtCorreo.Text;
-            enviar.pdepto = ComboboxDepto.SelectedItem.ToString();
             enviar.ptelefono = txtTelefono.Text;
+            enviar.pdepto = ComboboxDepto.SelectedItem.ToString();
             enviar.pdomicilio = txtDomicilio.Text;
             enviar.pfacultad = ComboboxFacultad.SelectedItem.ToString();
             enviar.pcarrera = txtCarrera.Text;
-            enviar.ppromedio = txtPromedio.Text;
             enviar.paño = ComboBoxAño.SelectedItem.ToString();
+            enviar.ppromedio = txtPromedio.Text;
 
             enviar.Show();
 
@@ -145,6 +145,7 @@ namespace APPCOMY
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             txtN_carnet.Clear();
+            txtN_Becado.Clear();
             txtNombres.Clear();
             txtApellidos.Clear();
             txtCorreo.Clear();
