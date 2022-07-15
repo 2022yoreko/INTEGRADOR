@@ -53,11 +53,11 @@ namespace APPCOMY.Formularios
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Verdana", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(324, 106);
+            this.label1.Location = new System.Drawing.Point(469, 87);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 28);
+            this.label1.Size = new System.Drawing.Size(85, 33);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ayuda";
             // 
@@ -104,8 +104,8 @@ namespace APPCOMY.Formularios
             this.linkLabel1.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.linkLabel1.Font = new System.Drawing.Font("Verdana", 13F);
             this.linkLabel1.ForeColor = System.Drawing.Color.White;
-            this.linkLabel1.LinkColor = System.Drawing.Color.Navy;
-            this.linkLabel1.Location = new System.Drawing.Point(29, 40);
+            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.linkLabel1.Location = new System.Drawing.Point(29, 39);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(356, 22);
             this.linkLabel1.TabIndex = 7;
@@ -118,7 +118,7 @@ namespace APPCOMY.Formularios
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.BackColor = System.Drawing.Color.Gainsboro;
             this.linkLabel2.Font = new System.Drawing.Font("Verdana", 13F);
-            this.linkLabel2.LinkColor = System.Drawing.Color.Navy;
+            this.linkLabel2.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.linkLabel2.Location = new System.Drawing.Point(29, 98);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(400, 22);
@@ -132,7 +132,7 @@ namespace APPCOMY.Formularios
             this.linkLabel4.AutoSize = true;
             this.linkLabel4.BackColor = System.Drawing.Color.Gainsboro;
             this.linkLabel4.Font = new System.Drawing.Font("Verdana", 13F);
-            this.linkLabel4.LinkColor = System.Drawing.Color.Navy;
+            this.linkLabel4.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.linkLabel4.Location = new System.Drawing.Point(29, 153);
             this.linkLabel4.Name = "linkLabel4";
             this.linkLabel4.Size = new System.Drawing.Size(102, 22);
@@ -147,7 +147,7 @@ namespace APPCOMY.Formularios
             this.linkLabel6.AutoSize = true;
             this.linkLabel6.BackColor = System.Drawing.Color.Gainsboro;
             this.linkLabel6.Font = new System.Drawing.Font("Verdana", 13F);
-            this.linkLabel6.LinkColor = System.Drawing.Color.Navy;
+            this.linkLabel6.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.linkLabel6.Location = new System.Drawing.Point(29, 209);
             this.linkLabel6.Name = "linkLabel6";
             this.linkLabel6.Size = new System.Drawing.Size(159, 22);
@@ -163,7 +163,7 @@ namespace APPCOMY.Formularios
             this.btnRegresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.btnRegresar.Location = new System.Drawing.Point(909, 21);
+            this.btnRegresar.Location = new System.Drawing.Point(910, 29);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(46, 39);
             this.btnRegresar.TabIndex = 32;
@@ -189,7 +189,7 @@ namespace APPCOMY.Formularios
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(554, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(602, 19);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(262, 55);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -202,7 +202,7 @@ namespace APPCOMY.Formularios
             this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
             this.label14.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(710, 31);
+            this.label14.Location = new System.Drawing.Point(758, 38);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(85, 17);
             this.label14.TabIndex = 47;
@@ -210,24 +210,25 @@ namespace APPCOMY.Formularios
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panel1.Controls.Add(this.linkLabel1);
             this.panel1.Controls.Add(this.linkLabel2);
             this.panel1.Controls.Add(this.linkLabel6);
             this.panel1.Controls.Add(this.linkLabel4);
             this.panel1.ForeColor = System.Drawing.Color.Transparent;
-            this.panel1.Location = new System.Drawing.Point(57, 162);
+            this.panel1.Location = new System.Drawing.Point(51, 162);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(458, 336);
+            this.panel1.Size = new System.Drawing.Size(442, 288);
             this.panel1.TabIndex = 48;
             // 
             // richTextBox1
             // 
+            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.richTextBox1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.ForeColor = System.Drawing.Color.Navy;
-            this.richTextBox1.Location = new System.Drawing.Point(554, 162);
+            this.richTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.richTextBox1.Location = new System.Drawing.Point(528, 162);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(428, 336);
+            this.richTextBox1.Size = new System.Drawing.Size(401, 288);
             this.richTextBox1.TabIndex = 49;
             this.richTextBox1.Text = "";
             // 
@@ -236,7 +237,7 @@ namespace APPCOMY.Formularios
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1017, 550);
+            this.ClientSize = new System.Drawing.Size(983, 506);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.btnMenu);

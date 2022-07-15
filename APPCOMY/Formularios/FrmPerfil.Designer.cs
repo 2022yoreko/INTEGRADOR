@@ -36,7 +36,6 @@ namespace APPCOMY.Formularios
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtBusqueda = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.CN_carnet = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CN_Becado = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,9 +53,10 @@ namespace APPCOMY.Formularios
             this.btnRegresar = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
+            this.txtBusqueda = new System.Windows.Forms.TextBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.cbOption = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -109,16 +109,6 @@ namespace APPCOMY.Formularios
             this.label1.Size = new System.Drawing.Size(211, 27);
             this.label1.TabIndex = 93;
             this.label1.Text = "Perfil de Estudiantes";
-            // 
-            // txtBusqueda
-            // 
-            this.txtBusqueda.Font = new System.Drawing.Font("Verdana", 12F);
-            this.txtBusqueda.ForeColor = System.Drawing.Color.DimGray;
-            this.txtBusqueda.Location = new System.Drawing.Point(790, 37);
-            this.txtBusqueda.Name = "txtBusqueda";
-            this.txtBusqueda.Size = new System.Drawing.Size(193, 27);
-            this.txtBusqueda.TabIndex = 94;
-            this.txtBusqueda.TextChanged += new System.EventHandler(this.txtBusqueda_TextChanged_1);
             // 
             // dataGridView1
             // 
@@ -254,21 +244,6 @@ namespace APPCOMY.Formularios
             this.pictureBox3.TabIndex = 90;
             this.pictureBox3.TabStop = false;
             // 
-            // btnBuscar
-            // 
-            this.btnBuscar.BackColor = System.Drawing.SystemColors.Window;
-            this.btnBuscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBuscar.BackgroundImage")));
-            this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnBuscar.FlatAppearance.BorderSize = 0;
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
-            this.btnBuscar.Location = new System.Drawing.Point(977, 37);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(34, 26);
-            this.btnBuscar.TabIndex = 84;
-            this.btnBuscar.UseVisualStyleBackColor = false;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-            // 
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
@@ -297,6 +272,31 @@ namespace APPCOMY.Formularios
             this.btnEditar.TabIndex = 82;
             this.btnEditar.UseVisualStyleBackColor = false;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
+            // txtBusqueda
+            // 
+            this.txtBusqueda.Font = new System.Drawing.Font("Verdana", 12F);
+            this.txtBusqueda.ForeColor = System.Drawing.Color.DimGray;
+            this.txtBusqueda.Location = new System.Drawing.Point(790, 37);
+            this.txtBusqueda.Name = "txtBusqueda";
+            this.txtBusqueda.Size = new System.Drawing.Size(193, 27);
+            this.txtBusqueda.TabIndex = 94;
+            this.txtBusqueda.TextChanged += new System.EventHandler(this.txtBusqueda_TextChanged_1);
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.SystemColors.Window;
+            this.btnBuscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBuscar.BackgroundImage")));
+            this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBuscar.FlatAppearance.BorderSize = 0;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(81)))), ((int)(((byte)(162)))));
+            this.btnBuscar.Location = new System.Drawing.Point(977, 37);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(34, 26);
+            this.btnBuscar.TabIndex = 84;
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // cbOption
             // 
@@ -352,7 +352,6 @@ namespace APPCOMY.Formularios
         #endregion
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label2;
@@ -361,9 +360,7 @@ namespace APPCOMY.Formularios
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtBusqueda;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ComboBox cbOption;
         private System.Windows.Forms.DataGridViewTextBoxColumn CN_carnet;
         private System.Windows.Forms.DataGridViewTextBoxColumn CN_Becado;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cnombres;
@@ -377,5 +374,8 @@ namespace APPCOMY.Formularios
         private System.Windows.Forms.DataGridViewTextBoxColumn Caño;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cpromedio;
         private EventHandler txtBusqueda_TextChanged;
+        private System.Windows.Forms.TextBox txtBusqueda;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.ComboBox cbOption;
     }
 }

@@ -17,6 +17,8 @@ namespace APPCOMY.Formularios
         private DataGrid dt;
 
         private string N_carnet, N_becado, nombres, apellidos, correo, telefono, depto, domicilio, facultad, carrera, año, promedio;
+        private int posicion;
+
         public string pN_carnet 
         {
             set 
@@ -91,11 +93,6 @@ namespace APPCOMY.Formularios
 
         }
 
-        private void txtBusqueda_TextChanged_1(object sender, EventArgs e)
-        {
-            search(txtBusqueda.Text, cbOption.SelectedIndex);
-        }
-
         public string pcarrera
         {
             set
@@ -119,6 +116,11 @@ namespace APPCOMY.Formularios
                promedio = value;
             }
 
+        }
+
+        private void txtBusqueda_TextChanged_1(object sender, EventArgs e)
+        {
+            //search(txtBusqueda.Text, cbOption.SelectedIndex);
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
@@ -174,13 +176,15 @@ namespace APPCOMY.Formularios
                 string[] row = listTemp[i].Split(';');
                 dataGridView1.Rows.Add(row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], row[10], row [11]);
                 //dataGridView1.Rows.Add("", row[0], row[1], row[2], row[3], row[7], row[10], row[9], row[4], row[5], row[6], row[8]);
-                                             // "", row 0,1,2,3,7,10,9,4,5,6,8
+                                           
             }
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-          
+
+            dataGridView1.Rows.Clear();
+            txtBusqueda.Clear();
         }
 
         public FrmPerfil()

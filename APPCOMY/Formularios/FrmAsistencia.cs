@@ -98,7 +98,7 @@ namespace APPCOMY
             }
             catch 
             {
-                MessageBox.Show("Debe marcar todos los datos");
+                MessageBox.Show("Debe marcar todos los datos por día");
             }
 
             if (Guardar == true) 
@@ -107,8 +107,5 @@ namespace APPCOMY
             }
 
         }
-
-       
-        
     }
 }
