@@ -88,9 +88,9 @@ namespace APPCOMY
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
-            FrmPresentacion presentacion = new FrmPresentacion();
-            presentacion.MdiParent = this.MdiParent;
-            presentacion.Show();
+            FrmLogin login = new FrmLogin();
+            login.MdiParent = this.MdiParent;
+            login.Show();
             this.Close();
         }
 

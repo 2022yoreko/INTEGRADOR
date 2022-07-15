@@ -342,6 +342,7 @@ namespace APPCOMY.Formularios
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.txtBusqueda);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmPerfil";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Perfil";

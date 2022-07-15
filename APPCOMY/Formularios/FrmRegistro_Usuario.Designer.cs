@@ -255,6 +255,7 @@ namespace APPCOMY
             this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(670, 550);
             this.Name = "FrmRegistro_Usuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
