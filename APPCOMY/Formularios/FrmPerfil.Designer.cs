@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace APPCOMY.Formularios
 {
     partial class FrmPerfil
@@ -116,7 +118,7 @@ namespace APPCOMY.Formularios
             this.txtBusqueda.Name = "txtBusqueda";
             this.txtBusqueda.Size = new System.Drawing.Size(193, 27);
             this.txtBusqueda.TabIndex = 94;
-            this.txtBusqueda.TextChanged += new System.EventHandler(this.txtBusqueda_TextChanged);
+            this.txtBusqueda.TextChanged += new System.EventHandler(this.txtBusqueda_TextChanged_1);
             // 
             // dataGridView1
             // 
@@ -213,6 +215,7 @@ namespace APPCOMY.Formularios
             this.btnMenu.Size = new System.Drawing.Size(44, 38);
             this.btnMenu.TabIndex = 92;
             this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // btnRegresar
             // 
@@ -311,7 +314,6 @@ namespace APPCOMY.Formularios
             this.cbOption.Name = "cbOption";
             this.cbOption.Size = new System.Drawing.Size(89, 26);
             this.cbOption.TabIndex = 96;
-            this.cbOption.SelectedIndexChanged += new System.EventHandler(this.cbOption_SelectedIndexChanged);
             // 
             // FrmPerfil
             // 
@@ -345,6 +347,8 @@ namespace APPCOMY.Formularios
 
         }
 
+     
+
         #endregion
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnEliminar;
@@ -372,5 +376,6 @@ namespace APPCOMY.Formularios
         private System.Windows.Forms.DataGridViewTextBoxColumn Ccarrera;
         private System.Windows.Forms.DataGridViewTextBoxColumn Caño;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cpromedio;
+        private EventHandler txtBusqueda_TextChanged;
     }
 }

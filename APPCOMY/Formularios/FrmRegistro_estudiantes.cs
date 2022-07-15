@@ -274,7 +274,6 @@ namespace APPCOMY
             txtPromedio.Clear();
 
         }
-
         private void txtPromedio_Validated(object sender, EventArgs e)
         {
             if (txtPromedio.Text.Trim() == "")
@@ -286,6 +285,7 @@ namespace APPCOMY
             {
                 epError.Clear();
             }
+
         }
 
     }
