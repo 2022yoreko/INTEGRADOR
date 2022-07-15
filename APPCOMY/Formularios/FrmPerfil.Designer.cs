@@ -305,11 +305,17 @@ namespace APPCOMY.Formularios
             this.cbOption.FormattingEnabled = true;
             this.cbOption.Items.AddRange(new object[] {
             "N_carnet",
+            "N_Becado",
             "Nombres",
             "Apellidos",
             "Correo",
+            "Telefono",
+            "Depto",
+            "Domicilio",
             "Facultad",
-            "Carrera"});
+            "Carrera",
+            "Año",
+            "Promedio"});
             this.cbOption.Location = new System.Drawing.Point(672, 38);
             this.cbOption.Name = "cbOption";
             this.cbOption.Size = new System.Drawing.Size(89, 26);
